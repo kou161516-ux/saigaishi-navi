@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a202c;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .disaster-badge {
+    @apply text-xs font-medium px-2 py-1 rounded-full;
+  }
+
+  .lesson-box {
+    @apply bg-red-50 border-l-4 border-red-500 rounded-r-lg p-5 my-6;
+  }
+
+  .preparedness-box {
+    @apply bg-green-50 border-l-4 border-green-500 rounded-r-lg p-5 my-6;
+  }
+
+  .affiliate-box {
+    @apply bg-amber-50 border border-amber-200 rounded-lg p-5 my-8;
+  }
+
+  .prose-content h2 {
+    @apply text-xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-200;
+  }
+
+  .prose-content h3 {
+    @apply text-lg font-bold text-gray-800 mt-6 mb-3;
+  }
+
+  .prose-content p {
+    @apply text-gray-700 leading-relaxed mb-4;
+  }
+
+  .prose-content ul {
+    @apply list-disc list-inside space-y-2 mb-4;
+  }
+
+  .prose-content li {
+    @apply text-gray-700;
+  }
+}

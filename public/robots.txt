@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+
+# Host
+Host: https://saigaishi-navi.vercel.app
+
+# Sitemaps
+Sitemap: https://saigaishi-navi.vercel.app/sitemap.xml

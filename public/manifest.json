@@ -1,0 +1,21 @@
+{
+  "name": "災害史ナビ｜過去の災害から学ぶ防災の知恵",
+  "short_name": "災害史ナビ",
+  "description": "過去の重大災害の歴史を学び、現代の備えにつなげる防災情報サイト",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2d3748",
+  "theme_color": "#2d3748",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
