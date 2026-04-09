@@ -92,6 +92,13 @@ export default function DisasterCard({ disaster }: Props) {
         {disaster.magnitude && (
           <p className="text-xs text-gray-500 mt-1">規模: {disaster.magnitude}</p>
         )}
+
+        {/* Affiliate CTA */}
+        <div className="mt-3 pt-3 border-t border-gray-100">
+          <span className="inline-flex items-center gap-1 text-xs text-amber-600 font-medium group-hover:text-amber-700">
+            🛡️ 防災グッズを今すぐ確認 →
+          </span>
+        </div>
       </div>
     </Link>
   )
