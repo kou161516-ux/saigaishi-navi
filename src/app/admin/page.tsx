@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { getAllDisasters } from '@/lib/disasters'
+import { DisasterData } from '@/types/disaster'
 
 export const dynamic = 'force-dynamic'
 
@@ -16,12 +18,72 @@ interface ArticleScore {
   title: string
 }
 
-interface ImproveData {
-  generated: string
-  totalArticles: number
-  averageScore: number
-  needsImprovement: ArticleIssue[]
-  scores: ArticleScore[]
+function calculateScore(disaster: DisasterData): {
+  score: number
+  issues: string[]
+  suggestions: string[]
+} {
+  let score = 0
+  const issues: string[] = []
+  const suggestions: string[] = []
+
+  if ((disaster.relatedSlugs?.length ?? 0) >= 3) {
+    score += 15
+  } else {
+    issues.push('relatedSlugs不足')
+    suggestions.push('関連記事を3件以上追加')
+  }
+
+  if (disaster.lessons.length >= 4) {
+    score += 15
+  } else {
+    issues.push('lessons不足')
+    suggestions.push('教訓を4件以上追加')
+  }
+
+  if (disaster.preparedness.length >= 4) {
+    score += 15
+  } else {
+    issues.push('preparedness不足')
+    suggestions.push('備えを4件以上追加')
+  }
+
+  if ((disaster.sources?.length ?? 0) >= 3) {
+    score += 15
+  } else {
+    issues.push('sources少ない')
+    suggestions.push('出典を3件以上追加')
+  }
+
+  if (disaster.tags.length >= 4) {
+    score += 10
+  } else {
+    issues.push('tags不足')
+    suggestions.push('タグを4件以上追加')
+  }
+
+  if (disaster.summary.length >= 150) {
+    score += 15
+  } else {
+    issues.push('summary短すぎる')
+    suggestions.push('概要を150文字以上に拡充')
+  }
+
+  const metaLen = disaster.metaDescription?.length ?? 0
+  if (metaLen >= 50 && metaLen <= 160) {
+    score += 15
+  } else if (metaLen === 0) {
+    issues.push('metaDescription未設定')
+    suggestions.push('metaDescriptionを50〜160文字で設定')
+  } else if (metaLen < 50) {
+    issues.push('metaDescription短すぎる')
+    suggestions.push('metaDescriptionを50文字以上に拡充')
+  } else {
+    issues.push('metaDescription長すぎる')
+    suggestions.push('metaDescriptionを160文字以内に短縮')
+  }
+
+  return { score, issues, suggestions }
 }
 
 function ScoreBadge({ score }: { score: number }) {
@@ -54,66 +116,55 @@ function IssueBadge({ issue }: { issue: string }) {
   )
 }
 
-async function fetchImproveData(): Promise<ImproveData | null> {
-  try {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_SITE_URL ||
-      process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : 'http://localhost:3000'
-    const res = await fetch(`${baseUrl}/api/improve`, {
-      cache: 'no-store',
-    })
-    if (!res.ok) return null
-    return (await res.json()) as ImproveData
-  } catch {
-    return null
-  }
-}
+export default function AdminPage() {
+  const disasters = getAllDisasters()
 
-export default async function AdminPage() {
-  const data = await fetchImproveData()
+  const allScores: ArticleScore[] = []
+  const needsImprovement: ArticleIssue[] = []
 
-  if (!data) {
-    return (
-      <div className="min-h-screen bg-gray-50 p-8">
-        <div className="mx-auto max-w-5xl">
-          <h1 className="mb-6 text-2xl font-bold text-gray-800">管理者ダッシュボード</h1>
-          <div className="rounded-lg bg-red-50 p-6 text-red-700">
-            データの取得に失敗しました。APIが正常に動作しているか確認してください。
-          </div>
-        </div>
-      </div>
-    )
+  for (const disaster of disasters) {
+    const { score, issues, suggestions } = calculateScore(disaster)
+    allScores.push({ slug: disaster.slug, score, title: disaster.title })
+    if (score < 85 || issues.length > 0) {
+      needsImprovement.push({ slug: disaster.slug, title: disaster.title, score, issues, suggestions })
+    }
   }
 
-  const top10 = data.scores.slice(0, 10)
-  const bottom10 = [...data.scores].sort((a, b) => a.score - b.score).slice(0, 10)
-  const gaugePercent = Math.min(100, data.averageScore)
+  needsImprovement.sort((a, b) => a.score - b.score)
+  const scoresSorted = [...allScores].sort((a, b) => b.score - a.score)
+  const top10 = scoresSorted.slice(0, 10)
+  const bottom10 = [...allScores].sort((a, b) => a.score - b.score).slice(0, 10)
+
+  const totalArticles = allScores.length
+  const averageScore =
+    totalArticles > 0
+      ? Math.round(allScores.reduce((sum, s) => sum + s.score, 0) / totalArticles)
+      : 0
+  const gaugePercent = Math.min(100, averageScore)
 
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="mx-auto max-w-5xl px-4 py-8">
         <h1 className="mb-2 text-2xl font-bold text-gray-900">管理者ダッシュボード</h1>
         <p className="mb-6 text-sm text-gray-500">
-          生成日時: {new Date(data.generated).toLocaleString('ja-JP')}
+          自動改善エージェント — 全{totalArticles}記事の品質スコア
         </p>
 
         {/* サマリーカード */}
         <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <div className="rounded-lg bg-white p-5 shadow-sm border border-gray-200">
             <p className="text-sm text-gray-500">総記事数</p>
-            <p className="mt-1 text-3xl font-bold text-gray-900">{data.totalArticles}</p>
+            <p className="mt-1 text-3xl font-bold text-gray-900">{totalArticles}</p>
           </div>
           <div className="rounded-lg bg-white p-5 shadow-sm border border-gray-200">
             <p className="text-sm text-gray-500">改善が必要な記事</p>
             <p className="mt-1 text-3xl font-bold text-orange-600">
-              {data.needsImprovement.length}
+              {needsImprovement.length}
             </p>
           </div>
           <div className="rounded-lg bg-white p-5 shadow-sm border border-gray-200">
             <p className="mb-2 text-sm text-gray-500">平均スコア</p>
-            <p className="mb-2 text-3xl font-bold text-gray-900">{data.averageScore}点</p>
+            <p className="mb-2 text-3xl font-bold text-gray-900">{averageScore}点</p>
             <div className="h-3 w-full rounded-full bg-gray-200">
               <div
                 className={`h-3 rounded-full transition-all ${
@@ -132,7 +183,7 @@ export default async function AdminPage() {
         {/* 要改善記事一覧 */}
         <section className="mb-8">
           <h2 className="mb-3 text-lg font-semibold text-gray-800">
-            改善が必要な記事 ({data.needsImprovement.length}件)
+            改善が必要な記事 ({needsImprovement.length}件)
           </h2>
           <div className="overflow-x-auto rounded-lg border border-gray-200 bg-white shadow-sm">
             <table className="min-w-full text-sm">
@@ -145,7 +196,7 @@ export default async function AdminPage() {
                 </tr>
               </thead>
               <tbody>
-                {data.needsImprovement.map((article, idx) => (
+                {needsImprovement.map((article, idx) => (
                   <tr
                     key={article.slug}
                     className={`border-b border-gray-100 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
@@ -175,7 +226,7 @@ export default async function AdminPage() {
                     </td>
                   </tr>
                 ))}
-                {data.needsImprovement.length === 0 && (
+                {needsImprovement.length === 0 && (
                   <tr>
                     <td colSpan={4} className="px-4 py-6 text-center text-gray-500">
                       改善が必要な記事はありません
