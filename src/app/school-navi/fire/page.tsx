@@ -6,9 +6,9 @@ import fireSchoolsData from '@/data/schools/fire-schools.json'
 export const revalidate = 86400
 
 export const metadata: Metadata = {
-  title: '消防学校ナビ 全国一覧 | 消防大学校・都道府県消防学校',
+  title: '消防学校ナビ 全国一覧 | 消防大学校・都道府県消防学校・政令指定都市消防局',
   description:
-    '全国47都道府県の消防学校と消防大学校・消防研究センターの公式情報一覧。所在地・電話番号・公式サイトURLを掲載。消防職員・消防団員の教育訓練機関ガイド。',
+    '全国47都道府県の消防学校・消防大学校・政令指定都市20市の消防局（訓練センター）の公式情報一覧。所在地・電話番号・公式サイトURLを掲載。消防職員・消防団員の教育訓練機関ガイド。',
 }
 
 interface NationalSchool {
@@ -35,6 +35,19 @@ interface PrefecturalSchool {
   note: string
 }
 
+interface DesignatedCitySchool {
+  id: string
+  city: string
+  prefecture: string
+  name: string
+  trainingFacility: string
+  location: string
+  tel: string
+  url: string
+  urlVerified: boolean
+  note: string
+}
+
 const REGION_MAP: Record<string, string[]> = {
   北海道: ['北海道'],
   東北: ['青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県'],
@@ -47,17 +60,19 @@ const REGION_MAP: Record<string, string[]> = {
 }
 
 export default function FireSchoolNaviPage() {
-  const { national, prefectural, updatedAt } = fireSchoolsData as {
+  const { national, prefectural, designatedCities, updatedAt } = fireSchoolsData as {
     updatedAt: string
     national: NationalSchool[]
     prefectural: PrefecturalSchool[]
+    designatedCities: DesignatedCitySchool[]
   }
 
   const verifiedCount =
     national.filter((s) => s.urlVerified).length +
-    prefectural.filter((s) => s.urlVerified).length
+    prefectural.filter((s) => s.urlVerified).length +
+    designatedCities.filter((s) => s.urlVerified).length
 
-  const totalCount = national.length + prefectural.length
+  const totalCount = national.length + prefectural.length + designatedCities.length
 
   const getSchoolByPref = (pref: string): PrefecturalSchool | undefined =>
     prefectural.find((s) => s.prefecture === pref)
@@ -76,7 +91,7 @@ export default function FireSchoolNaviPage() {
           />
           <h1 className="text-3xl font-bold">消防学校ナビ 全国一覧</h1>
           <p className="mt-2" style={{ color: '#fca5a5' }}>
-            消防大学校・消防研究センターと全国47都道府県消防学校の公式情報
+            消防大学校・消防研究センター・全国47都道府県消防学校・政令指定都市20市消防局の公式情報
           </p>
           <p className="text-sm mt-2" style={{ color: '#fca5a5', opacity: 0.8 }}>
             URL確認済み: {verifiedCount} / {totalCount}件　最終更新: {updatedAt}
@@ -225,6 +240,78 @@ export default function FireSchoolNaviPage() {
               </div>
             </div>
           ))}
+        </section>
+
+        {/* 政令指定都市消防局 */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2 border-b-2 border-red-600 pb-2">
+            政令指定都市消防局 一覧
+          </h2>
+          <p className="text-sm text-gray-600 mb-5">
+            政令指定都市20市は独自の消防局を設置しており、消防学校・訓練センター等の教育訓練施設を運営しています。
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100 text-left">
+                  <th className="px-4 py-3 font-semibold text-gray-700 whitespace-nowrap">都市</th>
+                  <th className="px-4 py-3 font-semibold text-gray-700">消防局・訓練施設</th>
+                  <th className="px-4 py-3 font-semibold text-gray-700 hidden lg:table-cell">所在地</th>
+                  <th className="px-4 py-3 font-semibold text-gray-700 hidden md:table-cell whitespace-nowrap">電話番号</th>
+                  <th className="px-4 py-3 font-semibold text-gray-700 whitespace-nowrap">公式サイト</th>
+                </tr>
+              </thead>
+              <tbody>
+                {designatedCities.map((city, index) => (
+                  <tr
+                    key={city.id}
+                    className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
+                  >
+                    <td className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">
+                      {city.city}
+                    </td>
+                    <td className="px-4 py-3 text-gray-800">
+                      {city.name}
+                      {city.trainingFacility && (
+                        <p className="text-xs text-red-600 mt-0.5 font-medium">{city.trainingFacility}</p>
+                      )}
+                      {city.note && (
+                        <p className="text-xs text-gray-400 mt-0.5">{city.note}</p>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-gray-600 hidden lg:table-cell text-xs">
+                      {city.location}
+                    </td>
+                    <td className="px-4 py-3 text-gray-600 hidden md:table-cell whitespace-nowrap">
+                      {city.tel}
+                    </td>
+                    <td className="px-4 py-3">
+                      {city.urlVerified ? (
+                        <Link
+                          href={city.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 font-medium transition hover:opacity-80"
+                          style={{ color: '#dc2626' }}
+                        >
+                          公式サイト
+                          <span className="text-xs">↗</span>
+                        </Link>
+                      ) : (
+                        <span className="inline-flex items-center bg-gray-100 text-gray-400 px-2 py-1 rounded text-xs">
+                          調査中
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 text-xs text-orange-800">
+            <p className="font-semibold mb-1">📌 政令指定都市消防局について</p>
+            <p>政令指定都市は消防組織法に基づき独自の消防本部（消防局）を設置。各消防局は消防職員・消防団員の初任・専科・幹部教育を実施しています。独自の消防学校を持たない市は、都道府県立消防学校と連携して教育訓練を行っています。</p>
+          </div>
         </section>
 
         {/* 関連リンク */}
