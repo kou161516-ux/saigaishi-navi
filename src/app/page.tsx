@@ -2,6 +2,8 @@ import Link from 'next/link'
 import DisasterCard from '@/components/disaster/DisasterCard'
 import AdSense from '@/components/ads/AdSense'
 import AffiliateBox from '@/components/affiliate/AffiliateBox'
+import LatestEarthquakeWidget from '@/components/news/LatestEarthquakeWidget'
+import DisasterPreventionDayBanner from '@/components/special/DisasterPreventionDayBanner'
 import {
   getFeaturedDisasters,
   getAllDisasters,
@@ -9,11 +11,49 @@ import {
   getTotalLessons,
 } from '@/lib/disasters'
 
+// 月ごとの特集スラッグ（その月に因んだ災害）
+const monthlyFeatured: Record<number, string[]> = {
+  1:  ['noto-earthquake-2024', 'hanshin-awaji-earthquake-1995'],
+  2:  ['hokkaido-earthquake-2018', 'nihonkai-chubu-earthquake-1983'],
+  3:  ['tohoku-earthquake-2011', 'miyagi-earthquake-1978'],
+  4:  ['kumamoto-earthquake-2016', 'fukui-earthquake-1948'],
+  5:  ['ontake-eruption-2014', 'pinatubo-eruption-1991'],
+  6:  ['fukui-earthquake-1948', 'niigata-earthquake-1964'],
+  7:  ['western-japan-flood-2018', 'northern-kyushu-flood-2017'],
+  8:  ['nagasaki-flood-1982', 'atami-landslide-2021'],
+  9:  ['kanto-earthquake-1923', 'isewan-typhoon-1959'],
+  10: ['ringo-typhoon-1991', 'okushiri-tsunami-1993'],
+  11: ['niigata-chuetsu-earthquake-2004', 'izmit-earthquake-1999'],
+  12: ['india-ocean-tsunami-2004', 'armero-volcano-1985'],
+}
+
+const monthNames: Record<number, string> = {
+  1: '1月', 2: '2月', 3: '3月', 4: '4月',
+  5: '5月', 6: '6月', 7: '7月', 8: '8月',
+  9: '9月', 10: '10月', 11: '11月', 12: '12月',
+}
+
 export default function HomePage() {
   const featured = getFeaturedDisasters()
   const allDisasters = getAllDisasters()
   const totalDeaths = getTotalDeaths()
   const totalLessons = getTotalLessons()
+
+  // 今月の特集
+  const currentMonth = new Date().getMonth() + 1
+  const monthlySlugs = monthlyFeatured[currentMonth] ?? []
+  const monthlyDisasters = monthlySlugs
+    .map((slug) => allDisasters.find((d) => d.slug === slug))
+    .filter((d): d is NonNullable<typeof d> => d !== undefined)
+
+  // 被害 TOP10（deaths + missing の降順）
+  const top10 = [...allDisasters]
+    .sort((a, b) => {
+      const totalA = (a.deaths ?? 0) + (a.missing ?? 0)
+      const totalB = (b.deaths ?? 0) + (b.missing ?? 0)
+      return totalB - totalA
+    })
+    .slice(0, 10)
 
   const categories = [
     { href: '/country/japan', icon: '🇯🇵', label: '日本の災害', count: allDisasters.filter((d) => d.country === 'japan').length },
@@ -22,6 +62,8 @@ export default function HomePage() {
     { href: '/type/tsunami', icon: '🌊', label: '津波', count: allDisasters.filter((d) => d.type === 'tsunami').length },
     { href: '/type/typhoon', icon: '🌀', label: '台風', count: allDisasters.filter((d) => d.type === 'typhoon').length },
     { href: '/type/flood', icon: '🌧', label: '洪水・豪雨', count: allDisasters.filter((d) => d.type === 'flood').length },
+    { href: '/type/volcano', icon: '🌋', label: '火山', count: allDisasters.filter((d) => d.type === 'volcano').length },
+    { href: '/type/landslide', icon: '⛰', label: '土砂崩れ', count: allDisasters.filter((d) => d.type === 'landslide').length },
   ]
 
   const eras = ['1920s', '1950s', '1990s', '2000s', '2010s', '2020s']
@@ -74,21 +116,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Category Grid */}
+      {/* 防災の日バナー（Server Component） */}
+      <DisasterPreventionDayBanner />
+
+      {/* Latest Earthquake Widget */}
+      <LatestEarthquakeWidget />
+
+      {/* タイプ別に探す（改善版） */}
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            カテゴリから探す
+          <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">
+            タイプ別に探す
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <p className="text-sm text-gray-500 text-center mb-6">
+            災害の種類でカテゴリを選んで一覧を確認できます
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
             {categories.map((cat) => (
               <Link
                 key={cat.href}
                 href={cat.href}
-                className="bg-white rounded-lg border border-gray-200 p-4 text-center hover:shadow-md hover:border-amber-300 transition group"
+                className="bg-white rounded-xl border border-gray-200 p-4 text-center hover:shadow-md hover:border-amber-300 hover:bg-amber-50 transition group"
               >
                 <div className="text-3xl mb-2">{cat.icon}</div>
-                <p className="font-medium text-gray-800 group-hover:text-amber-600 text-sm">
+                <p className="font-medium text-gray-800 group-hover:text-amber-700 text-xs leading-tight">
                   {cat.label}
                 </p>
                 <p className="text-xs text-gray-400 mt-1">{cat.count}件</p>
@@ -104,6 +155,34 @@ export default function HomePage() {
         <AdSense slot="1234567890" format="auto" className="my-4" />
       </div>
 
+      {/* 今月の防災チェック */}
+      {monthlyDisasters.length > 0 && (
+        <section className="py-12 px-4 bg-amber-50 border-y border-amber-100">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-wrap items-center justify-between mb-6 gap-3">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="bg-amber-400 text-white text-xs font-bold px-2 py-0.5 rounded">
+                    {monthNames[currentMonth]}の防災チェック
+                  </span>
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  今月に因んだ災害を振り返る
+                </h2>
+              </div>
+              <Link href="/disasters" className="text-amber-600 hover:text-amber-700 text-sm font-medium">
+                全記事を見る →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {monthlyDisasters.map((disaster) => (
+                <DisasterCard key={disaster.slug} disaster={disaster} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Featured Disasters */}
       <section className="py-12 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -118,6 +197,67 @@ export default function HomePage() {
               <DisasterCard key={disaster.slug} disaster={disaster} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 被害の大きかった災害 TOP10 */}
+      <section className="py-12 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-wrap items-center justify-between mb-6 gap-3">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">被害の大きかった災害 TOP10</h2>
+              <p className="text-sm text-gray-500 mt-1">死者・行方不明者数の合計で集計</p>
+            </div>
+            <Link href="/disasters" className="text-amber-600 hover:text-amber-700 text-sm font-medium">
+              全災害を見る →
+            </Link>
+          </div>
+          <ol className="space-y-3">
+            {top10.map((disaster, index) => {
+              const total = (disaster.deaths ?? 0) + (disaster.missing ?? 0)
+              const isTop3 = index < 3
+              return (
+                <li key={disaster.slug}>
+                  <Link
+                    href={`/disasters/${disaster.slug}`}
+                    className="flex items-center gap-4 bg-white rounded-lg border border-gray-200 px-5 py-4 hover:shadow-md hover:border-amber-300 transition group"
+                  >
+                    {/* Rank */}
+                    <span
+                      className={`flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm ${
+                        index === 0
+                          ? 'bg-yellow-400 text-white'
+                          : index === 1
+                          ? 'bg-gray-400 text-white'
+                          : index === 2
+                          ? 'bg-amber-700 text-white'
+                          : 'bg-gray-100 text-gray-600'
+                      }`}
+                    >
+                      {index + 1}
+                    </span>
+                    {/* Info */}
+                    <div className="flex-1 min-w-0">
+                      <p className="font-bold text-gray-900 group-hover:text-amber-700 transition truncate">
+                        {disaster.title}
+                      </p>
+                      <p className="text-xs text-gray-500 mt-0.5">
+                        {disaster.date.slice(0, 4)}年 · {disaster.region}
+                      </p>
+                    </div>
+                    {/* Deaths */}
+                    <div className="flex-shrink-0 text-right">
+                      <p className={`font-bold text-sm ${isTop3 ? 'text-red-700' : 'text-gray-700'}`}>
+                        {total.toLocaleString()}人
+                      </p>
+                      <p className="text-xs text-gray-400">死者・行不明</p>
+                    </div>
+                    <span className="flex-shrink-0 text-gray-400 group-hover:text-amber-500 transition text-lg">›</span>
+                  </Link>
+                </li>
+              )
+            })}
+          </ol>
         </div>
       </section>
 

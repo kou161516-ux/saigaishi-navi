@@ -47,11 +47,24 @@ export function getRelatedDisasters(
   limit: number = 3
 ): DisasterData[] {
   const disaster = getDisasterBySlug(slug)
-  if (!disaster || !disaster.relatedSlugs) return []
-  return disaster.relatedSlugs
+  if (!disaster) return []
+
+  // 1. relatedSlugs に明示されたものを優先
+  const explicitSlugs = disaster.relatedSlugs ?? []
+  const explicit = explicitSlugs
     .slice(0, limit)
     .map((s) => getDisasterBySlug(s))
     .filter((d): d is DisasterData => d !== undefined)
+
+  if (explicit.length >= limit) return explicit
+
+  // 2. 不足分を同タイプの災害から自動補完（自分自身・既取得を除く）
+  const excludeSlugs = new Set([slug, ...explicit.map((d) => d.slug)])
+  const sameType = getAllDisasters()
+    .filter((d) => d.type === disaster.type && !excludeSlugs.has(d.slug))
+    .slice(0, limit - explicit.length)
+
+  return [...explicit, ...sameType]
 }
 
 export function getAllSlugs(): string[] {
@@ -88,4 +101,61 @@ export function getTotalDeaths(): number {
 
 export function getTotalLessons(): number {
   return getAllDisasters().reduce((acc, d) => acc + d.lessons.length, 0)
+}
+
+export function getAllTags(): string[] {
+  const disasters = getAllDisasters()
+  const tagSet = new Set<string>()
+  disasters.forEach((d) => d.tags.forEach((t) => tagSet.add(t)))
+  return Array.from(tagSet).sort()
+}
+
+export function getDisastersByTag(tag: string): DisasterData[] {
+  return getAllDisasters().filter((d) => d.tags.includes(tag))
+}
+
+export function getTagCounts(): Record<string, number> {
+  const disasters = getAllDisasters()
+  return disasters.reduce((acc, d) => {
+    d.tags.forEach((t) => {
+      acc[t] = (acc[t] || 0) + 1
+    })
+    return acc
+  }, {} as Record<string, number>)
+}
+
+// 直近30日以内に updatedAt または publishedAt が更新された記事を取得
+export function getRecentlyUpdatedDisasters(): DisasterData[] {
+  const thirtyDaysAgo = new Date()
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30)
+  return getAllDisasters().filter((d) => {
+    const updated = new Date(d.updatedAt || d.publishedAt)
+    return updated >= thirtyDaysAgo
+  })
+}
+
+// カテゴリ別統計（総件数・タイプ別件数・国別件数・総死者数）
+export function getDisasterStats(): {
+  totalCount: number
+  byType: Record<string, number>
+  byCountry: Record<string, number>
+  totalDeaths: number
+} {
+  const disasters = getAllDisasters()
+  const byType: Record<string, number> = {}
+  const byCountry: Record<string, number> = {}
+  let totalDeaths = 0
+
+  disasters.forEach((d) => {
+    byType[d.type] = (byType[d.type] || 0) + 1
+    byCountry[d.country] = (byCountry[d.country] || 0) + 1
+    totalDeaths += d.deaths || 0
+  })
+
+  return {
+    totalCount: disasters.length,
+    byType,
+    byCountry,
+    totalDeaths,
+  }
 }

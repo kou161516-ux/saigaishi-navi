@@ -33,6 +33,13 @@ interface Props {
   disaster: DisasterData
 }
 
+function getScaleBadge(deaths?: number): { label: string; className: string } | null {
+  if (deaths === undefined) return null
+  if (deaths > 1000) return { label: '大規模', className: 'bg-red-600 text-white' }
+  if (deaths > 100)  return { label: '中規模', className: 'bg-orange-500 text-white' }
+  return null
+}
+
 export default function DisasterCard({ disaster }: Props) {
   const formattedDate = format(new Date(disaster.date), 'yyyy年M月d日', {
     locale: ja,
@@ -42,16 +49,26 @@ export default function DisasterCard({ disaster }: Props) {
       ? disaster.summary.slice(0, 80) + '…'
       : disaster.summary
 
+  const scaleBadge = getScaleBadge(disaster.deaths)
+  const lessonCount = disaster.lessons.length
+
   return (
     <Link href={`/disasters/${disaster.slug}`} className="block group">
       <div className="bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md transition-shadow h-full flex flex-col">
-        {/* Type badge */}
-        <div className="flex items-center justify-between mb-3">
-          <span
-            className={`text-xs font-medium px-2 py-1 rounded-full ${typeColors[disaster.type] || typeColors.other}`}
-          >
-            {typeLabels[disaster.type] || disaster.type}
-          </span>
+        {/* Type badge + scale badge + country */}
+        <div className="flex items-center justify-between mb-3 gap-2 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span
+              className={`text-xs font-medium px-2 py-1 rounded-full ${typeColors[disaster.type] || typeColors.other}`}
+            >
+              {typeLabels[disaster.type] || disaster.type}
+            </span>
+            {scaleBadge && (
+              <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${scaleBadge.className}`}>
+                {scaleBadge.label}
+              </span>
+            )}
+          </div>
           {disaster.country === 'japan' ? (
             <span className="text-xs text-gray-400">🇯🇵 日本</span>
           ) : (
@@ -71,7 +88,7 @@ export default function DisasterCard({ disaster }: Props) {
         {/* Summary */}
         <p className="text-sm text-gray-600 leading-relaxed mb-4">{shortSummary}</p>
 
-        {/* Deaths */}
+        {/* Deaths + Missing */}
         {disaster.deaths !== undefined && (
           <div className="border-t border-gray-100 pt-3 mt-auto">
             <span className="text-xs text-gray-500">
@@ -88,14 +105,26 @@ export default function DisasterCard({ disaster }: Props) {
           </div>
         )}
 
+        {/* Economic Loss */}
+        {disaster.economicLoss && (
+          <p className="text-xs text-gray-500 mt-1">
+            💰 損失: {disaster.economicLoss}
+          </p>
+        )}
+
         {/* Magnitude */}
         {disaster.magnitude && (
           <p className="text-xs text-gray-500 mt-1">規模: {disaster.magnitude}</p>
         )}
 
-        {/* Affiliate CTA */}
-        <div className="mt-3 pt-3 border-t border-gray-100">
-          <span className="inline-flex items-center gap-1 text-xs text-amber-600 font-medium group-hover:text-amber-700">
+        {/* Lesson count badge + Affiliate CTA */}
+        <div className="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+          {lessonCount > 0 && (
+            <span className="inline-flex items-center gap-1 text-xs text-blue-600 font-medium bg-blue-50 px-2 py-0.5 rounded-full">
+              💡 教訓 {lessonCount}件
+            </span>
+          )}
+          <span className="inline-flex items-center gap-1 text-xs text-amber-600 font-medium group-hover:text-amber-700 ml-auto">
             🛡️ 防災グッズを今すぐ確認 →
           </span>
         </div>

@@ -33,7 +33,7 @@ export interface DisasterData {
   lifeline?: string    // ライフライン影響
   lessons: string[]    // 教訓（箇条書き）
   preparedness: string[] // 今に活かす備え（箇条書き）
-  affiliateCategory: 'water' | 'power' | 'evacuation' | 'indoor' | 'general'
+  affiliateCategory: 'water' | 'power' | 'evacuation' | 'indoor' | 'general' | 'tsunami' | 'typhoon' | 'flood'
   relatedSlugs?: string[]
   tags: string[]
   sources: { title: string; url?: string }[]

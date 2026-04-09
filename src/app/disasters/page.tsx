@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getAllDisasters } from '@/lib/disasters'
 import DisastersClient from './_client'
+import SearchBox from '@/components/ui/SearchBox'
 
 export const metadata: Metadata = {
   title: '災害一覧',
@@ -18,6 +19,9 @@ export default function DisastersPage() {
             日本・世界の重大災害 {disasters.length}件を収録
           </p>
         </div>
+      </div>
+      <div className="max-w-6xl mx-auto px-4 pt-6">
+        <SearchBox disasters={disasters} />
       </div>
       <DisastersClient disasters={disasters} />
     </div>

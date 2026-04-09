@@ -120,6 +120,43 @@ export default async function DisasterDetailPage({
       '@type': 'WebPage',
       '@id': `${siteUrl}/disasters/${disaster.slug}`,
     },
+    about: {
+      '@type': 'Event',
+      name: disaster.title,
+      startDate: disaster.date,
+      location: {
+        '@type': 'Place',
+        name: disaster.region,
+      },
+    },
+    keywords: disaster.tags.join(', '),
+    articleSection: '防災',
+    inLanguage: 'ja',
+  }
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'ホーム',
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: '災害一覧',
+        item: `${siteUrl}/disasters`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: disaster.title,
+        item: `${siteUrl}/disasters/${disaster.slug}`,
+      },
+    ],
   }
 
   return (
@@ -127,6 +164,10 @@ export default async function DisasterDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* Hero */}
@@ -260,12 +301,13 @@ export default async function DisasterDetailPage({
             <p className="text-sm font-medium text-gray-600 mb-2">タグ:</p>
             <div className="flex flex-wrap gap-2">
               {disaster.tags.map((tag) => (
-                <span
+                <Link
                   key={tag}
-                  className="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full"
+                  href={`/tags/${encodeURIComponent(tag)}`}
+                  className="bg-gray-100 hover:bg-amber-100 hover:text-amber-800 text-gray-600 text-xs px-3 py-1 rounded-full transition-colors"
                 >
                   #{tag}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -300,9 +342,17 @@ export default async function DisasterDetailPage({
         {/* Related */}
         {related.length > 0 && (
           <section className="mb-8">
-            <h2 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">
-              関連する災害
-            </h2>
+            <div className="flex items-center justify-between mb-4 pb-2 border-b border-gray-200">
+              <h2 className="text-xl font-bold text-gray-900">
+                関連する災害
+              </h2>
+              <Link
+                href={`/type/${disaster.type}`}
+                className="text-sm text-amber-600 hover:text-amber-700 font-medium"
+              >
+                同じタイプの災害をもっと見る →
+              </Link>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {related.map((d) => (
                 <DisasterCard key={d.slug} disaster={d} />

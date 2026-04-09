@@ -49,16 +49,19 @@
   ],
   "sources": [
     {
-      "title": "内閣府 北海道南西沖地震の概要"
+      "title": "内閣府 北海道南西沖地震の概要",
+      "url": "https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case199301.html"
     },
     {
       "title": "北海道 北海道南西沖地震の記録"
     },
     {
-      "title": "気象庁 北海道南西沖地震の地震・津波の記録"
+      "title": "気象庁 北海道南西沖地震の地震・津波の記録",
+      "url": "https://www.jma-net.go.jp/sapporo/jishin/nanseioki.html"
     }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",
+  "updatedAt": "2024-01-01",
   "metaDescription": "北海道南西沖地震・奥尻島津波（1993年7月12日）の記録。M7.8・津波到達2分という極限状況で生き延びるために。230人が犠牲となった夜間津波の教訓。"
 }

@@ -49,7 +49,8 @@
   ],
   "sources": [
     {
-      "title": "気象庁 チリ地震津波の概要"
+      "title": "気象庁 チリ地震津波の概要",
+      "url": "https://www.data.jma.go.jp/stats/data/bosai/report/1960/19600522/19600522.html"
     },
     {
       "title": "内閣府 チリ地震津波の被害状況"
@@ -60,5 +61,6 @@
   ],
   "featured": false,
   "publishedAt": "2024-01-01",
+  "updatedAt": "2024-01-01",
   "metaDescription": "チリ地震津波（1960年5月23日）の記録。観測史上最大Mw9.5のチリ地震が日本に引き起こした遠地津波。日本側死者142人の教訓と遠地津波への備えを解説。"
 }

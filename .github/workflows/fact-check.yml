@@ -1,0 +1,24 @@
+name: Fact Check & Quality Validation
+
+on:
+  push:
+    paths: ['src/data/disasters/**']
+  schedule:
+    - cron: '0 0 * * 0'  # 毎週日曜UTC 0時
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - name: Run fact-check script
+        run: node scripts/fact-check.js
+      - name: Check link health
+        run: node scripts/link-check.js
+      - name: TypeScript type check
+        run: npx tsc --noEmit

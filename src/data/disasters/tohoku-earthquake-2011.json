@@ -8,7 +8,7 @@
   "type": "earthquake",
   "magnitude": "M9.0",
   "deaths": 15900,
-  "missing": 2523,
+  "missing": 2520,
   "injured": 6157,
   "buildings": "全壊・半壊合わせて約40万棟",
   "economicLoss": "約16.9兆円（内閣府推計）",
@@ -53,13 +53,16 @@
       "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h23/64/special_01.html"
     },
     {
-      "title": "消防庁 東日本大震災記録集"
+      "title": "消防庁 東日本大震災記録集",
+      "url": "https://www.fdma.go.jp/publication/hakusho/r6/document/67972.html"
     },
     {
-      "title": "復興庁 復興の現状"
+      "title": "復興庁 復興の現状",
+      "url": "https://www.reconstruction.go.jp/topics/main-cat2/sub-cat2-6/20240301_kanrenshi.pdf"
     }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",
+  "updatedAt": "2024-01-01",
   "metaDescription": "東日本大震災（2011年3月11日）の被害・教訓・今に活かす備えを詳しく解説。死者・行方不明者約1万8千人、M9.0の巨大地震と大津波が東北を襲った複合災害の全記録。"
 }

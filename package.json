@@ -8,7 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "fact-check": "node scripts/fact-check.js",
+    "link-check": "node scripts/link-check.js",
+    "validate": "npm run fact-check && npx tsc --noEmit"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

@@ -1,0 +1,26 @@
+name: Weekly Redeploy (毎週月曜)
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # 毎週月曜UTC 0時（JST 9時）
+  workflow_dispatch:
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - name: Update build timestamp
+        run: |
+          echo "LAST_BUILD=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_ENV
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          npm install -g vercel
+          vercel deploy --prod --token $VERCEL_TOKEN

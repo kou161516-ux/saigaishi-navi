@@ -95,6 +95,18 @@ export default function Header() {
               教訓一覧
             </Link>
             <Link
+              href="/tags"
+              className="text-gray-300 hover:text-amber-400 transition text-sm font-medium"
+            >
+              タグ一覧
+            </Link>
+            <Link
+              href="/stats"
+              className="text-gray-300 hover:text-amber-400 transition text-sm font-medium"
+            >
+              統計
+            </Link>
+            <Link
               href="/about"
               className="text-gray-300 hover:text-amber-400 transition text-sm font-medium"
             >
@@ -135,6 +147,8 @@ export default function Header() {
                 { href: '/era/2000s', label: '2000年代' },
                 { href: '/era/1990s', label: '1990年代' },
                 { href: '/lessons', label: '教訓一覧' },
+                { href: '/tags', label: 'タグ一覧' },
+                { href: '/stats', label: '統計ダッシュボード' },
                 { href: '/about', label: 'サイトについて' },
               ].map((item) => (
                 <Link

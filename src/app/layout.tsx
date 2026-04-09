@@ -26,9 +26,16 @@ export const metadata: Metadata = {
     locale: 'ja_JP',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://saigaishi-navi.vercel.app',
     siteName: '災害史ナビ',
+    title: '災害史ナビ｜過去の災害から学ぶ、今日の備え',
+    description:
+      '日本・世界の重大災害の歴史を学び、今日の備えにつなげる。防災・災害史の知識データベース。',
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@saigaishinavi',
+    title: '災害史ナビ｜過去の災害から学ぶ、今日の備え',
+    description:
+      '日本・世界の重大災害の歴史を学び、今日の備えにつなげる。防災・災害史の知識データベース。',
   },
   robots: {
     index: true,

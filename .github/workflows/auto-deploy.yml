@@ -1,0 +1,38 @@
+name: 自動デプロイ（毎週月曜9時）
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # 毎週月曜 UTC 0時（JST 9時）
+  push:
+    branches: [main]
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run fact-check
+        run: npm run fact-check
+        continue-on-error: true  # ファクトチェックのエラーでもデプロイは継続
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Vercel
+        run: npx vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
