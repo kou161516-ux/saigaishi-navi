@@ -1,0 +1,1152 @@
+============================================================
+saigaishi-navi エージェント統合レポート
+生成日時  : 2026-04-09 04:12:23
+実行モード: --all
+実行環境  : darwin / Node.js v25.9.0
+実行エージェント数: 6体
+============================================================
+
+【実行サマリ】
+
+  エージェント名      | 結果   | 実行時間
+  -------------------|--------|----------
+  fact-check          |  OK    |    71ms
+  auto-update         |  OK    |    58ms
+  internal-link       |  OK    |    90ms
+  revenue             |  OK    |    68ms
+  db-expansion        |  OK    |    70ms
+  auto-improve        |  OK    |    65ms
+
+  合計: 6体実行 / エラー: 0体 / 成功: 6体
+
+------------------------------------------------------------
+[エージェント: fact-check]
+実行時間: 71ms
+ステータス: OK
+--- 出力 ---
+✅ [armero-volcano-1985.json] OK
+✅ [atami-landslide-2021.json] OK
+✅ [bhola-cyclone-1970.json] OK
+✅ [chile-earthquake-tsunami-1960.json] OK
+✅ [fukui-earthquake-1948.json] OK
+✅ [fukushima-nuclear-2011.json] OK
+✅ [haiti-earthquake-2010.json] OK
+✅ [haiyan-typhoon-2013.json] OK
+✅ [hanshin-awaji-earthquake-1995.json] OK
+✅ [heatwave-japan-2018.json] OK
+✅ [hokkaido-blizzard-historical.json] OK
+✅ [hokkaido-earthquake-2018.json] OK
+✅ [hokkaido-nansei-oki-earthquake-1993.json] OK
+✅ [hurricane-katrina-2005.json] OK
+✅ [india-ocean-tsunami-2004.json] OK
+✅ [isewan-typhoon-1959.json] OK
+✅ [izmit-earthquake-1999.json] OK
+✅ [kanto-earthquake-1923.json] OK
+✅ [kii-peninsula-flood-2011.json] OK
+✅ [kinugawa-flood-2015.json] OK
+✅ [kumamoto-earthquake-2016.json] OK
+✅ [kumamoto-flood-2020.json] OK
+✅ [libya-flood-2023.json] OK
+✅ [miyagi-earthquake-1978.json] OK
+✅ [morocco-earthquake-2023.json] OK
+✅ [muroto-typhoon-1961.json] OK
+✅ [nagasaki-flood-1982.json] OK
+✅ [nankai-trough-tokai-earthquake-history.json] OK
+✅ [nepal-earthquake-2015.json] OK
+✅ [nihonkai-chubu-earthquake-1983.json] OK
+✅ [niigata-chuetsu-earthquake-2004.json] OK
+✅ [niigata-earthquake-1964.json] OK
+✅ [northern-kyushu-flood-2017.json] OK
+✅ [noto-earthquake-2007.json] OK
+✅ [noto-earthquake-2024.json] OK
+✅ [okushiri-tsunami-1993.json] OK
+✅ [ontake-eruption-2014.json] OK
+✅ [pinatubo-eruption-1991.json] OK
+✅ [reiwa-typhoon19-2019.json] OK
+✅ [ringo-typhoon-1991.json] OK
+✅ [sichuan-earthquake-2008.json] OK
+✅ [tangshan-earthquake-1976.json] OK
+✅ [tohoku-earthquake-2011.json] OK
+✅ [tottori-earthquake-2000.json] OK
+✅ [toyamaru-typhoon-1954.json] OK
+✅ [turkey-syria-earthquake-2023.json] OK
+✅ [unzen-eruption-1991.json] OK
+✅ [western-japan-flood-2018.json] OK
+✅ [yamagata-niigata-flood-2022.json] OK
+
+📊 49ファイルチェック完了: ❌0エラー ⚠️0警告
+
+------------------------------------------------------------
+[エージェント: auto-update]
+実行時間: 58ms
+ステータス: OK
+--- 出力 ---
+📊 更新状況レポート (2026-04-09)
+
+✅ 最近更新済み: 49件
+⚠️  要更新確認 (90日以上未更新): 0件
+
+------------------------------------------------------------
+[エージェント: internal-link]
+実行時間: 90ms
+ステータス: OK
+--- 出力 ---
+=== 内部リンク戦略レポート ===
+生成日時: 2026/4/9 13:12:23
+対象記事数: 49件
+
+【孤立記事（relatedSlugs 2件以下）】
+  孤立記事なし
+
+【クラスター構造】
+
+▼ 地震クラスター（ハブ: tohoku-earthquake-2011）
+  子記事[20件]: fukui-earthquake-1948, haiti-earthquake-2010, hanshin-awaji-earthquake-1995, hokkaido-earthquake-2018, izmit-earthquake-1999, kanto-earthquake-1923, kumamoto-earthquake-2016, miyagi-earthquake-1978, morocco-earthquake-2023, nankai-trough-tokai-earthquake-history, nepal-earthquake-2015, nihonkai-chubu-earthquake-1983, niigata-chuetsu-earthquake-2004, niigata-earthquake-1964, noto-earthquake-2007, noto-earthquake-2024, sichuan-earthquake-2008, tangshan-earthquake-1976, tottori-earthquake-2000, turkey-syria-earthquake-2023
+
+▼ 津波クラスター（ハブ: india-ocean-tsunami-2004）
+  子記事[3件]: chile-earthquake-tsunami-1960, hokkaido-nansei-oki-earthquake-1993, okushiri-tsunami-1993
+
+▼ 台風クラスター（ハブ: isewan-typhoon-1959）
+  子記事[7件]: bhola-cyclone-1970, haiyan-typhoon-2013, hurricane-katrina-2005, muroto-typhoon-1961, reiwa-typhoon19-2019, ringo-typhoon-1991, toyamaru-typhoon-1954
+
+▼ 洪水クラスター（ハブ: western-japan-flood-2018）
+  子記事[7件]: kii-peninsula-flood-2011, kinugawa-flood-2015, kumamoto-flood-2020, libya-flood-2023, nagasaki-flood-1982, northern-kyushu-flood-2017, yamagata-niigata-flood-2022
+
+▼ 火山クラスター（ハブ: unzen-eruption-1991）
+  子記事[3件]: armero-volcano-1985, ontake-eruption-2014, pinatubo-eruption-1991
+
+【内部リンク提案（記事別）】
+
+armero-volcano-1985:
+  + pinatubo-eruption-1991  (スコア: 11)
+  + unzen-eruption-1991  (スコア: 6)
+  + bhola-cyclone-1970  (スコア: 4)
+
+atami-landslide-2021:
+  + kii-peninsula-flood-2011  (スコア: 5)
+  + nagasaki-flood-1982  (スコア: 5)
+  + fukushima-nuclear-2011  (スコア: 4)
+
+bhola-cyclone-1970:
+  + hurricane-katrina-2005  (スコア: 9)
+  + muroto-typhoon-1961  (スコア: 7)
+  + toyamaru-typhoon-1954  (スコア: 6)
+
+chile-earthquake-tsunami-1960:
+  + bhola-cyclone-1970  (スコア: 4)
+  + tangshan-earthquake-1976  (スコア: 4)
+  + haiti-earthquake-2010  (スコア: 3)
+
+fukui-earthquake-1948:
+  + nankai-trough-tokai-earthquake-history  (スコア: 10)
+  + niigata-earthquake-1964  (スコア: 10)
+  + hokkaido-earthquake-2018  (スコア: 9)
+
+fukushima-nuclear-2011:
+  + hokkaido-nansei-oki-earthquake-1993  (スコア: 5)
+  + unzen-eruption-1991  (スコア: 5)
+  + atami-landslide-2021  (スコア: 4)
+
+haiti-earthquake-2010:
+  + izmit-earthquake-1999  (スコア: 9)
+  + morocco-earthquake-2023  (スコア: 9)
+  + nepal-earthquake-2015  (スコア: 9)
+
+haiyan-typhoon-2013:
+  + bhola-cyclone-1970  (スコア: 9)
+  + muroto-typhoon-1961  (スコア: 7)
+  + reiwa-typhoon19-2019  (スコア: 7)
+
+hanshin-awaji-earthquake-1995:
+  + nihonkai-chubu-earthquake-1983  (スコア: 10)
+  + niigata-chuetsu-earthquake-2004  (スコア: 10)
+  + hokkaido-earthquake-2018  (スコア: 9)
+
+heatwave-japan-2018:
+  + fukushima-nuclear-2011  (スコア: 4)
+  + kii-peninsula-flood-2011  (スコア: 4)
+  + kinugawa-flood-2015  (スコア: 4)
+
+hokkaido-blizzard-historical:
+  + okushiri-tsunami-1993  (スコア: 5)
+  + hanshin-awaji-earthquake-1995  (スコア: 4)
+  + isewan-typhoon-1959  (スコア: 4)
+
+hokkaido-earthquake-2018:
+  + niigata-earthquake-1964  (スコア: 10)
+  + noto-earthquake-2007  (スコア: 10)
+  + tohoku-earthquake-2011  (スコア: 10)
+
+hokkaido-nansei-oki-earthquake-1993:
+  + india-ocean-tsunami-2004  (スコア: 7)
+  + hanshin-awaji-earthquake-1995  (スコア: 6)
+  + noto-earthquake-2024  (スコア: 6)
+
+hurricane-katrina-2005:
+  + bhola-cyclone-1970  (スコア: 9)
+  + reiwa-typhoon19-2019  (スコア: 7)
+  + muroto-typhoon-1961  (スコア: 6)
+
+india-ocean-tsunami-2004:
+  + hokkaido-nansei-oki-earthquake-1993  (スコア: 7)
+  + armero-volcano-1985  (スコア: 4)
+  + haiti-earthquake-2010  (スコア: 4)
+
+isewan-typhoon-1959:
+  + fukui-earthquake-1948  (スコア: 4)
+  + hokkaido-blizzard-historical  (スコア: 4)
+  + kii-peninsula-flood-2011  (スコア: 4)
+
+izmit-earthquake-1999:
+  + sichuan-earthquake-2008  (スコア: 10)
+  + turkey-syria-earthquake-2023  (スコア: 10)
+  + haiti-earthquake-2010  (スコア: 9)
+
+kanto-earthquake-1923:
+  + noto-earthquake-2024  (スコア: 10)
+  + hokkaido-earthquake-2018  (スコア: 9)
+  + kumamoto-earthquake-2016  (スコア: 9)
+
+kii-peninsula-flood-2011:
+  + kinugawa-flood-2015  (スコア: 10)
+  + yamagata-niigata-flood-2022  (スコア: 9)
+  + libya-flood-2023  (スコア: 6)
+
+kinugawa-flood-2015:
+  + kii-peninsula-flood-2011  (スコア: 10)
+  + yamagata-niigata-flood-2022  (スコア: 10)
+  + nagasaki-flood-1982  (スコア: 8)
+
+kumamoto-earthquake-2016:
+  + fukui-earthquake-1948  (スコア: 9)
+  + kanto-earthquake-1923  (スコア: 9)
+  + miyagi-earthquake-1978  (スコア: 9)
+
+kumamoto-flood-2020:
+  + yamagata-niigata-flood-2022  (スコア: 10)
+  + nagasaki-flood-1982  (スコア: 9)
+  + libya-flood-2023  (スコア: 7)
+
+libya-flood-2023:
+  + kinugawa-flood-2015  (スコア: 7)
+  + kumamoto-flood-2020  (スコア: 7)
+  + yamagata-niigata-flood-2022  (スコア: 7)
+
+miyagi-earthquake-1978:
+  + nankai-trough-tokai-earthquake-history  (スコア: 10)
+  + nihonkai-chubu-earthquake-1983  (スコア: 10)
+  + niigata-earthquake-1964  (スコア: 10)
+
+morocco-earthquake-2023:
+  + haiti-earthquake-2010  (スコア: 9)
+  + sichuan-earthquake-2008  (スコア: 9)
+  + turkey-syria-earthquake-2023  (スコア: 9)
+
+muroto-typhoon-1961:
+  + bhola-cyclone-1970  (スコア: 7)
+  + haiyan-typhoon-2013  (スコア: 7)
+  + hurricane-katrina-2005  (スコア: 6)
+
+nagasaki-flood-1982:
+  + kumamoto-flood-2020  (スコア: 9)
+  + kinugawa-flood-2015  (スコア: 8)
+  + yamagata-niigata-flood-2022  (スコア: 8)
+
+nankai-trough-tokai-earthquake-history:
+  + fukui-earthquake-1948  (スコア: 10)
+  + miyagi-earthquake-1978  (スコア: 10)
+  + noto-earthquake-2007  (スコア: 10)
+
+nepal-earthquake-2015:
+  + haiti-earthquake-2010  (スコア: 9)
+  + sichuan-earthquake-2008  (スコア: 9)
+  + turkey-syria-earthquake-2023  (スコア: 9)
+
+nihonkai-chubu-earthquake-1983:
+  + niigata-earthquake-1964  (スコア: 12)
+  + hanshin-awaji-earthquake-1995  (スコア: 10)
+  + miyagi-earthquake-1978  (スコア: 10)
+
+niigata-chuetsu-earthquake-2004:
+  + hanshin-awaji-earthquake-1995  (スコア: 10)
+  + noto-earthquake-2007  (スコア: 10)
+  + tohoku-earthquake-2011  (スコア: 10)
+
+niigata-earthquake-1964:
+  + nihonkai-chubu-earthquake-1983  (スコア: 12)
+  + fukui-earthquake-1948  (スコア: 10)
+  + hokkaido-earthquake-2018  (スコア: 10)
+
+northern-kyushu-flood-2017:
+  + kumamoto-earthquake-2016  (スコア: 5)
+  + fukushima-nuclear-2011  (スコア: 4)
+  + heatwave-japan-2018  (スコア: 4)
+
+noto-earthquake-2007:
+  + hokkaido-earthquake-2018  (スコア: 10)
+  + nankai-trough-tokai-earthquake-history  (スコア: 10)
+  + niigata-chuetsu-earthquake-2004  (スコア: 10)
+
+noto-earthquake-2024:
+  + kanto-earthquake-1923  (スコア: 10)
+  + nankai-trough-tokai-earthquake-history  (スコア: 10)
+  + nihonkai-chubu-earthquake-1983  (スコア: 10)
+
+okushiri-tsunami-1993:
+  + niigata-earthquake-1964  (スコア: 6)
+  + hanshin-awaji-earthquake-1995  (スコア: 5)
+  + hokkaido-blizzard-historical  (スコア: 5)
+
+ontake-eruption-2014:
+  + pinatubo-eruption-1991  (スコア: 5)
+  + atami-landslide-2021  (スコア: 4)
+  + fukushima-nuclear-2011  (スコア: 4)
+
+pinatubo-eruption-1991:
+  + unzen-eruption-1991  (スコア: 6)
+  + haiti-earthquake-2010  (スコア: 4)
+  + haiyan-typhoon-2013  (スコア: 4)
+
+reiwa-typhoon19-2019:
+  + haiyan-typhoon-2013  (スコア: 7)
+  + hurricane-katrina-2005  (スコア: 7)
+  + bhola-cyclone-1970  (スコア: 5)
+
+ringo-typhoon-1991:
+  + toyamaru-typhoon-1954  (スコア: 9)
+  + haiyan-typhoon-2013  (スコア: 6)
+  + hurricane-katrina-2005  (スコア: 6)
+
+sichuan-earthquake-2008:
+  + izmit-earthquake-1999  (スコア: 10)
+  + morocco-earthquake-2023  (スコア: 9)
+  + nepal-earthquake-2015  (スコア: 9)
+
+tangshan-earthquake-1976:
+  + haiti-earthquake-2010  (スコア: 9)
+  + izmit-earthquake-1999  (スコア: 8)
+  + morocco-earthquake-2023  (スコア: 8)
+
+tohoku-earthquake-2011:
+  + hokkaido-earthquake-2018  (スコア: 10)
+  + niigata-chuetsu-earthquake-2004  (スコア: 10)
+  + noto-earthquake-2007  (スコア: 10)
+
+tottori-earthquake-2000:
+  + hokkaido-earthquake-2018  (スコア: 10)
+  + nihonkai-chubu-earthquake-1983  (スコア: 10)
+  + niigata-chuetsu-earthquake-2004  (スコア: 10)
+
+toyamaru-typhoon-1954:
+  + ringo-typhoon-1991  (スコア: 9)
+  + bhola-cyclone-1970  (スコア: 6)
+  + haiyan-typhoon-2013  (スコア: 6)
+
+turkey-syria-earthquake-2023:
+  + izmit-earthquake-1999  (スコア: 10)
+  + morocco-earthquake-2023  (スコア: 9)
+  + nepal-earthquake-2015  (スコア: 9)
+
+unzen-eruption-1991:
+  + pinatubo-eruption-1991  (スコア: 6)
+  + fukushima-nuclear-2011  (スコア: 5)
+  + hanshin-awaji-earthquake-1995  (スコア: 4)
+
+western-japan-flood-2018:
+  + hokkaido-earthquake-2018  (スコア: 5)
+  + niigata-chuetsu-earthquake-2004  (スコア: 5)
+  + fukushima-nuclear-2011  (スコア: 4)
+
+yamagata-niigata-flood-2022:
+  + kinugawa-flood-2015  (スコア: 10)
+  + kumamoto-flood-2020  (スコア: 10)
+  + kii-peninsula-flood-2011  (スコア: 9)
+
+【ハブ記事ランキング TOP10】
+1. tohoku-earthquake-2011 - 被参照数: 21件  「東日本大震災（2011年）」
+2. hanshin-awaji-earthquake-1995 - 被参照数: 16件  「阪神・淡路大震災（1995年）」
+3. western-japan-flood-2018 - 被参照数: 13件  「平成30年7月豪雨（西日本豪雨）」
+4. isewan-typhoon-1959 - 被参照数: 10件  「伊勢湾台風（1959年）」
+5. noto-earthquake-2024 - 被参照数: 10件  「能登半島地震（2024年）」
+6. northern-kyushu-flood-2017 - 被参照数: 9件  「九州北部豪雨（2017年）」
+7. chile-earthquake-tsunami-1960 - 被参照数: 8件  「チリ地震津波（1960年）」
+8. reiwa-typhoon19-2019 - 被参照数: 8件  「令和元年東日本台風（台風19号）（2019年）」
+9. kanto-earthquake-1923 - 被参照数: 7件  「関東大震災（1923年）」
+10. kumamoto-earthquake-2016 - 被参照数: 7件  「熊本地震（2016年）」
+
+【防災ブログ連携推奨記事 TOP10】
+記事タイトル | 推奨リンクテキスト | 対象カテゴリ
+--------------------------------------------------------------------------------
+東日本大震災（2011年） | 東日本大震災（2011年）から学ぶ地震の教訓 | 地震
+阪神・淡路大震災（1995年） | 阪神・淡路大震災（1995年）から学ぶ地震の教訓 | 地震
+能登半島地震（2024年） | 能登半島地震（2024年）から学ぶ地震の教訓 | 地震
+チリ地震津波（1960年） | チリ地震津波（1960年）から学ぶ津波の記録 | 津波
+北海道胆振東部地震（2018年） | 北海道胆振東部地震（2018年）から学ぶ地震の教訓 | 地震
+関東大震災（1923年） | 関東大震災（1923年）から学ぶ地震の教訓 | 地震
+熊本地震（2016年） | 熊本地震（2016年）から学ぶ地震の教訓 | 地震
+宮城県沖地震（1978年） | 宮城県沖地震（1978年）から学ぶ地震の教訓 | 地震
+福井地震（1948年） | 福井地震（1948年）から学ぶ地震の教訓 | 地震
+ハイチ地震（2010年） | ハイチ地震（2010年）から学ぶ地震の教訓 | 地震
+
+---
+[完了] 内部リンク戦略レポートを出力しました。
+  --fix オプションで孤立記事のrelatedSlugsを自動補完できます。
+
+------------------------------------------------------------
+[エージェント: revenue]
+実行時間: 68ms
+ステータス: OK
+--- 出力 ---
+=== 収益最適化レポート ===
+生成日時: 2026/4/9 13:12:23
+対象記事数: 49件
+
+【高収益ポテンシャル記事 TOP10】
+
+1. 南海トラフ巨大地震の歴史と次への備え (nankai-trough-tokai-earthquake-history)
+   収益スコア: 26  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+2. 鳥取県西部地震（2000年） (tottori-earthquake-2000)
+   収益スコア: 25  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+3. 福井地震（1948年） (fukui-earthquake-1948)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+4. 阪神・淡路大震災（1995年） (hanshin-awaji-earthquake-1995)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+5. 北海道胆振東部地震（2018年） (hokkaido-earthquake-2018)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+6. 関東大震災（1923年） (kanto-earthquake-1923)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+7. 熊本地震（2016年） (kumamoto-earthquake-2016)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+8. 宮城県沖地震（1978年） (miyagi-earthquake-1978)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+9. 日本海中部地震（1983年） (nihonkai-chubu-earthquake-1983)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+10. 新潟県中越地震（2004年） (niigata-chuetsu-earthquake-2004)
+   収益スコア: 24  優先度: 高
+   推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源
+   推奨CTA: 「地震に備えた防災リュックとポータブル電源を今すぐチェック」
+   配置: 本文中（第2〜3段落後）・記事末
+
+【記事別収益改善提案】
+
+nankai-trough-tokai-earthquake-history:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+tottori-earthquake-2000:
+  現在のaffiliateCategory: indoor
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+fukui-earthquake-1948:
+  現在のaffiliateCategory: indoor
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+hanshin-awaji-earthquake-1995:
+  現在のaffiliateCategory: indoor
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+hokkaido-earthquake-2018:
+  現在のaffiliateCategory: power
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+kanto-earthquake-1923:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+kumamoto-earthquake-2016:
+  現在のaffiliateCategory: evacuation
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+miyagi-earthquake-1978:
+  現在のaffiliateCategory: water
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+nihonkai-chubu-earthquake-1983:
+  現在のaffiliateCategory: tsunami
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+niigata-chuetsu-earthquake-2004:
+  現在のaffiliateCategory: evacuation
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+niigata-earthquake-1964:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+noto-earthquake-2007:
+  現在のaffiliateCategory: indoor
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+noto-earthquake-2024:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+tohoku-earthquake-2011:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 防災リュック, ポータブル電源, 保存水, 非常食, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+haiti-earthquake-2010:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 海外旅行保険, 防災リュック, ポータブル電源, 保存水, 非常食
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+izmit-earthquake-1999:
+  現在のaffiliateCategory: indoor
+  推奨商品: LEDライト, 家具固定グッズ, 海外旅行保険, 防災リュック, ポータブル電源, 保存水, 非常食
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+morocco-earthquake-2023:
+  現在のaffiliateCategory: indoor
+  推奨商品: LEDライト, 家具固定グッズ, 海外旅行保険, 防災リュック, ポータブル電源, 保存水, 非常食
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+nepal-earthquake-2015:
+  現在のaffiliateCategory: evacuation
+  推奨商品: LEDライト, 家具固定グッズ, 海外旅行保険, 防災リュック, ポータブル電源, 保存水, 非常食
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+sichuan-earthquake-2008:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 海外旅行保険, 防災リュック, ポータブル電源, 保存水, 非常食
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+tangshan-earthquake-1976:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 海外旅行保険, 防災リュック, ポータブル電源, 保存水, 非常食
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+turkey-syria-earthquake-2023:
+  現在のaffiliateCategory: general
+  推奨商品: LEDライト, 家具固定グッズ, 海外旅行保険, 防災リュック, ポータブル電源, 保存水, 非常食
+  CTA案: 地震に備えた防災リュックとポータブル電源を今すぐチェック
+  改善ポイント: affiliateCategoryをtypeに合わせて更新すると訴求精度が上がる / 「防災リュック」「ポータブル電源」は高CVR商品のため記事本文中に早めに配置推奨
+
+isewan-typhoon-1959:
+  現在のaffiliateCategory: typhoon
+  推奨商品: LEDライト, ポータブル電源, 保存水, 非常食, 養生テープ, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+kii-peninsula-flood-2011:
+  現在のaffiliateCategory: flood
+  推奨商品: 防水バッグ, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+kinugawa-flood-2015:
+  現在のaffiliateCategory: flood
+  推奨商品: 防水バッグ, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+kumamoto-flood-2020:
+  現在のaffiliateCategory: flood
+  推奨商品: 防水バッグ, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+muroto-typhoon-1961:
+  現在のaffiliateCategory: typhoon
+  推奨商品: LEDライト, ポータブル電源, 保存水, 非常食, 養生テープ, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+nagasaki-flood-1982:
+  現在のaffiliateCategory: flood
+  推奨商品: 防水バッグ, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+northern-kyushu-flood-2017:
+  現在のaffiliateCategory: flood
+  推奨商品: 防水バッグ, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+reiwa-typhoon19-2019:
+  現在のaffiliateCategory: typhoon
+  推奨商品: LEDライト, ポータブル電源, 保存水, 非常食, 養生テープ, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+ringo-typhoon-1991:
+  現在のaffiliateCategory: typhoon
+  推奨商品: LEDライト, ポータブル電源, 保存水, 非常食, 養生テープ, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+toyamaru-typhoon-1954:
+  現在のaffiliateCategory: typhoon
+  推奨商品: LEDライト, ポータブル電源, 保存水, 非常食, 養生テープ, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+western-japan-flood-2018:
+  現在のaffiliateCategory: flood
+  推奨商品: 防水バッグ, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+yamagata-niigata-flood-2022:
+  現在のaffiliateCategory: evacuation
+  推奨商品: 防水バッグ, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+libya-flood-2023:
+  現在のaffiliateCategory: evacuation
+  推奨商品: 防水バッグ, 海外旅行保険, 非常用トイレ, 保存水, ポータブル電源, ウェーダー, 防災リュック
+  CTA案: 水害・浸水に備えた非常用トイレ・防水バッグを今すぐ確認
+  改善ポイント: 「非常用トイレ」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+bhola-cyclone-1970:
+  現在のaffiliateCategory: evacuation
+  推奨商品: LEDライト, 海外旅行保険, ポータブル電源, 保存水, 非常食, 養生テープ, 防災リュック
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+haiyan-typhoon-2013:
+  現在のaffiliateCategory: typhoon
+  推奨商品: LEDライト, 海外旅行保険, ポータブル電源, 保存水, 非常食, 養生テープ, 防災リュック
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+hurricane-katrina-2005:
+  現在のaffiliateCategory: typhoon
+  推奨商品: LEDライト, 海外旅行保険, ポータブル電源, 保存水, 非常食, 養生テープ, 防災リュック
+  CTA案: 台風シーズン前にポータブル電源・LEDライトを準備しよう
+  改善ポイント: 「ポータブル電源」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+hokkaido-blizzard-historical:
+  現在のaffiliateCategory: indoor
+  推奨商品: 防寒具, 保存水, 非常食, 除雪道具, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 豪雪・大雪に備えた防寒具・非常食の備蓄を確認する
+  改善ポイント: 「保存水」「非常食」は高CVR商品のため記事本文中に早めに配置推奨
+
+hokkaido-nansei-oki-earthquake-1993:
+  現在のaffiliateCategory: tsunami
+  推奨商品: 防水バッグ, LEDライト, 防災リュック, 保存水, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 津波避難に必要な防災リュック・防水グッズを確認する
+  改善ポイント: 「防災リュック」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+okushiri-tsunami-1993:
+  現在のaffiliateCategory: tsunami
+  推奨商品: 防水バッグ, LEDライト, 防災リュック, 保存水, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 津波避難に必要な防災リュック・防水グッズを確認する
+  改善ポイント: 「防災リュック」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+atami-landslide-2021:
+  現在のaffiliateCategory: evacuation
+  推奨商品: LEDライト, 防災リュック, 保存水, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 土砂災害に備えた防災リュックと避難グッズを確認
+  改善ポイント: 「防災リュック」「保存水」は高CVR商品のため記事本文中に早めに配置推奨
+
+chile-earthquake-tsunami-1960:
+  現在のaffiliateCategory: tsunami
+  推奨商品: 防水バッグ, LEDライト, 海外旅行保険, 防災リュック, 保存水
+  CTA案: 津波避難に必要な防災リュック・防水グッズを確認する
+  改善ポイント: 商品マッチング良好。CTA文の定期的な見直しと季節性を加味した訴求を推奨
+
+heatwave-japan-2018:
+  現在のaffiliateCategory: indoor
+  推奨商品: 経口補水液, 保存水, クーラーボックス, 日よけグッズ, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 熱中症対策に経口補水液・保存水を備蓄しよう
+  改善ポイント: 「保存水」「Amazon防災グッズまとめ」は高CVR商品のため記事本文中に早めに配置推奨
+
+india-ocean-tsunami-2004:
+  現在のaffiliateCategory: tsunami
+  推奨商品: 防水バッグ, LEDライト, 海外旅行保険, 防災リュック, 保存水
+  CTA案: 津波避難に必要な防災リュック・防水グッズを確認する
+  改善ポイント: 商品マッチング良好。CTA文の定期的な見直しと季節性を加味した訴求を推奨
+
+ontake-eruption-2014:
+  現在のaffiliateCategory: evacuation
+  推奨商品: 防塵マスク, LEDライト, ゴーグル, 防災リュック, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 火山噴火に備えた防塵マスク・防災グッズを確認する
+  改善ポイント: 「防災リュック」「Amazon防災グッズまとめ」は高CVR商品のため記事本文中に早めに配置推奨
+
+unzen-eruption-1991:
+  現在のaffiliateCategory: evacuation
+  推奨商品: 防塵マスク, LEDライト, ゴーグル, 防災リュック, Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: 火山噴火に備えた防塵マスク・防災グッズを確認する
+  改善ポイント: 「防災リュック」「Amazon防災グッズまとめ」は高CVR商品のため記事本文中に早めに配置推奨
+
+armero-volcano-1985:
+  現在のaffiliateCategory: evacuation
+  推奨商品: 防塵マスク, LEDライト, 海外旅行保険, ゴーグル, 防災リュック
+  CTA案: 火山噴火に備えた防塵マスク・防災グッズを確認する
+  改善ポイント: 商品マッチング良好。CTA文の定期的な見直しと季節性を加味した訴求を推奨
+
+pinatubo-eruption-1991:
+  現在のaffiliateCategory: evacuation
+  推奨商品: 防塵マスク, LEDライト, 海外旅行保険, ゴーグル, 防災リュック
+  CTA案: 火山噴火に備えた防塵マスク・防災グッズを確認する
+  改善ポイント: 商品マッチング良好。CTA文の定期的な見直しと季節性を加味した訴求を推奨
+
+fukushima-nuclear-2011:
+  現在のaffiliateCategory: evacuation
+  推奨商品: Amazon防災グッズまとめ, 楽天防災セット
+  CTA案: この災害から学んで今日から防災グッズを準備しよう
+  改善ポイント: 商品マッチング良好。CTA文の定期的な見直しと季節性を加味した訴求を推奨
+
+【全体収益改善サマリー】
+- 高優先度: 40件
+- 中優先度: 8件
+- 低優先度: 1件
+
+AdSense最適記事（長文・情報型上位）:
+  1. ハイチ地震（2010年）  (244文字)
+  2. 南海トラフ巨大地震の歴史と次への備え  (213文字)
+  3. 福島第一原子力発電所事故（2011年）  (212文字)
+  4. リビア洪水・ダム決壊（2023年）  (211文字)
+  5. 御嶽山噴火（2014年）  (190文字)
+
+---
+[完了] 収益最適化レポートを出力しました。
+  --category [type] でフィルタリングできます（例: --category earthquake）
+
+------------------------------------------------------------
+[エージェント: db-expansion]
+実行時間: 70ms
+ステータス: OK
+--- 出力 ---
+[db-expansion-agent] 起動中...
+[db-expansion-agent] 49 件の記事を読み込みました
+
+=== データベース拡張レポート ===
+生成日時: 2026-04-09 04:12:23
+対象記事数: 49件
+
+【現在のカバレッジ分析】
+
+■ 国別
+  japan: 34件
+  world: 15件
+
+■ 災害種別
+  earthquake: 21件
+  tsunami: 4件
+  typhoon: 8件
+  flood: 8件
+  volcano: 4件
+  heatwave: 1件
+  snowstorm: 1件
+  landslide: 1件
+  other: 1件
+
+■ 年代別
+  〜1960年: 6件
+  1960-1990年: 9件
+  1990-2000年: 8件
+  2000年代: 5件
+  2010年代: 14件
+  2020年代: 7件
+
+■ 死者規模別
+  1万人以上: 10件
+  1000〜9999人: 11件
+  100〜999人: 11件
+  100人未満: 17件
+  不明: 0件
+
+■ 全記事一覧（slug / タイトル / 国 / 種別 / 年 / 死者数）
+  kanto-earthquake-1923 | 関東大震災（1923年） | japan | earthquake | 1923 | 99331人
+  nankai-trough-tokai-earthquake-history | 南海トラフ巨大地震の歴史と次への備え | japan | earthquake | 1946 | 2666人
+  fukui-earthquake-1948 | 福井地震（1948年） | japan | earthquake | 1948 | 3769人
+  toyamaru-typhoon-1954 | 洞爺丸台風（1954年） | japan | typhoon | 1954 | 1361人
+  isewan-typhoon-1959 | 伊勢湾台風（1959年） | japan | typhoon | 1959 | 4697人
+  chile-earthquake-tsunami-1960 | チリ地震津波（1960年） | world | tsunami | 1960 | 142人
+  muroto-typhoon-1961 | 第二室戸台風（1961年） | japan | typhoon | 1961 | 194人
+  niigata-earthquake-1964 | 新潟地震（1964年） | japan | earthquake | 1964 | 26人
+  bhola-cyclone-1970 | ボーラサイクロン（1970年） | world | typhoon | 1970 | 300000人
+  tangshan-earthquake-1976 | 唐山地震（1976年） | world | earthquake | 1976 | 242000人
+  hokkaido-blizzard-historical | 北海道・豪雪の歴史と教訓（昭和52年豪雪特集） | japan | snowstorm | 1977 | 101人
+  miyagi-earthquake-1978 | 宮城県沖地震（1978年） | japan | earthquake | 1978 | 28人
+  nagasaki-flood-1982 | 長崎大水害（1982年） | japan | flood | 1982 | 262人
+  nihonkai-chubu-earthquake-1983 | 日本海中部地震（1983年） | japan | earthquake | 1983 | 104人
+  armero-volcano-1985 | アルメロ火山災害（1985年） | world | volcano | 1985 | 23000人
+  unzen-eruption-1991 | 雲仙普賢岳噴火・火砕流災害（1991年） | japan | volcano | 1991 | 43人
+  pinatubo-eruption-1991 | ピナトゥボ山噴火（1991年） | world | volcano | 1991 | 847人
+  ringo-typhoon-1991 | 台風19号・りんご台風（1991年） | japan | typhoon | 1991 | 62人
+  hokkaido-nansei-oki-earthquake-1993 | 北海道南西沖地震・奥尻島大津波（1993年） | japan | tsunami | 1993 | 202人
+  okushiri-tsunami-1993 | 北海道南西沖地震・奥尻島津波（1993年） | japan | tsunami | 1993 | 202人
+  hanshin-awaji-earthquake-1995 | 阪神・淡路大震災（1995年） | japan | earthquake | 1995 | 6434人
+  izmit-earthquake-1999 | イズミット地震（1999年） | world | earthquake | 1999 | 18373人
+  tottori-earthquake-2000 | 鳥取県西部地震（2000年） | japan | earthquake | 2000 | 0人
+  niigata-chuetsu-earthquake-2004 | 新潟県中越地震（2004年） | japan | earthquake | 2004 | 68人
+  india-ocean-tsunami-2004 | インド洋大津波（2004年） | world | tsunami | 2004 | 227899人
+  hurricane-katrina-2005 | ハリケーン・カトリーナ（2005年） | world | typhoon | 2005 | 1833人
+  noto-earthquake-2007 | 能登半島地震（2007年） | japan | earthquake | 2007 | 1人
+  sichuan-earthquake-2008 | 四川大地震（2008年） | world | earthquake | 2008 | 69227人
+  haiti-earthquake-2010 | ハイチ地震（2010年） | world | earthquake | 2010 | 316000人
+  tohoku-earthquake-2011 | 東日本大震災（2011年） | japan | earthquake | 2011 | 15900人
+  fukushima-nuclear-2011 | 福島第一原子力発電所事故（2011年） | japan | other | 2011 | 0人
+  kii-peninsula-flood-2011 | 台風12号 紀伊半島大水害（2011年） | japan | flood | 2011 | 82人
+  haiyan-typhoon-2013 | 台風ハイエン（2013年） | world | typhoon | 2013 | 6300人
+  ontake-eruption-2014 | 御嶽山噴火（2014年） | japan | volcano | 2014 | 58人
+  nepal-earthquake-2015 | ネパール地震（2015年） | world | earthquake | 2015 | 8964人
+  kinugawa-flood-2015 | 鬼怒川洪水・平成27年9月関東東北豪雨（2015年） | japan | flood | 2015 | 20人
+  kumamoto-earthquake-2016 | 熊本地震（2016年） | japan | earthquake | 2016 | 273人
+  northern-kyushu-flood-2017 | 九州北部豪雨（2017年） | japan | flood | 2017 | 40人
+  western-japan-flood-2018 | 平成30年7月豪雨（西日本豪雨） | japan | flood | 2018 | 237人
+  heatwave-japan-2018 | 平成30年記録的猛暑（2018年夏） | japan | heatwave | 2018 | 1581人
+  hokkaido-earthquake-2018 | 北海道胆振東部地震（2018年） | japan | earthquake | 2018 | 43人
+  reiwa-typhoon19-2019 | 令和元年東日本台風（台風19号）（2019年） | japan | typhoon | 2019 | 91人
+  kumamoto-flood-2020 | 令和2年7月豪雨・球磨川洪水（2020年） | japan | flood | 2020 | 84人
+  atami-landslide-2021 | 熱海市伊豆山土石流災害（2021年） | japan | landslide | 2021 | 28人
+  yamagata-niigata-flood-2022 | 令和4年8月豪雨（山形・新潟豪雨） | japan | flood | 2022 | 3人
+  turkey-syria-earthquake-2023 | トルコ・シリア地震（2023年） | world | earthquake | 2023 | 59259人
+  morocco-earthquake-2023 | モロッコ地震（2023年） | world | earthquake | 2023 | 2960人
+  libya-flood-2023 | リビア洪水・ダム決壊（2023年） | world | flood | 2023 | 5923人
+  noto-earthquake-2024 | 能登半島地震（2024年） | japan | earthquake | 2024 | 594人
+
+【優先追加記事候補 TOP15】
+
+1. 昭和南海地震（1946年）単独記事
+   スラッグ候補: showa-nankai-earthquake-1946
+   カテゴリ: 日本 | 優先度: high | 収益性: high
+   理由: 南海トラフ対策の検索需要が高く、過去の被害事例として教育的価値大
+   推奨ソース: https://www.bousai.go.jp/ / 内閣府中央防災会議報告書
+
+2. 昭和東南海地震（1944年）単独記事
+   スラッグ候補: showa-tonankai-earthquake-1944
+   カテゴリ: 日本 | 優先度: high | 収益性: high
+   理由: 東南海地震の歴史的事例、南海トラフ関連の内部リンク強化に有効
+   推奨ソース: https://www.bousai.go.jp/ / 内閣府中央防災会議報告書
+
+3. 三陸地震津波（1933年）
+   スラッグ候補: sanriku-tsunami-1933
+   カテゴリ: 日本 | 優先度: high | 収益性: high
+   理由: 東日本大震災との比較コンテンツとして需要あり、津波教育の観点でも重要
+   推奨ソース: https://www.jma.go.jp/ / 気象庁地震・津波履歴
+
+4. 関東大震災の教訓詳細記事
+   スラッグ候補: kanto-earthquake-1923-lessons
+   カテゴリ: 日本 | 優先度: high | 収益性: high
+   理由: 既存kanto-earthquake-1923の補完、首都直下型地震への関心が高い
+   推奨ソース: https://www.bousai.go.jp/kyoiku/kirokushu/kantodaishinsai/ / 内閣府
+
+5. 1999年台湾集集地震（死者2,415人）
+   スラッグ候補: taiwan-earthquake-1999
+   カテゴリ: 世界 | 優先度: high | 収益性: high
+   理由: 台湾語・中国語市場向け需要大、日本との比較教育にも有効
+   推奨ソース: 中央気象局（台湾）/ Wikipedia: 1999 Jiji earthquake
+
+6. 2010年チリ地震M8.8
+   スラッグ候補: chile-earthquake-2010
+   カテゴリ: 世界 | 優先度: high | 収益性: high
+   理由: M8.8の超巨大地震、津波警報システム改善の契機として教育的価値大
+   推奨ソース: USGS / CSN Chile / Wikipedia: 2010 Chile earthquake
+
+7. 2011年ニュージーランドクライストチャーチ地震
+   スラッグ候補: christchurch-earthquake-2011
+   カテゴリ: 世界 | 優先度: high | 収益性: high
+   理由: 先進国での都市型被害、耐震化・BCPの観点で収益性高い
+   推奨ソース: GNS Science NZ / Wikipedia: 2011 Christchurch earthquake
+
+8. 在宅避難の具体的方法
+   スラッグ候補: shelter-in-place-guide
+   カテゴリ: テーマ | 優先度: high | 収益性: high
+   理由: コロナ以降の検索需要増大、アフィリエイト収益性最高クラス
+   推奨ソース: 内閣府「在宅避難のすすめ」/ 各自治体避難マニュアル
+
+9. 車中泊避難の注意点
+   スラッグ候補: car-evacuation-guide
+   カテゴリ: テーマ | 優先度: high | 収益性: high
+   理由: 車中泊グッズへのアフィリエイト導線、エコノミー症候群予防等需要高い
+   推奨ソース: 厚生労働省 エコノミークラス症候群予防指針 / 内閣府
+
+10. 子どもとの避難
+   スラッグ候補: evacuation-with-children
+   カテゴリ: テーマ | 優先度: high | 収益性: high
+   理由: 子育て世代の防災意識向上、育児グッズ系アフィ導線
+   推奨ソース: 内閣府「子ども・子育て支援」防災ページ / こども家庭庁
+
+11. 高齢者・障害者の避難
+   スラッグ候補: evacuation-elderly-disabled
+   カテゴリ: テーマ | 優先度: high | 収益性: high
+   理由: 社会的弱者支援の観点、自治体・消防との親和性高い
+   推奨ソース: 内閣府「避難行動要支援者避難行動支援に関する取組指針」
+
+12. 津波てんでんこの教訓
+   スラッグ候補: tsunami-tendenko-lesson
+   カテゴリ: テーマ | 優先度: high | 収益性: high
+   理由: 東日本大震災の教訓コンテンツ、学校教育との連携需要あり
+   推奨ソース: 岩手県防災教育資料 / 田老町津波伝承記録
+
+13. 1970年ペルー地震（死者66,000人）
+   スラッグ候補: peru-earthquake-1970
+   カテゴリ: 世界 | 優先度: high | 収益性: medium
+   理由: 南米最大級地震の一つ、スペイン語圏の多言語展開に有効
+   推奨ソース: USGS / Wikipedia: 1970 Ancash earthquake
+
+14. 2005年カシミール地震（死者73,000人）
+   スラッグ候補: kashmir-earthquake-2005
+   カテゴリ: 世界 | 優先度: high | 収益性: medium
+   理由: M7.6・7万3千人の大被害、南アジア地震帯の代表事例
+   推奨ソース: USGS Earthquake Hazards / Wikipedia: 2005 Kashmir earthquake
+
+15. 1931年中国洪水（死者85万〜400万人）
+   スラッグ候補: china-flood-1931
+   カテゴリ: 世界 | 優先度: high | 収益性: medium
+   理由: 史上最大規模の水害、世界規模の教訓として英語需要も高い
+   推奨ソース: Wikipedia: 1931 China floods / NOAA NCEI
+
+【DB項目拡張提案】
+
+  追加フィールド: region_detail - 詳細地域（市区町村レベル） - 優先度: high
+    例: "region_detail": "輪島市・珠洲市・穴水町"
+  追加フィールド: affected_population - 被災人口（被害を受けた総人口） - 優先度: high
+    例: "affected_population": "500000"
+  追加フィールド: reconstruction_years - 復興完了年数（概算） - 優先度: medium
+    例: "reconstruction_years": "5"
+  追加フィールド: lesson_categories - 教訓のカテゴリ分類（配列） - 優先度: high
+    例: "lesson_categories": "["避難", "耐震化", "情報伝達"]"
+  追加フィールド: preparedness_level - 備え実践の難易度 - 優先度: medium
+    例: "preparedness_level": "easy/medium/hard"
+  追加フィールド: related_disasters - 類似パターンの他の災害スラッグ - 優先度: medium
+    例: "related_disasters": "["noto-earthquake-2024"]"
+  追加フィールド: language_versions - 翻訳済み言語コード（配列） - 優先度: high
+    例: "language_versions": "["en", "zh-TW"]"
+  追加フィールド: media_coverage - メディア報道規模 - 優先度: low
+    例: "media_coverage": "global/national/regional/local"
+
+【多言語展開ロードマップ】
+
+  ■ 英語化優先 TOP5
+    1. インド洋大津波（2004年） (india-ocean-tsunami-2004)
+       理由: 世界共通テーマ、14カ国被害、英語圏検索需要大
+    2. チリ地震津波（1960年） (chile-earthquake-tsunami-1960)
+       理由: 世界最大地震M9.5、チリ・ラテアメリカ市場
+    3. 東日本大震災（2011年） (tohoku-earthquake-2011)
+       理由: 東日本大震災、世界的知名度、英語需要最大級
+    4. トルコ・シリア地震（2023年） (turkey-syria-earthquake-2023)
+       理由: 直近の大規模被害、国際的関心高い
+    5. 四川大地震（2008年） (sichuan-earthquake-2008)
+       理由: 中国語圏市場、四川省・中国ユーザー向け
+
+  ■ 台湾・中国語化優先 TOP5
+    1. 四川大地震（2008年） (sichuan-earthquake-2008)
+       理由: 四川省・中国ユーザー向け、中国語検索需要最大
+    2. インド洋大津波（2004年） (india-ocean-tsunami-2004)
+       理由: 台湾・タイなどアジア被災国向け
+    3. 東日本大震災（2011年） (tohoku-earthquake-2011)
+       理由: 台湾から多くの支援、関心度高い
+    4. トルコ・シリア地震（2023年） (turkey-syria-earthquake-2023)
+       理由: 国際的関心、中国語メディアでも報道
+    5. 能登半島地震（2024年） (noto-earthquake-2024)
+       理由: 台湾からの支援あり、関心度高い
+
+【採用サイト向け拡張提案】
+
+  ■ 消防採用サイト連携 不足ページ候補
+    1. 消防士の現場活動事例（災害対応レポート）
+    2. 消防採用試験の出題傾向ページ（過去の大規模災害）
+    3. 消防団員向け地域防災ページ
+    4. 女性消防士の活躍事例（多様性訴求）
+    5. 消防学校の訓練内容解説
+
+  ■ 警察採用サイト連携 不足ページ候補
+    1. 警察の災害時活動事例（治安維持・行方不明者捜索）
+    2. 警察採用と防災の関連解説ページ
+    3. 災害時の交通規制・避難誘導事例
+    4. 警察犬・特殊部隊の救助活動事例
+
+【月別拡張スケジュール案】
+
+  1ヶ月目:
+    - 昭和南海地震（1946年）単独記事 (優先度: high / 収益性: high)
+    - 昭和東南海地震（1944年）単独記事 (優先度: high / 収益性: high)
+    - 三陸地震津波（1933年） (優先度: high / 収益性: high)
+
+  2ヶ月目:
+    - 関東大震災の教訓詳細記事 (優先度: high / 収益性: high)
+    - 1999年台湾集集地震（死者2,415人） (優先度: high / 収益性: high)
+    - 2010年チリ地震M8.8 (優先度: high / 収益性: high)
+
+  3ヶ月目:
+    - 2011年ニュージーランドクライストチャーチ地震 (優先度: high / 収益性: high)
+    - 在宅避難の具体的方法 (優先度: high / 収益性: high)
+    - 車中泊避難の注意点 (優先度: high / 収益性: high)
+
+  4ヶ月目:
+    - 子どもとの避難 (優先度: high / 収益性: high)
+    - 高齢者・障害者の避難 (優先度: high / 収益性: high)
+    - 津波てんでんこの教訓 (優先度: high / 収益性: high)
+
+  5ヶ月目:
+    - 1970年ペルー地震（死者66,000人） (優先度: high / 収益性: medium)
+    - 2005年カシミール地震（死者73,000人） (優先度: high / 収益性: medium)
+    - 1931年中国洪水（死者85万〜400万人） (優先度: high / 収益性: medium)
+
+【現状サマリ】
+  総記事数: 49件
+  日本記事: 34件 / 世界記事: 15件
+  最も多い災害種別: earthquake (21件)
+  未収録候補（チェックリスト）: 29件
+  TOP15追加で総記事数: 64件（予測）
+
+=== レポート終了 ===
+
+------------------------------------------------------------
+[エージェント: auto-improve]
+実行時間: 65ms
+ステータス: OK
+--- 出力 ---
+=== 自動改善レポート ===
+生成日時: 2026/4/9 13:12:23
+
+【要改善記事 TOP10】
+1. アルメロ火山災害（1985年） (スコア: 100/100)
+   問題: なし（優良記事）
+2. 熱海市伊豆山土石流災害（2021年） (スコア: 100/100)
+   問題: なし（優良記事）
+3. ボーラサイクロン（1970年） (スコア: 100/100)
+   問題: なし（優良記事）
+4. チリ地震津波（1960年） (スコア: 100/100)
+   問題: なし（優良記事）
+5. 福井地震（1948年） (スコア: 100/100)
+   問題: なし（優良記事）
+6. 福島第一原子力発電所事故（2011年） (スコア: 100/100)
+   問題: なし（優良記事）
+7. ハイチ地震（2010年） (スコア: 100/100)
+   問題: なし（優良記事）
+8. 台風ハイエン（2013年） (スコア: 100/100)
+   問題: なし（優良記事）
+9. 阪神・淡路大震災（1995年） (スコア: 100/100)
+   問題: なし（優良記事）
+10. 平成30年記録的猛暑（2018年夏） (スコア: 100/100)
+   問題: なし（優良記事）
+
+【全記事スコア一覧】
+slug | スコア | 問題点サマリー
+--- | --- | ---
+armero-volcano-1985 | 100/100 | 問題なし
+atami-landslide-2021 | 100/100 | 問題なし
+bhola-cyclone-1970 | 100/100 | 問題なし
+chile-earthquake-tsunami-1960 | 100/100 | 問題なし
+fukui-earthquake-1948 | 100/100 | 問題なし
+fukushima-nuclear-2011 | 100/100 | 問題なし
+haiti-earthquake-2010 | 100/100 | 問題なし
+haiyan-typhoon-2013 | 100/100 | 問題なし
+hanshin-awaji-earthquake-1995 | 100/100 | 問題なし
+heatwave-japan-2018 | 100/100 | 問題なし
+hokkaido-blizzard-historical | 100/100 | 問題なし
+hokkaido-earthquake-2018 | 100/100 | 問題なし
+hokkaido-nansei-oki-earthquake-1993 | 100/100 | 問題なし
+hurricane-katrina-2005 | 100/100 | 問題なし
+india-ocean-tsunami-2004 | 100/100 | 問題なし
+isewan-typhoon-1959 | 100/100 | 問題なし
+izmit-earthquake-1999 | 100/100 | 問題なし
+kanto-earthquake-1923 | 100/100 | 問題なし
+kii-peninsula-flood-2011 | 100/100 | 問題なし
+kinugawa-flood-2015 | 100/100 | 問題なし
+kumamoto-earthquake-2016 | 100/100 | 問題なし
+kumamoto-flood-2020 | 100/100 | 問題なし
+libya-flood-2023 | 100/100 | 問題なし
+miyagi-earthquake-1978 | 100/100 | 問題なし
+morocco-earthquake-2023 | 100/100 | 問題なし
+muroto-typhoon-1961 | 100/100 | 問題なし
+nagasaki-flood-1982 | 100/100 | 問題なし
+nankai-trough-tokai-earthquake-history | 100/100 | 問題なし
+nepal-earthquake-2015 | 100/100 | 問題なし
+nihonkai-chubu-earthquake-1983 | 100/100 | 問題なし
+niigata-chuetsu-earthquake-2004 | 100/100 | 問題なし
+niigata-earthquake-1964 | 100/100 | 問題なし
+northern-kyushu-flood-2017 | 100/100 | 問題なし
+noto-earthquake-2007 | 100/100 | 問題なし
+noto-earthquake-2024 | 100/100 | 問題なし
+okushiri-tsunami-1993 | 100/100 | 問題なし
+ontake-eruption-2014 | 100/100 | 問題なし
+pinatubo-eruption-1991 | 100/100 | 問題なし
+reiwa-typhoon19-2019 | 100/100 | 問題なし
+ringo-typhoon-1991 | 100/100 | 問題なし
+sichuan-earthquake-2008 | 100/100 | 問題なし
+tangshan-earthquake-1976 | 100/100 | 問題なし
+tohoku-earthquake-2011 | 100/100 | 問題なし
+tottori-earthquake-2000 | 100/100 | 問題なし
+toyamaru-typhoon-1954 | 100/100 | 問題なし
+turkey-syria-earthquake-2023 | 100/100 | 問題なし
+unzen-eruption-1991 | 100/100 | 問題なし
+western-japan-flood-2018 | 100/100 | 問題なし
+yamagata-niigata-flood-2022 | 100/100 | 問題なし
+
+【統計サマリー】
+総記事数: 49
+平均スコア: 100/100
+満点記事（100点）: 49 件
+要改善記事（70点未満）: 0 件
+
+============================================================
+レポート終了
+============================================================

@@ -21,7 +21,12 @@
     "internal-link": "node scripts/internal-link-agent.js",
     "internal-link:fix": "node scripts/internal-link-agent.js --fix",
     "revenue": "node scripts/revenue-agent.js",
-    "revenue:category": "node scripts/revenue-agent.js --category"
+    "revenue:category": "node scripts/revenue-agent.js --category",
+    "db-expansion": "node scripts/db-expansion-agent.js",
+    "agent:all": "node scripts/agent-runner.js --all",
+    "agent:weekly": "node scripts/agent-runner.js --weekly",
+    "agent:monthly": "node scripts/agent-runner.js --monthly",
+    "agent:report": "node scripts/agent-runner.js --report"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
