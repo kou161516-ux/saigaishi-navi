@@ -353,6 +353,20 @@ export default function AdminPage() {
                 DBカバレッジ・優先追加候補・多言語展開ロードマップ
               </p>
             </Link>
+            <Link
+              href="/admin/update-monitor"
+              className="group rounded-lg border border-cyan-200 bg-white p-5 shadow-sm hover:border-cyan-400 hover:shadow-md transition-all"
+            >
+              <div className="mb-2 flex items-center gap-2">
+                <span className="text-xl">🔄</span>
+                <span className="font-semibold text-cyan-700 group-hover:text-cyan-900">
+                  更新モニタリング
+                </span>
+              </div>
+              <p className="text-xs text-gray-500">
+                自動更新システムの稼働状況・記事更新優先度を確認
+              </p>
+            </Link>
           </div>
         </section>
 

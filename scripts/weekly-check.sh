@@ -20,5 +20,21 @@ echo "【3. リンクチェック（時間がかかります...）】"
 node scripts/link-check.js
 
 echo ""
+echo "【4. USGS自動ファクトチェック】"
+node scripts/usgs-factcheck.js --save
+
+echo ""
+echo "【5. 記事更新チェック】"
+node scripts/article-updater.js
+
+echo ""
+echo "【6. 死者数確認推奨リスト】"
+node scripts/deaths-updater.js
+
+echo ""
+echo "【7. 全エージェント実行】"
+npm run agent:all
+
+echo ""
 echo "=== チェック完了 ==="
 echo "問題があれば修正してから: bash scripts/deploy.sh"

@@ -7,12 +7,16 @@
       "schedule": "0 0 * * *"
     },
     {
+      "path": "/api/cron/revalidate-news",
+      "schedule": "0 6 * * *"
+    },
+    {
       "path": "/api/cron/link-check",
       "schedule": "0 2 * * 0"
     },
     {
-      "path": "/api/cron/revalidate-news",
-      "schedule": "0 6 * * *"
+      "path": "/api/cron/factcheck",
+      "schedule": "0 1 * * 1"
     }
   ]
 }

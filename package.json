@@ -26,7 +26,15 @@
     "agent:all": "node scripts/agent-runner.js --all",
     "agent:weekly": "node scripts/agent-runner.js --weekly",
     "agent:monthly": "node scripts/agent-runner.js --monthly",
-    "agent:report": "node scripts/agent-runner.js --report"
+    "agent:report": "node scripts/agent-runner.js --report",
+    "usgs-check": "node scripts/usgs-factcheck.js",
+    "usgs-check:fix": "node scripts/usgs-factcheck.js --fix",
+    "jma-check": "node scripts/jma-factcheck.js",
+    "factcheck:all": "npm run fact-check:verbose && npm run usgs-check && npm run jma-check",
+    "article-check": "node scripts/article-updater.js",
+    "deaths-check": "node scripts/deaths-updater.js",
+    "update:all": "npm run article-check && npm run deaths-check && npm run usgs-check",
+    "update:report": "npm run article-check -- --report && npm run deaths-check -- --report"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
