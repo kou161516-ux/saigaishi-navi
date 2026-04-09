@@ -17,7 +17,11 @@
     "validate:full": "npm run fact-check:verbose && npm run link-check && npm run auto-update",
     "search-intent": "node scripts/search-intent-agent.js",
     "auto-improve": "node scripts/auto-improve-agent.js",
-    "auto-improve:fix": "node scripts/auto-improve-agent.js --fix"
+    "auto-improve:fix": "node scripts/auto-improve-agent.js --fix",
+    "internal-link": "node scripts/internal-link-agent.js",
+    "internal-link:fix": "node scripts/internal-link-agent.js --fix",
+    "revenue": "node scripts/revenue-agent.js",
+    "revenue:category": "node scripts/revenue-agent.js --category"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

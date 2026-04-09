@@ -307,8 +307,57 @@ export default function AdminPage() {
           </section>
         </div>
 
+        {/* エージェント向けページ */}
+        <section className="mb-8 mt-8">
+          <h2 className="mb-4 text-lg font-semibold text-gray-800">エージェント向けダッシュボード</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <Link
+              href="/admin/internal-links"
+              className="group rounded-lg border border-blue-200 bg-white p-5 shadow-sm hover:border-blue-400 hover:shadow-md transition-all"
+            >
+              <div className="mb-2 flex items-center gap-2">
+                <span className="text-xl">🔗</span>
+                <span className="font-semibold text-blue-700 group-hover:text-blue-900">
+                  内部リンク戦略
+                </span>
+              </div>
+              <p className="text-xs text-gray-500">
+                孤立記事・ハブ候補・クラスター別リンク密度を分析
+              </p>
+            </Link>
+            <Link
+              href="/admin/revenue"
+              className="group rounded-lg border border-yellow-200 bg-white p-5 shadow-sm hover:border-yellow-400 hover:shadow-md transition-all"
+            >
+              <div className="mb-2 flex items-center gap-2">
+                <span className="text-xl">💰</span>
+                <span className="font-semibold text-yellow-700 group-hover:text-yellow-900">
+                  収益最適化
+                </span>
+              </div>
+              <p className="text-xs text-gray-500">
+                アフィリエイトカテゴリ分布・高収益ポテンシャル記事を分析
+              </p>
+            </Link>
+            <Link
+              href="/admin/db-expansion"
+              className="group rounded-lg border border-teal-200 bg-white p-5 shadow-sm hover:border-teal-400 hover:shadow-md transition-all"
+            >
+              <div className="mb-2 flex items-center gap-2">
+                <span className="text-xl">📊</span>
+                <span className="font-semibold text-teal-700 group-hover:text-teal-900">
+                  DB拡張計画
+                </span>
+              </div>
+              <p className="text-xs text-gray-500">
+                DBカバレッジ・優先追加候補・多言語展開ロードマップ
+              </p>
+            </Link>
+          </div>
+        </section>
+
         {/* ナビゲーション */}
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-4 flex flex-wrap gap-3">
           <Link
             href="/admin/seo-checklist"
             className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
