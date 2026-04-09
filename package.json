@@ -14,7 +14,10 @@
     "link-check": "node scripts/link-check.js",
     "auto-update": "node scripts/auto-update.js",
     "validate": "npm run fact-check && npx tsc --noEmit",
-    "validate:full": "npm run fact-check:verbose && npm run link-check && npm run auto-update"
+    "validate:full": "npm run fact-check:verbose && npm run link-check && npm run auto-update",
+    "search-intent": "node scripts/search-intent-agent.js",
+    "auto-improve": "node scripts/auto-improve-agent.js",
+    "auto-improve:fix": "node scripts/auto-improve-agent.js --fix"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

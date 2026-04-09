@@ -5,7 +5,7 @@ module.exports = {
   sitemapSize: 5000,
   changefreq: 'weekly',
   priority: 0.7,
-  exclude: ['/contact/success'],
+  exclude: ['/contact/success', '/admin', '/admin/*', '/api/*'],
   transform: async (config, path) => {
     // トップページは優先度 1.0
     if (path === '/') {
