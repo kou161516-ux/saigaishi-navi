@@ -35,16 +35,46 @@
     "地域の防災訓練・消防署主催の救助講習に参加し、瓦礫の下からの自力脱出・他者救助の知識と技術を習得する。"
   ],
   "affiliateCategory": "general",
-  "relatedSlugs": ["tangshan-earthquake-1976", "hanshin-awaji-earthquake-1995", "tohoku-earthquake-2011", "haiti-earthquake-2010"],
-  "tags": ["トルコ", "シリア", "M7.8", "東アナトリア断層", "連続地震", "冬季", "建物倒壊", "建築基準"],
+  "relatedSlugs": [
+    "tangshan-earthquake-1976",
+    "hanshin-awaji-earthquake-1995",
+    "tohoku-earthquake-2011",
+    "haiti-earthquake-2010"
+  ],
+  "tags": [
+    "トルコ",
+    "シリア",
+    "M7.8",
+    "東アナトリア断層",
+    "連続地震",
+    "冬季",
+    "建物倒壊",
+    "建築基準"
+  ],
   "sources": [
-    {"title": "2023 Turkey–Syria earthquakes - Wikipedia", "url": "https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes"},
-    {"title": "United Nations - Türkiye-Syria Earthquake Response", "url": "https://www.un.org/en/turkiye-syria-earthquake-response"},
-    {"title": "Britannica - Kahramanmaras earthquake of 2023", "url": "https://www.britannica.com/event/2023-Turkey-Syria-earthquake"},
-    {"title": "ReliefWeb - Turkey Earthquake 2023", "url": "https://reliefweb.int/disaster/eq-2023-000015-tur"},
-    {"title": "Al Jazeera - Death toll climbs above 50,000 after Turkey, Syria earthquakes", "url": "https://www.aljazeera.com/news/2023/2/25/death-toll-climbs-above-50000-after-turkey-syria-earthquakes"}
+    {
+      "title": "2023 Turkey–Syria earthquakes - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes"
+    },
+    {
+      "title": "United Nations - Türkiye-Syria Earthquake Response",
+      "url": "https://www.un.org/en/turkiye-syria-earthquake-response"
+    },
+    {
+      "title": "Britannica - Kahramanmaras earthquake of 2023",
+      "url": "https://www.britannica.com/event/2023-Turkey-Syria-earthquake"
+    },
+    {
+      "title": "ReliefWeb - Turkey Earthquake 2023",
+      "url": "https://reliefweb.int/disaster/eq-2023-000015-tur"
+    },
+    {
+      "title": "Al Jazeera - Death toll climbs above 50,000 after Turkey, Syria earthquakes",
+      "url": "https://www.aljazeera.com/news/2023/2/25/death-toll-climbs-above-50000-after-turkey-syria-earthquakes"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",
-  "metaDescription": "2023年2月6日のトルコ・シリア地震M7.8＋M7.7で死者5万9000人超。冬季早朝・連続大地震・建物倒壊が重なった近代最大の地震被害の教訓と備えを解説。"
+  "metaDescription": "2023年2月6日のトルコ・シリア地震M7.8＋M7.7で死者5万9000人超。冬季早朝・連続大地震・建物倒壊が重なった近代最大の地震被害の教訓と備えを解説。",
+  "updatedAt": "2026-04-09"
 }

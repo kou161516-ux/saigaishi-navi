@@ -34,16 +34,45 @@
     "ペット・高齢者・障害者の避難計画を事前に確認し、ペット可避難所・福祉避難所の場所を把握する。"
   ],
   "affiliateCategory": "typhoon",
-  "relatedSlugs": ["isewan-typhoon-1959", "hurricane-katrina-2005", "western-japan-flood-2018"],
-  "tags": ["フィリピン", "台風", "高潮", "ストームサージ", "タクロバン", "レイテ島", "気候変動", "超大型台風"],
+  "relatedSlugs": [
+    "isewan-typhoon-1959",
+    "hurricane-katrina-2005",
+    "western-japan-flood-2018"
+  ],
+  "tags": [
+    "フィリピン",
+    "台風",
+    "高潮",
+    "ストームサージ",
+    "タクロバン",
+    "レイテ島",
+    "気候変動",
+    "超大型台風"
+  ],
   "sources": [
-    {"title": "Typhoon Haiyan - Wikipedia", "url": "https://en.wikipedia.org/wiki/Typhoon_Haiyan"},
-    {"title": "Britannica - Super Typhoon Haiyan 2013", "url": "https://www.britannica.com/event/Super-Typhoon-Haiyan"},
-    {"title": "NOAA Climate.gov - 2013 Record-breaking Super Typhoon Haiyan", "url": "https://www.climate.gov/news-features/understanding-climate/2013-state-climate-record-breaking-super-typhoon-haiyan"},
-    {"title": "Internet Geography - Typhoon Haiyan Case Study", "url": "https://www.internetgeography.net/topics/typhoon-haiyan-case-study/"},
-    {"title": "Direct Relief - Typhoon Haiyan Disaster Response", "url": "https://www.directrelief.org/emergency/typhoon-haiyan/"}
+    {
+      "title": "Typhoon Haiyan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Typhoon_Haiyan"
+    },
+    {
+      "title": "Britannica - Super Typhoon Haiyan 2013",
+      "url": "https://www.britannica.com/event/Super-Typhoon-Haiyan"
+    },
+    {
+      "title": "NOAA Climate.gov - 2013 Record-breaking Super Typhoon Haiyan",
+      "url": "https://www.climate.gov/news-features/understanding-climate/2013-state-climate-record-breaking-super-typhoon-haiyan"
+    },
+    {
+      "title": "Internet Geography - Typhoon Haiyan Case Study",
+      "url": "https://www.internetgeography.net/topics/typhoon-haiyan-case-study/"
+    },
+    {
+      "title": "Direct Relief - Typhoon Haiyan Disaster Response",
+      "url": "https://www.directrelief.org/emergency/typhoon-haiyan/"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",
-  "metaDescription": "2013年台風ハイエンは最大風速315km/hでフィリピン直撃。7m超の高潮がタクロバン市を飲み込み死者・行方不明7354人。高潮の恐怖と台風防災の教訓を解説。"
+  "metaDescription": "2013年台風ハイエンは最大風速315km/hでフィリピン直撃。7m超の高潮がタクロバン市を飲み込み死者・行方不明7354人。高潮の恐怖と台風防災の教訓を解説。",
+  "updatedAt": "2026-04-09"
 }

@@ -35,16 +35,44 @@
     "水・食料7日分の備蓄と防水袋に入れた非常用持ち出し品を準備する。"
   ],
   "affiliateCategory": "tsunami",
-  "relatedSlugs": ["tohoku-earthquake-2011", "chile-earthquake-tsunami-1960", "okushiri-tsunami-1993"],
-  "tags": ["インド洋", "スマトラ島沖", "超巨大地震", "津波", "M9.1", "多国間災害", "警報システム欠如"],
+  "relatedSlugs": [
+    "tohoku-earthquake-2011",
+    "chile-earthquake-tsunami-1960",
+    "okushiri-tsunami-1993"
+  ],
+  "tags": [
+    "インド洋",
+    "スマトラ島沖",
+    "超巨大地震",
+    "津波",
+    "M9.1",
+    "多国間災害",
+    "警報システム欠如"
+  ],
   "sources": [
-    {"title": "2004 Indian Ocean earthquake and tsunami - Wikipedia", "url": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami"},
-    {"title": "Britannica - Indian Ocean tsunami of 2004", "url": "https://www.britannica.com/event/Indian-Ocean-tsunami-of-2004"},
-    {"title": "NOAA - 2004 Indian Ocean Tsunami", "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153"},
-    {"title": "World Vision - 2004 Indian Ocean Earthquake and Tsunami Facts", "url": "https://www.worldvision.org/disaster-relief-news-stories/2004-indian-ocean-earthquake-tsunami-facts"},
-    {"title": "PreventionWeb - 2004 Indian Ocean Earthquake and Tsunami", "url": "https://recovery.preventionweb.net/collections/recovery-collection-2004-indian-ocean-earthquake-and-tsunami"}
+    {
+      "title": "2004 Indian Ocean earthquake and tsunami - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami"
+    },
+    {
+      "title": "Britannica - Indian Ocean tsunami of 2004",
+      "url": "https://www.britannica.com/event/Indian-Ocean-tsunami-of-2004"
+    },
+    {
+      "title": "NOAA - 2004 Indian Ocean Tsunami",
+      "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153"
+    },
+    {
+      "title": "World Vision - 2004 Indian Ocean Earthquake and Tsunami Facts",
+      "url": "https://www.worldvision.org/disaster-relief-news-stories/2004-indian-ocean-earthquake-tsunami-facts"
+    },
+    {
+      "title": "PreventionWeb - 2004 Indian Ocean Earthquake and Tsunami",
+      "url": "https://recovery.preventionweb.net/collections/recovery-collection-2004-indian-ocean-earthquake-and-tsunami"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",
-  "metaDescription": "2004年12月26日のスマトラ沖M9.1地震が引き起こしたインド洋大津波。14か国で22万7899人が犠牲となった史上最悪の津波災害の教訓と備えを解説。"
+  "metaDescription": "2004年12月26日のスマトラ沖M9.1地震が引き起こしたインド洋大津波。14か国で22万7899人が犠牲となった史上最悪の津波災害の教訓と備えを解説。",
+  "updatedAt": "2026-04-09"
 }

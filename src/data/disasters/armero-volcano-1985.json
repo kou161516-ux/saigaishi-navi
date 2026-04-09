@@ -34,15 +34,39 @@
     "地域の自主防災組織に参加し、火山・土砂災害の避難訓練に参加する。"
   ],
   "affiliateCategory": "evacuation",
-  "relatedSlugs": ["tohoku-earthquake-2011", "chile-earthquake-tsunami-1960"],
-  "tags": ["コロンビア", "火山噴火", "ラハール", "泥流", "ネバドデルルイス", "警告無視", "南米"],
+  "relatedSlugs": [
+    "tohoku-earthquake-2011",
+    "chile-earthquake-tsunami-1960"
+  ],
+  "tags": [
+    "コロンビア",
+    "火山噴火",
+    "ラハール",
+    "泥流",
+    "ネバドデルルイス",
+    "警告無視",
+    "南米"
+  ],
   "sources": [
-    {"title": "Armero tragedy - Wikipedia (English)", "url": "https://en.wikipedia.org/wiki/Armero_tragedy"},
-    {"title": "USGS - Lessons Learned from Armero Tragedy", "url": "https://www.usgs.gov/observatories/hvo/news/volcano-watch-lessons-learned-armero-colombia-tragedy"},
-    {"title": "PreventionWeb - Colombia 1985 Nevado del Ruiz Eruption", "url": "https://www.preventionweb.net/collections/colombia-1985-nevado-del-ruiz-eruption"},
-    {"title": "Global Volcanism Program - Nevado del Ruiz 1985", "url": "https://en.wikipedia.org/wiki/Armero_tragedy"}
+    {
+      "title": "Armero tragedy - Wikipedia (English)",
+      "url": "https://en.wikipedia.org/wiki/Armero_tragedy"
+    },
+    {
+      "title": "USGS - Lessons Learned from Armero Tragedy",
+      "url": "https://www.usgs.gov/observatories/hvo/news/volcano-watch-lessons-learned-armero-colombia-tragedy"
+    },
+    {
+      "title": "PreventionWeb - Colombia 1985 Nevado del Ruiz Eruption",
+      "url": "https://www.preventionweb.net/collections/colombia-1985-nevado-del-ruiz-eruption"
+    },
+    {
+      "title": "Global Volcanism Program - Nevado del Ruiz 1985",
+      "url": "https://en.wikipedia.org/wiki/Armero_tragedy"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",
-  "metaDescription": "1985年コロンビア・ネバド・デル・ルイス火山噴火で発生した温水泥流（ラハール）が2万3000人以上の命を奪った。警告があったのに避難しなかった防災史上最悪の失敗事例。"
+  "metaDescription": "1985年コロンビア・ネバド・デル・ルイス火山噴火で発生した温水泥流（ラハール）が2万3000人以上の命を奪った。警告があったのに避難しなかった防災史上最悪の失敗事例。",
+  "updatedAt": "2026-04-09"
 }

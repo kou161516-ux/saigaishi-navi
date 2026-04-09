@@ -35,16 +35,44 @@
     "停電に備えた手回し・太陽光充電式のラジオ・ライト・モバイルバッテリーを常備する。"
   ],
   "affiliateCategory": "typhoon",
-  "relatedSlugs": ["isewan-typhoon-1959", "haiyan-typhoon-2013", "western-japan-flood-2018"],
-  "tags": ["米国", "ハリケーン", "ニューオーリンズ", "堤防決壊", "高潮", "社会的脆弱性", "気候変動"],
+  "relatedSlugs": [
+    "isewan-typhoon-1959",
+    "haiyan-typhoon-2013",
+    "western-japan-flood-2018"
+  ],
+  "tags": [
+    "米国",
+    "ハリケーン",
+    "ニューオーリンズ",
+    "堤防決壊",
+    "高潮",
+    "社会的脆弱性",
+    "気候変動"
+  ],
   "sources": [
-    {"title": "Hurricane Katrina - Wikipedia", "url": "https://en.wikipedia.org/wiki/Hurricane_Katrina"},
-    {"title": "Britannica - Hurricane Katrina", "url": "https://www.britannica.com/event/Hurricane-Katrina"},
-    {"title": "NOAA - Hurricane Katrina August 2005", "url": "https://www.weather.gov/mob/katrina"},
-    {"title": "National Geographic - Hurricane Katrina impacts and facts", "url": "https://www.nationalgeographic.com/environment/article/hurricane-katrina"},
-    {"title": "World Vision - Hurricane Katrina Facts and FAQs", "url": "https://www.worldvision.org/disaster-relief-news-stories/2005-hurricane-katrina-facts"}
+    {
+      "title": "Hurricane Katrina - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hurricane_Katrina"
+    },
+    {
+      "title": "Britannica - Hurricane Katrina",
+      "url": "https://www.britannica.com/event/Hurricane-Katrina"
+    },
+    {
+      "title": "NOAA - Hurricane Katrina August 2005",
+      "url": "https://www.weather.gov/mob/katrina"
+    },
+    {
+      "title": "National Geographic - Hurricane Katrina impacts and facts",
+      "url": "https://www.nationalgeographic.com/environment/article/hurricane-katrina"
+    },
+    {
+      "title": "World Vision - Hurricane Katrina Facts and FAQs",
+      "url": "https://www.worldvision.org/disaster-relief-news-stories/2005-hurricane-katrina-facts"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",
-  "metaDescription": "2005年ハリケーン・カトリーナで死者1833人、ニューオーリンズ市街80%浸水。堤防決壊・人種・貧困が複合した米国最大の自然災害から学ぶ防災の教訓。"
+  "metaDescription": "2005年ハリケーン・カトリーナで死者1833人、ニューオーリンズ市街80%浸水。堤防決壊・人種・貧困が複合した米国最大の自然災害から学ぶ防災の教訓。",
+  "updatedAt": "2026-04-09"
 }
