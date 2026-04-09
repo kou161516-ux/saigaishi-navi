@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumb from '@/components/ui/Breadcrumb'
+import InsWebAffiliateBox from '@/components/affiliate/InsWebAffiliateBox'
 import fireSchoolsData from '@/data/schools/fire-schools.json'
 
 export const revalidate = 86400
@@ -374,6 +375,9 @@ export default function FireSchoolNaviPage() {
             </div>
           </div>
         </section>
+
+        {/* インズウェブ火災保険アフィリエイト */}
+        <InsWebAffiliateBox />
 
         {/* 免責・更新情報 */}
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 text-xs text-gray-500">

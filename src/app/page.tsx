@@ -2,6 +2,7 @@ import Link from 'next/link'
 import DisasterCard from '@/components/disaster/DisasterCard'
 import AdSense from '@/components/ads/AdSense'
 import AffiliateBox from '@/components/affiliate/AffiliateBox'
+import InsWebAffiliateBox from '@/components/affiliate/InsWebAffiliateBox'
 import LatestEarthquakeWidget from '@/components/news/LatestEarthquakeWidget'
 import DisasterPreventionDayBanner from '@/components/special/DisasterPreventionDayBanner'
 import {
@@ -159,6 +160,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* インズウェブ火災保険アフィリエイト */}
+      <div className="max-w-4xl mx-auto px-4">
+        <InsWebAffiliateBox />
+      </div>
 
       {/* AdSense - 記事上部 */}
       <div className="max-w-6xl mx-auto px-4">

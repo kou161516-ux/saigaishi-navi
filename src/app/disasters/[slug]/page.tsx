@@ -13,6 +13,7 @@ import TableOfContents from '@/components/ui/TableOfContents'
 import LessonBox from '@/components/disaster/LessonBox'
 import PreparednessBox from '@/components/disaster/PreparednessBox'
 import AffiliateBox from '@/components/affiliate/AffiliateBox'
+import InsWebAffiliateBox from '@/components/affiliate/InsWebAffiliateBox'
 import AdSense from '@/components/ads/AdSense'
 import DisasterCard from '@/components/disaster/DisasterCard'
 
@@ -300,8 +301,11 @@ export default async function DisasterDetailPage({
           <PreparednessBox preparedness={disaster.preparedness} />
         </section>
 
-        {/* Affiliate */}
+        {/* Affiliate - 防災グッズ */}
         <AffiliateBox category={disaster.affiliateCategory} />
+
+        {/* Affiliate - インズウェブ火災保険（SBIホールディングス） */}
+        <InsWebAffiliateBox />
 
         {/* AdSense - 記事下部 */}
         {/* 本番前にスロットIDを差し替えてください */}
