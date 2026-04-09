@@ -32,13 +32,32 @@
     "急いで避難する場合のための軽量な非常持出袋を玄関に置いておく",
     "近所の高齢者・要配慮者への声かけをする習慣をつける"
   ],
-  "affiliateCategory": "evacuation",
-  "relatedSlugs": ["northern-kyushu-flood-2017", "isewan-typhoon-1959"],
-  "tags": ["豪雨", "洪水", "土砂崩れ", "広島", "岡山", "愛媛", "大雨特別警報", "平成30年"],
+  "affiliateCategory": "flood",
+  "relatedSlugs": [
+    "northern-kyushu-flood-2017",
+    "isewan-typhoon-1959"
+  ],
+  "tags": [
+    "豪雨",
+    "洪水",
+    "土砂崩れ",
+    "広島",
+    "岡山",
+    "愛媛",
+    "大雨特別警報",
+    "平成30年"
+  ],
   "sources": [
-    { "title": "内閣府 平成30年7月豪雨の被害状況", "url": "https://www.bousai.go.jp/updates/h30typhoon7/" },
-    { "title": "消防庁 平成30年7月豪雨による被害状況" },
-    { "title": "国土交通省 平成30年7月豪雨に係る報告" }
+    {
+      "title": "内閣府 平成30年7月豪雨の被害状況",
+      "url": "https://www.bousai.go.jp/updates/h30typhoon7/"
+    },
+    {
+      "title": "消防庁 平成30年7月豪雨による被害状況"
+    },
+    {
+      "title": "国土交通省 平成30年7月豪雨に係る報告"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",

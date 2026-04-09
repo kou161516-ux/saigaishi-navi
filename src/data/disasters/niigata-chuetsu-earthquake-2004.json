@@ -33,13 +33,30 @@
     "避難所では段ボールベッドや仕切りを活用して衛生・プライバシーを確保する",
     "ペットの同行避難計画を事前に立てておく"
   ],
-  "affiliateCategory": "indoor",
-  "relatedSlugs": ["kumamoto-earthquake-2016", "hokkaido-earthquake-2018"],
-  "tags": ["地震", "土砂崩れ", "孤立集落", "新幹線", "新潟", "中山間地域"],
+  "affiliateCategory": "evacuation",
+  "relatedSlugs": [
+    "kumamoto-earthquake-2016",
+    "hokkaido-earthquake-2018"
+  ],
+  "tags": [
+    "地震",
+    "土砂崩れ",
+    "孤立集落",
+    "新幹線",
+    "新潟",
+    "中山間地域"
+  ],
   "sources": [
-    { "title": "内閣府 新潟県中越地震の被害状況", "url": "https://www.bousai.go.jp/updates/niigata2004/" },
-    { "title": "新潟県 中越大震災の記録" },
-    { "title": "消防庁 新潟県中越地震の対応記録" }
+    {
+      "title": "内閣府 新潟県中越地震の被害状況",
+      "url": "https://www.bousai.go.jp/updates/niigata2004/"
+    },
+    {
+      "title": "新潟県 中越大震災の記録"
+    },
+    {
+      "title": "消防庁 新潟県中越地震の対応記録"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

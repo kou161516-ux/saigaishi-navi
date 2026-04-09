@@ -34,12 +34,30 @@
     "防火対策として消火器の設置・定期点検を行う"
   ],
   "affiliateCategory": "indoor",
-  "relatedSlugs": ["tohoku-earthquake-2011", "kumamoto-earthquake-2016", "noto-earthquake-2024"],
-  "tags": ["地震", "直下型", "都市災害", "火災", "阪神", "M7クラス"],
+  "relatedSlugs": [
+    "tohoku-earthquake-2011",
+    "kumamoto-earthquake-2016",
+    "noto-earthquake-2024"
+  ],
+  "tags": [
+    "地震",
+    "直下型",
+    "都市災害",
+    "火災",
+    "阪神",
+    "M7クラス"
+  ],
   "sources": [
-    { "title": "内閣府 阪神・淡路大震災の概要", "url": "https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html/index2.html" },
-    { "title": "兵庫県 阪神・淡路大震災の記録" },
-    { "title": "消防庁 阪神・淡路大震災火災の被害記録" }
+    {
+      "title": "内閣府 阪神・淡路大震災の概要",
+      "url": "https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html/index2.html"
+    },
+    {
+      "title": "兵庫県 阪神・淡路大震災の記録"
+    },
+    {
+      "title": "消防庁 阪神・淡路大震災火災の被害記録"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",

@@ -33,13 +33,31 @@
     "停電・浸水に備えてポータブル電源・防水袋・長靴を準備する",
     "ペット・貴重品の持ち出し計画を家族で共有しておく"
   ],
-  "affiliateCategory": "evacuation",
-  "relatedSlugs": ["western-japan-flood-2018", "northern-kyushu-flood-2017"],
-  "tags": ["台風", "高潮", "洪水", "海抜ゼロメートル", "名古屋", "昭和", "災害対策基本法"],
+  "affiliateCategory": "typhoon",
+  "relatedSlugs": [
+    "western-japan-flood-2018",
+    "northern-kyushu-flood-2017"
+  ],
+  "tags": [
+    "台風",
+    "高潮",
+    "洪水",
+    "海抜ゼロメートル",
+    "名古屋",
+    "昭和",
+    "災害対策基本法"
+  ],
   "sources": [
-    { "title": "内閣府 伊勢湾台風50周年記念特集", "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h21/09/special_01.html" },
-    { "title": "気象庁 伊勢湾台風の概要" },
-    { "title": "愛知県防災局 伊勢湾台風の記録" }
+    {
+      "title": "内閣府 伊勢湾台風50周年記念特集",
+      "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h21/09/special_01.html"
+    },
+    {
+      "title": "気象庁 伊勢湾台風の概要"
+    },
+    {
+      "title": "愛知県防災局 伊勢湾台風の記録"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",

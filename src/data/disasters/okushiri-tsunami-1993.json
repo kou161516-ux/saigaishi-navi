@@ -33,13 +33,30 @@
     "地域の津波避難訓練に積極的に参加し、避難ルートを体で覚える",
     "防災ラジオを枕元に置き、夜間でも緊急情報を受信できるようにする"
   ],
-  "affiliateCategory": "evacuation",
-  "relatedSlugs": ["tohoku-earthquake-2011", "chile-earthquake-tsunami-1960"],
-  "tags": ["地震", "津波", "夜間", "離島", "北海道", "奥尻島", "日本海"],
+  "affiliateCategory": "tsunami",
+  "relatedSlugs": [
+    "tohoku-earthquake-2011",
+    "chile-earthquake-tsunami-1960"
+  ],
+  "tags": [
+    "地震",
+    "津波",
+    "夜間",
+    "離島",
+    "北海道",
+    "奥尻島",
+    "日本海"
+  ],
   "sources": [
-    { "title": "内閣府 北海道南西沖地震の概要" },
-    { "title": "北海道 北海道南西沖地震の記録" },
-    { "title": "気象庁 北海道南西沖地震の地震・津波の記録" }
+    {
+      "title": "内閣府 北海道南西沖地震の概要"
+    },
+    {
+      "title": "北海道 北海道南西沖地震の記録"
+    },
+    {
+      "title": "気象庁 北海道南西沖地震の地震・津波の記録"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

@@ -34,12 +34,31 @@
     "非常持出袋に常備薬・エコノミークラス症候群予防の弾性ストッキングも入れておく"
   ],
   "affiliateCategory": "evacuation",
-  "relatedSlugs": ["hanshin-awaji-earthquake-1995", "tohoku-earthquake-2011", "noto-earthquake-2024"],
-  "tags": ["地震", "前震", "本震", "余震", "九州", "熊本", "車中泊"],
+  "relatedSlugs": [
+    "hanshin-awaji-earthquake-1995",
+    "tohoku-earthquake-2011",
+    "noto-earthquake-2024"
+  ],
+  "tags": [
+    "地震",
+    "前震",
+    "本震",
+    "余震",
+    "九州",
+    "熊本",
+    "車中泊"
+  ],
   "sources": [
-    { "title": "内閣府 熊本地震の被害状況", "url": "https://www.bousai.go.jp/updates/h280414jishin/" },
-    { "title": "熊本県 熊本地震の記録" },
-    { "title": "消防庁 熊本地震に係る被害状況等について" }
+    {
+      "title": "内閣府 熊本地震の被害状況",
+      "url": "https://www.bousai.go.jp/updates/h280414jishin/"
+    },
+    {
+      "title": "熊本県 熊本地震の記録"
+    },
+    {
+      "title": "消防庁 熊本地震に係る被害状況等について"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

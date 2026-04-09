@@ -33,13 +33,30 @@
     "漁師・漁業従事者は特に遠地津波の知識と早期避難の重要性を認識する",
     "沿岸部の住居では2階以上への垂直避難の選択肢も合わせて確認しておく"
   ],
-  "affiliateCategory": "evacuation",
-  "relatedSlugs": ["tohoku-earthquake-2011", "okushiri-tsunami-1993"],
-  "tags": ["津波", "遠地津波", "チリ", "三陸", "世界最大地震", "M9クラス", "歴史的"],
+  "affiliateCategory": "tsunami",
+  "relatedSlugs": [
+    "tohoku-earthquake-2011",
+    "okushiri-tsunami-1993"
+  ],
+  "tags": [
+    "津波",
+    "遠地津波",
+    "チリ",
+    "三陸",
+    "世界最大地震",
+    "M9クラス",
+    "歴史的"
+  ],
   "sources": [
-    { "title": "気象庁 チリ地震津波の概要" },
-    { "title": "内閣府 チリ地震津波の被害状況" },
-    { "title": "岩手県 チリ地震津波の記録" }
+    {
+      "title": "気象庁 チリ地震津波の概要"
+    },
+    {
+      "title": "内閣府 チリ地震津波の被害状況"
+    },
+    {
+      "title": "岩手県 チリ地震津波の記録"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

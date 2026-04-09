@@ -32,13 +32,30 @@
     "家族全員で避難場所・集合場所・連絡手段を事前に決めておく",
     "防災ラジオを常備し、停電時でも気象情報・避難情報を入手できるようにする"
   ],
-  "affiliateCategory": "evacuation",
-  "relatedSlugs": ["western-japan-flood-2018", "isewan-typhoon-1959"],
-  "tags": ["豪雨", "土石流", "洪水", "線状降水帯", "福岡", "大分", "九州"],
+  "affiliateCategory": "flood",
+  "relatedSlugs": [
+    "western-japan-flood-2018",
+    "isewan-typhoon-1959"
+  ],
+  "tags": [
+    "豪雨",
+    "土石流",
+    "洪水",
+    "線状降水帯",
+    "福岡",
+    "大分",
+    "九州"
+  ],
   "sources": [
-    { "title": "内閣府 平成29年7月九州北部豪雨の被害状況" },
-    { "title": "消防庁 平成29年7月5日からの大雨による被害状況" },
-    { "title": "気象庁 平成29年7月九州北部豪雨の特徴" }
+    {
+      "title": "内閣府 平成29年7月九州北部豪雨の被害状況"
+    },
+    {
+      "title": "消防庁 平成29年7月5日からの大雨による被害状況"
+    },
+    {
+      "title": "気象庁 平成29年7月九州北部豪雨の特徴"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

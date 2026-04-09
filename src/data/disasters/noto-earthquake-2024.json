@@ -33,13 +33,33 @@
     "能登の事例から、1週間以上の備蓄水・食料が必要であることが改めて示された",
     "地域の地形・道路状況を把握し、孤立した場合の複数の避難経路を確認しておく"
   ],
-  "affiliateCategory": "water",
-  "relatedSlugs": ["tohoku-earthquake-2011", "hanshin-awaji-earthquake-1995", "niigata-chuetsu-earthquake-2004"],
-  "tags": ["地震", "津波", "火災", "孤立集落", "石川県", "能登半島", "断水", "2024年"],
+  "affiliateCategory": "general",
+  "relatedSlugs": [
+    "tohoku-earthquake-2011",
+    "hanshin-awaji-earthquake-1995",
+    "niigata-chuetsu-earthquake-2004"
+  ],
+  "tags": [
+    "地震",
+    "津波",
+    "火災",
+    "孤立集落",
+    "石川県",
+    "能登半島",
+    "断水",
+    "2024年"
+  ],
   "sources": [
-    { "title": "内閣府 令和6年能登半島地震について", "url": "https://www.bousai.go.jp/updates/r6_noto_earthquake/" },
-    { "title": "石川県 令和6年能登半島地震の被害記録" },
-    { "title": "消防庁 令和6年能登半島地震被害状況" }
+    {
+      "title": "内閣府 令和6年能登半島地震について",
+      "url": "https://www.bousai.go.jp/updates/r6_noto_earthquake/"
+    },
+    {
+      "title": "石川県 令和6年能登半島地震の被害記録"
+    },
+    {
+      "title": "消防庁 令和6年能登半島地震被害状況"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-03-01",

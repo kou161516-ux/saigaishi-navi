@@ -34,12 +34,29 @@
     "冷蔵庫・冷凍庫の中身を最低限の食品で維持するローリングストックを実践する"
   ],
   "affiliateCategory": "power",
-  "relatedSlugs": ["kumamoto-earthquake-2016", "noto-earthquake-2024"],
-  "tags": ["地震", "土砂崩れ", "液状化", "ブラックアウト", "停電", "北海道"],
+  "relatedSlugs": [
+    "kumamoto-earthquake-2016",
+    "noto-earthquake-2024"
+  ],
+  "tags": [
+    "地震",
+    "土砂崩れ",
+    "液状化",
+    "ブラックアウト",
+    "停電",
+    "北海道"
+  ],
   "sources": [
-    { "title": "内閣府 平成30年北海道胆振東部地震の概要", "url": "https://www.bousai.go.jp/updates/h30hokkaido/" },
-    { "title": "北海道 平成30年北海道胆振東部地震の記録" },
-    { "title": "経済産業省 北海道電力ブラックアウト分析" }
+    {
+      "title": "内閣府 平成30年北海道胆振東部地震の概要",
+      "url": "https://www.bousai.go.jp/updates/h30hokkaido/"
+    },
+    {
+      "title": "北海道 平成30年北海道胆振東部地震の記録"
+    },
+    {
+      "title": "経済産業省 北海道電力ブラックアウト分析"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

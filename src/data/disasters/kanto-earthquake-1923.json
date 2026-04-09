@@ -33,13 +33,31 @@
     "地域の防火組合・消防団活動に参加し、地域防災力を高める",
     "非常用持出袋に3日分の水・食料と応急処置用品を準備する"
   ],
-  "affiliateCategory": "evacuation",
-  "relatedSlugs": ["hanshin-awaji-earthquake-1995", "tohoku-earthquake-2011"],
-  "tags": ["地震", "火災", "大正時代", "東京", "横浜", "M7クラス", "歴史的大災害"],
+  "affiliateCategory": "general",
+  "relatedSlugs": [
+    "hanshin-awaji-earthquake-1995",
+    "tohoku-earthquake-2011"
+  ],
+  "tags": [
+    "地震",
+    "火災",
+    "大正時代",
+    "東京",
+    "横浜",
+    "M7クラス",
+    "歴史的大災害"
+  ],
   "sources": [
-    { "title": "内閣府 関東大震災100年", "url": "https://www.bousai.go.jp/kantou100/" },
-    { "title": "東京都 関東大震災の記録" },
-    { "title": "中央防災会議 関東大震災報告書" }
+    {
+      "title": "内閣府 関東大震災100年",
+      "url": "https://www.bousai.go.jp/kantou100/"
+    },
+    {
+      "title": "東京都 関東大震災の記録"
+    },
+    {
+      "title": "中央防災会議 関東大震災報告書"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",

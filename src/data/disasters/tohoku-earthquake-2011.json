@@ -34,12 +34,30 @@
     "避難生活に備えて非常用トイレを準備する"
   ],
   "affiliateCategory": "general",
-  "relatedSlugs": ["hanshin-awaji-earthquake-1995", "noto-earthquake-2024", "okushiri-tsunami-1993"],
-  "tags": ["地震", "津波", "原子力", "東北", "複合災害", "M9クラス"],
+  "relatedSlugs": [
+    "hanshin-awaji-earthquake-1995",
+    "noto-earthquake-2024",
+    "okushiri-tsunami-1993"
+  ],
+  "tags": [
+    "地震",
+    "津波",
+    "原子力",
+    "東北",
+    "複合災害",
+    "M9クラス"
+  ],
   "sources": [
-    { "title": "内閣府 東日本大震災の被害・影響", "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h23/64/special_01.html" },
-    { "title": "消防庁 東日本大震災記録集" },
-    { "title": "復興庁 復興の現状" }
+    {
+      "title": "内閣府 東日本大震災の被害・影響",
+      "url": "https://www.bousai.go.jp/kohou/kouhoubousai/h23/64/special_01.html"
+    },
+    {
+      "title": "消防庁 東日本大震災記録集"
+    },
+    {
+      "title": "復興庁 復興の現状"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",
