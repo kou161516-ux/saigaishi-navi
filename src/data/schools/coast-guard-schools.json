@@ -1,0 +1,167 @@
+{
+  "updatedAt": "2026-04-09",
+  "mainSchools": [
+    {
+      "id": "jcga",
+      "name": "海上保安大学校",
+      "nameEn": "Japan Coast Guard Academy",
+      "nameKana": "かいじょうほあんだいがっこう",
+      "location": "〒737-8512 広島県呉市若葉町5番1号",
+      "prefecture": "広島県",
+      "tel": "0823-21-4961",
+      "url": "https://www.academy.kaiho.mlit.go.jp/",
+      "urlVerified": true,
+      "description": "海上保安庁の幹部職員を養成する4年制の大学校。本科・専攻科・研修科を設置し、航海・機関・情報通信等の専門教育を行う。",
+      "established": "1951年",
+      "admissionInfo": "高等学校卒業程度の採用試験（人事院・海上保安庁共同実施）。受験資格：高校卒業後2年以内または卒業見込みの者。",
+      "courses": [
+        "本科（4年）：航海群・機関群・情報通信群",
+        "専攻科（6か月）：世界一周遠洋航海実習等",
+        "研修科 国際業務課程（3か月）"
+      ],
+      "notes": "2026年度より体力検査基準改正あり。詳細は公式サイトを参照。"
+    },
+    {
+      "id": "jcgs",
+      "name": "海上保安学校",
+      "nameEn": "Japan Coast Guard School",
+      "nameKana": "かいじょうほあんがっこう",
+      "location": "〒625-8503 京都府舞鶴市字長浜2001番地",
+      "prefecture": "京都府",
+      "tel": "0773-62-3520",
+      "url": "https://www.school.kaiho.mlit.go.jp/",
+      "urlVerified": true,
+      "description": "海上保安庁の一般職員（航海・機関・主計・通信・航空等）を養成する学校。2024年10月にホームページを新URLへ移転。",
+      "established": "1948年",
+      "admissionInfo": "高等学校卒業程度の採用試験（一般課程・海洋科学課程・情報システム課程・航空課程等）。",
+      "courses": [
+        "一般課程（1年）",
+        "海洋科学課程（2年）",
+        "情報システム課程（1年）",
+        "航空課程（1年）",
+        "主計課程（1年）"
+      ],
+      "branches": [
+        "門司分校（福岡県北九州市門司区）",
+        "宮城分校（宮城県岩沼市）"
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "id": "moji",
+      "name": "海上保安学校 門司分校",
+      "nameKana": "かいじょうほあんがっこう もじぶんこう",
+      "location": "〒801-0802 福岡県北九州市門司区白野江3丁目3番地1号",
+      "prefecture": "福岡県",
+      "tel": "093-341-8131",
+      "fax": "093-341-8132",
+      "url": "https://www.school.kaiho.mlit.go.jp/introduction/moji_branch.html",
+      "urlVerified": true,
+      "description": "九州最北端に位置する門司分校。海上保安官初任者の研修を行う。",
+      "parentSchool": "海上保安学校（舞鶴）"
+    },
+    {
+      "id": "miyagi",
+      "name": "海上保安学校 宮城分校",
+      "nameKana": "かいじょうほあんがっこう みやぎぶんこう",
+      "location": "〒989-2421 宮城県岩沼市下野郷字北長沼4番地",
+      "prefecture": "宮城県",
+      "tel": "0223-24-2338",
+      "url": "https://www.school.kaiho.mlit.go.jp/introduction/miyagi_branch.html",
+      "urlVerified": true,
+      "description": "宮城県岩沼市に位置する宮城分校。海上保安官初任者の研修を行う。",
+      "parentSchool": "海上保安学校（舞鶴）"
+    }
+  ],
+  "districts": [
+    {
+      "id": "district1",
+      "name": "第一管区海上保安本部",
+      "location": "北海道函館市",
+      "jurisdiction": "北海道（太平洋・オホーツク海・日本海側）",
+      "url": "https://www.kaiho.mlit.go.jp/01kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district2",
+      "name": "第二管区海上保安本部",
+      "location": "宮城県塩竈市",
+      "jurisdiction": "青森県・岩手県・宮城県・秋田県・山形県・福島県",
+      "url": "https://www.kaiho.mlit.go.jp/02kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district3",
+      "name": "第三管区海上保安本部",
+      "location": "神奈川県横浜市",
+      "jurisdiction": "茨城県・栃木県・群馬県・埼玉県・千葉県・東京都・神奈川県・山梨県・静岡県（東部）",
+      "url": "https://www.kaiho.mlit.go.jp/03kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district4",
+      "name": "第四管区海上保安本部",
+      "location": "愛知県名古屋市",
+      "jurisdiction": "静岡県（西部）・愛知県・三重県・岐阜県",
+      "url": "https://www.kaiho.mlit.go.jp/04kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district5",
+      "name": "第五管区海上保安本部",
+      "location": "兵庫県神戸市",
+      "jurisdiction": "大阪府・兵庫県・奈良県・和歌山県・徳島県・高知県",
+      "url": "https://www.kaiho.mlit.go.jp/05kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district6",
+      "name": "第六管区海上保安本部",
+      "location": "広島県広島市",
+      "jurisdiction": "岡山県・広島県・山口県（東部）・香川県・愛媛県",
+      "url": "https://www.kaiho.mlit.go.jp/06kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district7",
+      "name": "第七管区海上保安本部",
+      "location": "福岡県北九州市",
+      "jurisdiction": "山口県（西部）・福岡県・大分県・佐賀県・長崎県",
+      "url": "https://www.kaiho.mlit.go.jp/07kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district8",
+      "name": "第八管区海上保安本部",
+      "location": "京都府舞鶴市",
+      "jurisdiction": "京都府・兵庫県（日本海側）・鳥取県・島根県・福井県・石川県・富山県・新潟県（佐渡以西）",
+      "url": "https://www.kaiho.mlit.go.jp/08kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district9",
+      "name": "第九管区海上保安本部",
+      "location": "新潟県新潟市",
+      "jurisdiction": "新潟県（一部）・長野県",
+      "url": "https://www.kaiho.mlit.go.jp/09kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district10",
+      "name": "第十管区海上保安本部",
+      "location": "鹿児島県鹿児島市",
+      "jurisdiction": "熊本県・宮崎県・鹿児島県（奄美群島を含む）",
+      "url": "https://www.kaiho.mlit.go.jp/10kanku/",
+      "urlVerified": true
+    },
+    {
+      "id": "district11",
+      "name": "第十一管区海上保安本部",
+      "location": "沖縄県那覇市",
+      "jurisdiction": "沖縄県（先島諸島・尖閣諸島等を含む）",
+      "url": "https://www.kaiho.mlit.go.jp/11kanku/",
+      "urlVerified": true
+    }
+  ]
+}

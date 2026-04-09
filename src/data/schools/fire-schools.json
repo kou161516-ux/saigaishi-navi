@@ -1,0 +1,501 @@
+{
+  "updatedAt": "2026-04-09",
+  "national": [
+    {
+      "id": "fdmc",
+      "name": "消防大学校",
+      "nameKana": "しょうぼうだいがっこう",
+      "location": "東京都調布市深大寺東町4-35-3",
+      "prefecture": "東京都",
+      "tel": "0422-44-8331",
+      "url": "https://fdmc.fdma.go.jp/",
+      "urlVerified": true,
+      "description": "総務省消防庁が設置する幹部消防吏員・消防団員等の教育訓練機関",
+      "established": "1950年"
+    },
+    {
+      "id": "nrifd",
+      "name": "消防庁消防大学校 消防研究センター",
+      "nameKana": "しょうぼうけんきゅうせんたー",
+      "location": "東京都調布市深大寺東町4-35-3",
+      "prefecture": "東京都",
+      "tel": "0422-44-8331",
+      "url": "https://nrifd.fdma.go.jp/",
+      "urlVerified": true,
+      "description": "消防に関する科学技術の研究・開発及び火災原因等の調査を行う機関",
+      "established": "1950年"
+    }
+  ],
+  "prefectural": [
+    {
+      "id": "hokkaido",
+      "prefecture": "北海道",
+      "name": "北海道消防学校",
+      "location": "北海道恵庭市戸磯475番地",
+      "tel": "0123-36-3511",
+      "url": "https://www.pref.hokkaido.lg.jp/sm/sbg/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "aomori",
+      "prefecture": "青森県",
+      "name": "青森県消防学校",
+      "location": "青森県青森市大字新城字天田内183-3",
+      "tel": "017-788-4221",
+      "url": "https://www.pref.aomori.lg.jp/soshiki/kikikanri/shobogakko/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "iwate",
+      "prefecture": "岩手県",
+      "name": "岩手県消防学校",
+      "location": "岩手県紫波郡矢巾町大字煙山第11地割182番地",
+      "tel": "019-697-5611",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/anzenanshin/bosai/1004297/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "miyagi",
+      "prefecture": "宮城県",
+      "name": "宮城県消防学校",
+      "location": "宮城県仙台市宮城野区幸町4丁目7-1",
+      "tel": "022-236-8181",
+      "url": "https://www.pref.miyagi.jp/soshiki/syobog/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "akita",
+      "prefecture": "秋田県",
+      "name": "秋田県消防学校",
+      "location": "秋田県由利本荘市岩城内道川字築館1番地1",
+      "tel": "0184-73-2850",
+      "url": "https://www.pref.akita.lg.jp/pages/genre/syobo-school",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "yamagata",
+      "prefecture": "山形県",
+      "name": "山形県消防学校",
+      "location": "山形県上山市河崎1丁目1番35号",
+      "tel": "023-672-1321",
+      "url": "https://www.pref.yamagata.jp/027007/bosai/shobo/shoubou/shobogakko/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "fukushima",
+      "prefecture": "福島県",
+      "name": "福島県消防学校",
+      "location": "福島県福島市荒井字中沢7番地",
+      "tel": "024-593-1251",
+      "url": "https://www.pref.fukushima.lg.jp/sec/16150a/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "ibaraki",
+      "prefecture": "茨城県",
+      "name": "茨城県立消防学校",
+      "location": "茨城県東茨城郡茨城町長岡4068",
+      "tel": "029-292-5981",
+      "url": "https://www.pref.ibaraki.jp/seikatsukankyo/syobos/kyomu/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "tochigi",
+      "prefecture": "栃木県",
+      "name": "栃木県消防学校",
+      "location": "栃木県宇都宮市中里町248",
+      "tel": "028-674-4841",
+      "url": "https://www.pref.tochigi.lg.jp/l51/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "gunma",
+      "prefecture": "群馬県",
+      "name": "群馬県消防学校",
+      "location": "群馬県前橋市田口町1473",
+      "tel": "027-232-5600",
+      "url": "https://www.pref.gunma.jp/soshiki/33/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "saitama",
+      "prefecture": "埼玉県",
+      "name": "埼玉県消防学校",
+      "location": "埼玉県鴻巣市袋30",
+      "tel": "048-548-5411",
+      "url": "https://www.pref.saitama.lg.jp/soshiki/b0401/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "chiba",
+      "prefecture": "千葉県",
+      "name": "千葉県消防学校",
+      "location": "千葉県市原市菊間783-1",
+      "tel": "0436-63-5438",
+      "url": "https://www.pref.chiba.lg.jp/shougaku/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "tokyo",
+      "prefecture": "東京都",
+      "name": "東京消防庁消防学校",
+      "location": "東京都渋谷区西原2-51-1",
+      "tel": "03-3466-1511",
+      "url": "https://www.tfd.metro.tokyo.lg.jp/ts/fa/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "kanagawa",
+      "prefecture": "神奈川県",
+      "name": "神奈川県消防学校",
+      "location": "神奈川県厚木市下津古久280番地",
+      "tel": "046-241-4701",
+      "url": "https://www.pref.kanagawa.jp/docs/r2d/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "niigata",
+      "prefecture": "新潟県",
+      "name": "新潟県消防学校",
+      "location": "新潟県新潟市西区曽和100番地1",
+      "tel": "025-262-4141",
+      "url": "https://www.pref.niigata.lg.jp/sec/shobogakko/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "toyama",
+      "prefecture": "富山県",
+      "name": "富山県消防学校",
+      "location": "富山県富山市惣在寺1090-1",
+      "tel": "076-429-7690",
+      "url": "https://www.pref.toyama.jp/1930/bousaianzen/bousai/1030/school/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "ishikawa",
+      "prefecture": "石川県",
+      "name": "石川県消防学校",
+      "location": "石川県金沢市此花町12番1号",
+      "tel": "076-241-3939",
+      "url": "https://www.pref.ishikawa.lg.jp/shobo_gakko/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "fukui",
+      "prefecture": "福井県",
+      "name": "福井県消防学校",
+      "location": "福井県坂井市丸岡町霞ヶ城3-2",
+      "tel": "0776-67-2261",
+      "url": "https://www.pref.fukui.lg.jp/doc/syobogak/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "yamanashi",
+      "prefecture": "山梨県",
+      "name": "山梨県消防学校",
+      "location": "山梨県中央市今福1029-1",
+      "tel": "055-273-4078",
+      "url": "https://www.pref.yamanashi.jp/shobo-gk/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "nagano",
+      "prefecture": "長野県",
+      "name": "長野県消防学校",
+      "location": "長野県長野市篠ノ井東福寺2375-1",
+      "tel": "026-292-2580",
+      "url": "https://www.pref.nagano.lg.jp/shobogakko/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "gifu",
+      "prefecture": "岐阜県",
+      "name": "岐阜県消防学校",
+      "location": "岐阜県各務原市川島小網町2151",
+      "tel": "0586-89-3226",
+      "url": "https://www.pref.gifu.lg.jp/soshiki/21201/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "shizuoka",
+      "prefecture": "静岡県",
+      "name": "静岡県消防学校",
+      "location": "静岡県静岡市清水区谷津町1丁目577の1",
+      "tel": "054-369-1190",
+      "url": "https://www.pref.shizuoka.jp/bosaikinkyu/shobo/shobohonbu/1030264.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "aichi",
+      "prefecture": "愛知県",
+      "name": "愛知県消防学校",
+      "location": "愛知県尾張旭市大字新居5182の1393",
+      "tel": "0561-53-2015",
+      "url": "https://www.pref.aichi.jp/soshiki/shobogakko/0000010833.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "mie",
+      "prefecture": "三重県",
+      "name": "三重県消防学校",
+      "location": "三重県鈴鹿市石薬師町452",
+      "tel": "059-374-1821",
+      "url": "https://www.pref.mie.lg.jp/SHOBOS/HP/index.htm",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "shiga",
+      "prefecture": "滋賀県",
+      "name": "滋賀県消防学校",
+      "location": "滋賀県東近江市神郷町314",
+      "tel": "0748-42-1000",
+      "url": "https://www.pref.shiga.lg.jp/syobo/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "kyoto",
+      "prefecture": "京都府",
+      "name": "京都府立消防学校",
+      "location": "京都市南区上鳥羽塔ノ森下開ノ内21番地3",
+      "tel": "075-681-8111",
+      "url": "https://www.pref.kyoto.jp/shobogk/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "osaka",
+      "prefecture": "大阪府",
+      "name": "大阪府立消防学校",
+      "location": "大阪府大東市新田3丁目3番12号",
+      "tel": "072-870-2761",
+      "url": "https://www.pref.osaka.lg.jp/soshikikarasagasu/shobogakko/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "hyogo",
+      "prefecture": "兵庫県",
+      "name": "兵庫県立広域防災センター消防学校",
+      "location": "兵庫県三木市志染町御坂1-19",
+      "tel": "0794-87-2920",
+      "url": "https://www.fire-ac-hyogo.jp/",
+      "urlVerified": true,
+      "note": "兵庫県立広域防災センター内に設置"
+    },
+    {
+      "id": "nara",
+      "prefecture": "奈良県",
+      "name": "奈良県消防学校",
+      "location": "奈良県宇陀市菟田野宇賀志88番地",
+      "tel": "0745-84-2339",
+      "url": "https://www.pref.nara.jp/17657.htm",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "wakayama",
+      "prefecture": "和歌山県",
+      "name": "和歌山県消防学校",
+      "location": "和歌山市加太2362番19",
+      "tel": "073-488-8860",
+      "url": "https://www.pref.wakayama.lg.jp/prefg/011600/shoubougakkou/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "tottori",
+      "prefecture": "鳥取県",
+      "name": "鳥取県消防学校",
+      "location": "鳥取県倉吉市福庭町2丁目30",
+      "tel": "0858-22-3521",
+      "url": "https://www.pref.tottori.lg.jp/shoubouschool/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "shimane",
+      "prefecture": "島根県",
+      "name": "島根県消防学校",
+      "location": "島根県松江市乃木福富町735-157",
+      "tel": "0852-22-0166",
+      "url": "https://www.pref.shimane.lg.jp/shobogakko/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "okayama",
+      "prefecture": "岡山県",
+      "name": "岡山県消防学校",
+      "location": "岡山県岡山市北区三野2256番地1",
+      "tel": "086-293-0511",
+      "url": "https://www.pref.okayama.jp/soshiki/180/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "hiroshima",
+      "prefecture": "広島県",
+      "name": "広島県消防学校",
+      "location": "広島市安佐北区倉掛二丁目33番2号",
+      "tel": "082-843-1117",
+      "url": "https://www.pref.hiroshima.lg.jp/soshiki/150/syoubougakkou-top.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "yamaguchi",
+      "prefecture": "山口県",
+      "name": "山口県消防学校",
+      "location": "山口県山口市鋳銭司16440番地の1",
+      "tel": "083-986-4001",
+      "url": "https://www.pref.yamaguchi.lg.jp/soshiki/15/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "tokushima",
+      "prefecture": "徳島県",
+      "name": "徳島県消防学校",
+      "location": "徳島県板野郡北島町鯛浜字大西165",
+      "tel": "088-698-9999",
+      "url": "https://www.pref.tokushima.lg.jp/ippannokata/bosai/shobo/5001014/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "kagawa",
+      "prefecture": "香川県",
+      "name": "香川県消防学校",
+      "location": "香川県高松市生島町861-1",
+      "tel": "087-881-3281",
+      "url": "https://www.pref.kagawa.lg.jp/shobogakko/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "ehime",
+      "prefecture": "愛媛県",
+      "name": "愛媛県消防学校",
+      "location": "愛媛県松山市勝岡町1163-15",
+      "tel": "089-978-4000",
+      "url": "https://www.pref.ehime.jp/soshiki/42/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "kochi",
+      "prefecture": "高知県",
+      "name": "高知県消防学校",
+      "location": "高知県香南市野市町大谷519",
+      "tel": "0887-56-3560",
+      "url": "https://www.pref.kochi.lg.jp/soshiki/010302/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "fukuoka",
+      "prefecture": "福岡県",
+      "name": "福岡県消防学校",
+      "location": "福岡県嘉麻市牛隈1794",
+      "tel": "0948-57-2830",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/fukuokakennsyoubougakkou.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "saga",
+      "prefecture": "佐賀県",
+      "name": "佐賀県消防学校",
+      "location": "佐賀市兵庫町大字瓦町435-1",
+      "tel": "0952-26-0911",
+      "url": "https://www.pref.saga.lg.jp/list02580.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "nagasaki",
+      "prefecture": "長崎県",
+      "name": "長崎県消防学校",
+      "location": "長崎県大村市森園町663-6",
+      "tel": "0957-53-6155",
+      "url": "https://www.pref.nagasaki.jp/bunrui/anzen-anshin/anzen-anshinmachidukuri/shoubougakko/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "kumamoto",
+      "prefecture": "熊本県",
+      "name": "熊本県消防学校",
+      "location": "熊本県上益城郡益城町惣領2167",
+      "tel": "096-286-9222",
+      "url": "https://www.pref.kumamoto.jp/soshiki/14/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "oita",
+      "prefecture": "大分県",
+      "name": "大分県消防学校",
+      "location": "大分県由布市挾間町向原769番地",
+      "tel": "097-583-1199",
+      "url": "https://www.pref.oita.jp/soshiki/13501/",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "miyazaki",
+      "prefecture": "宮崎県",
+      "name": "宮崎県消防学校",
+      "location": "宮崎県宮崎市郡司分210",
+      "tel": "0985-56-0555",
+      "url": "https://www.pref.miyazaki.lg.jp/desaki/bosai/chishiki/index.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "kagoshima",
+      "prefecture": "鹿児島県",
+      "name": "鹿児島県消防学校",
+      "location": "鹿児島県日置市東市来町長里1020-1",
+      "tel": "099-274-4331",
+      "url": "https://www.pref.kagoshima.jp/aj05/kurashi-kankyo/anzen/fireschool.html",
+      "urlVerified": true,
+      "note": ""
+    },
+    {
+      "id": "okinawa",
+      "prefecture": "沖縄県",
+      "name": "沖縄県消防学校",
+      "location": "沖縄県中頭郡中城村北上原910",
+      "tel": "098-895-7123",
+      "url": "https://www.pref.okinawa.lg.jp/bosaianzen/shobokyukyu/1017858/index.html",
+      "urlVerified": true,
+      "note": ""
+    }
+  ]
+}
