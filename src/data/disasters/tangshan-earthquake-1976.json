@@ -35,13 +35,39 @@
     "3日分以上の食料・水・医薬品を備蓄し、定期的に賞味期限を確認・更新する。"
   ],
   "affiliateCategory": "general",
-  "relatedSlugs": ["kanto-earthquake-1923", "hanshin-awaji-earthquake-1995", "tohoku-earthquake-2011", "sichuan-earthquake-2008"],
-  "tags": ["中国", "直下型地震", "都市直下", "夜間地震", "建物倒壊", "20世紀最大", "河北省"],
+  "relatedSlugs": [
+    "kanto-earthquake-1923",
+    "hanshin-awaji-earthquake-1995",
+    "tohoku-earthquake-2011",
+    "sichuan-earthquake-2008",
+    "turkey-syria-earthquake-2023"
+  ],
+  "tags": [
+    "中国",
+    "直下型地震",
+    "都市直下",
+    "夜間地震",
+    "建物倒壊",
+    "20世紀最大",
+    "河北省"
+  ],
   "sources": [
-    {"title": "唐山地震 - Wikipedia（日本語）", "url": "https://ja.wikipedia.org/wiki/%E5%94%90%E5%B1%B1%E5%9C%B0%E9%9C%87"},
-    {"title": "USGS - Tangshan Earthquake 1976", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000qkv/executive"},
-    {"title": "DisasterHistory.org - Tangshan Earthquake 1976", "url": "https://disasterhistory.org/tangshan-earthquake-1976"},
-    {"title": "Britannica - Tangshan earthquake of 1976", "url": "https://www.britannica.com/event/Tangshan-earthquake-of-1976"}
+    {
+      "title": "唐山地震 - Wikipedia（日本語）",
+      "url": "https://ja.wikipedia.org/wiki/%E5%94%90%E5%B1%B1%E5%9C%B0%E9%9C%87"
+    },
+    {
+      "title": "USGS - Tangshan Earthquake 1976",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000qkv/executive"
+    },
+    {
+      "title": "DisasterHistory.org - Tangshan Earthquake 1976",
+      "url": "https://disasterhistory.org/tangshan-earthquake-1976"
+    },
+    {
+      "title": "Britannica - Tangshan earthquake of 1976",
+      "url": "https://www.britannica.com/event/Tangshan-earthquake-of-1976"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

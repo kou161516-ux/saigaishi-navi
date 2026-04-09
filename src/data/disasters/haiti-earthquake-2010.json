@@ -12,10 +12,10 @@
   "injured": 300000,
   "buildings": "住宅25万棟・商業施設3万棟が倒壊または重大損傷",
   "economicLoss": "約79億ドル（GDPの約120%）",
-  "summary": "2010年1月12日現地時間16時53分、ハイチの首都ポルトープランス近郊でM7.0の地震が発生。震源が内陸浅部（深度約13km）だったため揺れが極めて激しく、脆弱な建築物が大量倒壊。ハイチ政府推計で死者最大31万6000人、負傷者30万人、300万人以上が被災。西半球最貧国における建物の耐震性欠如と制度的脆弱性が壊滅的被害をもたらした。",
+  "summary": "2010年1月12日現地時間16時53分、ハイチの首都ポルトープランス近郊でM7.0の地震が発生。震源が内陸浅部（深度約13km）だったため揺れが極めて激しく、脆弱な建築物が大量倒壊。ハイチ政府推計で死者最大31万6000人（ただし独立研究では5万〜16万人との推計が有力）、負傷者30万人、300万人以上が被災。死者数には大きな推計幅があるが、いずれの数値も近代史上最大規模の地震被害であることに変わりはない。西半球最貧国における建物の耐震性欠如と制度的脆弱性が壊滅的被害をもたらした。",
   "background": "震源はポルトープランスの南西約25km、震源深度約13kmという浅い直下型地震。エンリキロ・プランタン・ガルドン断層系の活動による。ハイチは西半球で最も貧しい国であり、建築基準や建物の耐震性が極めて低く、コンクリートブロックを積み上げた「コンファート（comfort）構造」と呼ばれる簡易建築が多数倒壊した。首都機能のほぼすべてが集中するポルトープランスが直撃を受けたことが被害を拡大させた。",
   "socialContext": "ハイチは2010年当時、一人当たりGDP約700ドルという極度の貧困国。過去の政情不安・独裁政権・外債問題により国家機能が極度に弱体化していた。政府庁舎・国会議事堂・大統領官邸・裁判所・警察本部など主要機関のほぼすべてが倒壊し、行政機能が完全に麻痺。国連ハイチ安定化ミッション（MINUSTAH）本部も倒壊し、国連職員101名が死亡した。地震後10ヶ月でコレラが発生し、翌年にかけて約8000人が死亡するという複合的な人道危機が発生した。",
-  "damage": "ハイチ政府推計で死者最大31万6000人（独立研究では5〜16万人との推計もあり）、負傷者30万人。住宅25万棟・商業施設3万棟が倒壊または重大損傷。300万人以上が被災。学校の約80%、病院の約50%が破壊・損傷。行政・経済インフラの約60%が失われた。国連・各国政府・NGOによる大規模国際支援が展開されたが、復興は10年以上にわたり難航した。",
+  "damage": "ハイチ政府推計で死者最大31万6000人（ただし独立研究・疫学調査では実際の死者数は5万〜16万人の範囲との推計が有力で、政府発表値は過大推計の可能性が高いとされる）、負傷者30万人。住宅25万棟・商業施設3万棟が倒壊または重大損傷。300万人以上が被災。学校の約80%、病院の約50%が破壊・損傷。行政・経済インフラの約60%が失われた。国連・各国政府・NGOによる大規模国際支援が展開されたが、復興は10年以上にわたり難航した。",
   "lifeline": "ポルトープランスの電力・水道・通信・港湾が壊滅状態に。空港は比較的早期に復旧したが、港湾は大きく損傷し物資搬入に支障。水の確保が最大課題となり、衛生環境の悪化がコレラ流行を引き起こした。",
   "lessons": [
     "M7.0という規模は日本でも起こりうる大地震。震源の浅さと密集した低耐震建築物の組み合わせが被害を最大化した。建物の耐震性こそ最大の命の砦。",
@@ -34,14 +34,44 @@
     "災害時の感染症予防のため、ワクチン接種の記録を整理し、感染症リスクの高い場所へは渡航前に確認する。"
   ],
   "affiliateCategory": "general",
-  "relatedSlugs": ["kanto-earthquake-1923", "hanshin-awaji-earthquake-1995", "tohoku-earthquake-2011", "sichuan-earthquake-2008"],
-  "tags": ["ハイチ", "ポルトープランス", "M7.0", "直下型", "貧困", "コレラ", "建物倒壊", "複合災害"],
+  "relatedSlugs": [
+    "kanto-earthquake-1923",
+    "hanshin-awaji-earthquake-1995",
+    "tohoku-earthquake-2011",
+    "sichuan-earthquake-2008",
+    "turkey-syria-earthquake-2023"
+  ],
+  "tags": [
+    "ハイチ",
+    "ポルトープランス",
+    "M7.0",
+    "直下型",
+    "貧困",
+    "コレラ",
+    "建物倒壊",
+    "複合災害"
+  ],
   "sources": [
-    {"title": "2010 Haiti earthquake - Wikipedia", "url": "https://en.wikipedia.org/wiki/2010_Haiti_earthquake"},
-    {"title": "Britannica - 2010 Haiti earthquake", "url": "https://www.britannica.com/event/2010-Haiti-earthquake"},
-    {"title": "UN News - 2010 Haiti earthquake anniversary", "url": "https://news.un.org/en/story/2022/01/1109632"},
-    {"title": "PreventionWeb - Haiti earthquake 2010", "url": "https://www.preventionweb.net/collections/haiti-earthquake-2010"},
-    {"title": "Disasters Emergency Committee - 2010 Haiti Earthquake Facts", "url": "https://reliefweb.int/report/haiti/haiti-earthquake-facts-and-figures"}
+    {
+      "title": "2010 Haiti earthquake - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2010_Haiti_earthquake"
+    },
+    {
+      "title": "Britannica - 2010 Haiti earthquake",
+      "url": "https://www.britannica.com/event/2010-Haiti-earthquake"
+    },
+    {
+      "title": "UN News - 2010 Haiti earthquake anniversary",
+      "url": "https://news.un.org/en/story/2022/01/1109632"
+    },
+    {
+      "title": "PreventionWeb - Haiti earthquake 2010",
+      "url": "https://www.preventionweb.net/collections/haiti-earthquake-2010"
+    },
+    {
+      "title": "Disasters Emergency Committee - 2010 Haiti Earthquake Facts",
+      "url": "https://reliefweb.int/report/haiti/haiti-earthquake-facts-and-figures"
+    }
   ],
   "featured": true,
   "publishedAt": "2024-01-01",

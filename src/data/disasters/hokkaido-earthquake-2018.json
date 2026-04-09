@@ -7,7 +7,7 @@
   "region": "北海道胆振地方東部",
   "type": "earthquake",
   "magnitude": "M6.7",
-  "deaths": 42,
+  "deaths": 43,
   "missing": 0,
   "injured": 762,
   "buildings": "全壊約462棟、半壊約1,570棟",
@@ -36,7 +36,12 @@
   "affiliateCategory": "power",
   "relatedSlugs": [
     "kumamoto-earthquake-2016",
-    "noto-earthquake-2024"
+    "noto-earthquake-2024",
+    "heatwave-japan-2018",
+    "hokkaido-blizzard-historical",
+    "niigata-chuetsu-earthquake-2004",
+    "ontake-eruption-2014",
+    "unzen-eruption-1991"
   ],
   "tags": [
     "地震",
@@ -48,8 +53,8 @@
   ],
   "sources": [
     {
-      "title": "内閣府 平成30年北海道胆振東部地震の概要",
-      "url": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%88%9030%E5%B9%B4%E5%8C%97%E6%B5%B7%E9%81%93%E8%83%86%E6%8C%AF%E6%9D%B1%E9%83%A8%E5%9C%B0%E9%9C%87"
+      "title": "内閣府 平成30年北海道胆振東部地震に係る被害状況等について",
+      "url": "https://www.bousai.go.jp/updates/h30jishin_hokkaido/index.html"
     },
     {
       "title": "北海道 平成30年北海道胆振東部地震の記録"
@@ -60,6 +65,6 @@
   ],
   "featured": false,
   "publishedAt": "2024-01-01",
-  "updatedAt": "2024-01-01",
-  "metaDescription": "北海道胆振東部地震（2018年9月6日）の全記録。厚真町の土砂崩れと全道ブラックアウトという前例のない複合被害から学ぶ教訓と停電対策。"
+  "updatedAt": "2026-04-09",
+  "metaDescription": "北海道胆振東部地震（2018年9月6日）の全記録。厚真町の土砂崩れと全道ブラックアウトという前例のない複合被害から学ぶ教訓と停電対策。死者43人（消防庁確定）。"
 }

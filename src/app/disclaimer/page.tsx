@@ -36,10 +36,16 @@ export default function DisclaimerPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-3">商品情報について</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-3">商品情報・Amazonアソシエイトについて</h2>
           <p className="text-gray-700 leading-relaxed">
+            当サイトはAmazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。
+          </p>
+          <p className="text-gray-700 leading-relaxed mt-3">
+            当サイトで紹介している商品リンクからAmazonにてご購入いただいた場合、当サイトに紹介料が支払われることがあります。ただし、これによってお客様の購入価格や商品内容に影響は一切ありません。
+          </p>
+          <p className="text-gray-700 leading-relaxed mt-3">
             紹介している商品の価格・在庫・仕様は変動する場合があります。
-            最新の情報はAmazon等の販売ページにてご確認ください。
+            最新の情報はAmazonの各商品ページにてご確認ください。
           </p>
         </section>
 

@@ -6,6 +6,18 @@ const nextConfig = {
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.jma.go.jp',
+        pathname: '/bosai/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'earthquake.usgs.gov',
+        pathname: '/earthquakes/**',
+      },
+    ],
   },
   async headers() {
     return [

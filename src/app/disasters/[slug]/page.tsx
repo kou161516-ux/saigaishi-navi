@@ -56,22 +56,24 @@ export async function generateMetadata({
   if (!disaster) return {}
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || 'https://saigaishi-navi.vercel.app'
+  const description = disaster.metaDescription || disaster.summary.slice(0, 160)
   return {
-    title: disaster.title,
-    description:
-      disaster.metaDescription ||
-      disaster.summary.slice(0, 160),
+    title: `${disaster.title}の教訓と備え`,
+    description,
     openGraph: {
-      title: `${disaster.title} | 災害史ナビ`,
-      description: disaster.metaDescription || disaster.summary.slice(0, 160),
+      title: `${disaster.title}の教訓と備え | 災害史ナビ`,
+      description,
       url: `${siteUrl}/disasters/${disaster.slug}`,
       type: 'article',
       locale: 'ja_JP',
+      publishedTime: disaster.publishedAt,
+      modifiedTime: disaster.updatedAt || disaster.publishedAt,
+      tags: disaster.tags.slice(0, 5),
     },
     twitter: {
       card: 'summary_large_image',
-      title: disaster.title,
-      description: disaster.metaDescription || disaster.summary.slice(0, 160),
+      title: `${disaster.title}の教訓と備え`,
+      description,
     },
     alternates: {
       canonical: `${siteUrl}/disasters/${disaster.slug}`,
@@ -109,12 +111,17 @@ export default async function DisasterDetailPage({
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: disaster.title,
+    description: disaster.metaDescription || disaster.summary,
     datePublished: disaster.publishedAt,
     dateModified: disaster.updatedAt || disaster.publishedAt,
-    description: disaster.metaDescription || disaster.summary,
+    author: {
+      '@type': 'Organization',
+      name: '災害史ナビ',
+    },
     publisher: {
       '@type': 'Organization',
       name: '災害史ナビ',
+      url: siteUrl,
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -132,6 +139,11 @@ export default async function DisasterDetailPage({
     keywords: disaster.tags.join(', '),
     articleSection: '防災',
     inLanguage: 'ja',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: '災害史ナビ',
+      url: siteUrl,
+    },
   }
 
   const breadcrumbJsonLd = {

@@ -116,6 +116,17 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 最新地震情報バナー */}
+      <div className="max-w-4xl mx-auto px-4 pt-6">
+        <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-8 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="animate-pulse text-red-500">🔴</span>
+            <span className="text-sm font-medium">最新の地震・災害情報（気象庁・USGS連携）</span>
+          </div>
+          <a href="/news" className="text-sm text-red-600 hover:underline font-medium">確認する →</a>
+        </div>
+      </div>
+
       {/* 防災の日バナー（Server Component） */}
       <DisasterPreventionDayBanner />
 

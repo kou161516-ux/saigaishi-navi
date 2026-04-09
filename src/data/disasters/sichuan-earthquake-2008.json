@@ -35,13 +35,39 @@
     "学校・職場での防災訓練に積極的に参加し、地震発生時の行動を体に覚え込ませる。"
   ],
   "affiliateCategory": "general",
-  "relatedSlugs": ["tangshan-earthquake-1976", "tohoku-earthquake-2011", "hanshin-awaji-earthquake-1995", "kanto-earthquake-1923"],
-  "tags": ["中国", "四川省", "M7.9", "校舎倒壊", "手抜き工事", "土砂ダム", "子供の犠牲"],
+  "relatedSlugs": [
+    "tangshan-earthquake-1976",
+    "tohoku-earthquake-2011",
+    "hanshin-awaji-earthquake-1995",
+    "kanto-earthquake-1923",
+    "haiti-earthquake-2010"
+  ],
+  "tags": [
+    "中国",
+    "四川省",
+    "M7.9",
+    "校舎倒壊",
+    "手抜き工事",
+    "土砂ダム",
+    "子供の犠牲"
+  ],
   "sources": [
-    {"title": "四川大地震 - Wikipedia（日本語）", "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%9C%B0%E9%9C%87"},
-    {"title": "内閣府防災 - 中国・四川省における地震", "url": "https://www.bousai.go.jp/kaigirep/hakusho/h21/bousai2009/html/honbun/1b_4s_1_02.htm"},
-    {"title": "地震本部 - 2008年四川大地震", "url": "https://www.jishin.go.jp/figure/figure005012/"},
-    {"title": "USGS - Sichuan Earthquake 2008", "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000g650/executive"}
+    {
+      "title": "四川大地震 - Wikipedia（日本語）",
+      "url": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%9C%B0%E9%9C%87"
+    },
+    {
+      "title": "内閣府防災 - 中国・四川省における地震",
+      "url": "https://www.bousai.go.jp/kaigirep/hakusho/h21/bousai2009/html/honbun/1b_4s_1_02.htm"
+    },
+    {
+      "title": "地震本部 - 2008年四川大地震",
+      "url": "https://www.jishin.go.jp/figure/figure005012/"
+    },
+    {
+      "title": "USGS - Sichuan Earthquake 2008",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000g650/executive"
+    }
   ],
   "featured": false,
   "publishedAt": "2024-01-01",

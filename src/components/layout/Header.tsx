@@ -107,6 +107,13 @@ export default function Header() {
               統計
             </Link>
             <Link
+              href="/news"
+              className="text-red-400 hover:text-red-300 transition text-sm font-medium flex items-center gap-1"
+            >
+              <span className="animate-pulse">🔴</span>
+              最新情報
+            </Link>
+            <Link
               href="/about"
               className="text-gray-300 hover:text-amber-400 transition text-sm font-medium"
             >
@@ -149,6 +156,7 @@ export default function Header() {
                 { href: '/lessons', label: '教訓一覧' },
                 { href: '/tags', label: 'タグ一覧' },
                 { href: '/stats', label: '統計ダッシュボード' },
+                { href: '/news', label: '🔴 最新情報' },
                 { href: '/about', label: 'サイトについて' },
               ].map((item) => (
                 <Link

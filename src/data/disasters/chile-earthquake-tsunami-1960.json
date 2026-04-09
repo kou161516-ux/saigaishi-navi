@@ -15,7 +15,7 @@
   "summary": "1960年5月22日（現地時間）、チリ南部バルディビア付近でM9.5の史上最大の地震が発生。22〜24時間後に太平洋を渡ってきた大津波が日本の三陸海岸・北海道太平洋岸を直撃。地震のない日本の反対側から突然やってくる「遠地津波」の恐ろしさを日本に示した歴史的災害。",
   "background": "チリ沖の南米プレートと南極プレートの境界で発生した超巨大地震。発生したM9.5は観測史上最大の地震規模。日本への遠地津波は「大西洋・太平洋」を渡り、約22〜24時間かけて到達した。",
   "socialContext": "1960年当時、気象庁は津波警報を発令したが、前日のチリ本震情報が日本に届いておらず、警報が住民に十分伝わらなかった。岩手県田老町（現宮古市）は1933年の昭和三陸津波で大きな被害を受けた後に世界一の防潮堤を建設していたが、チリ津波がその防潮堤を越えてしまい再度被害を受けた。",
-  "damage": "岩手県・宮城県・北海道の太平洋岸で大規模な津波被害。三陸海岸では波高4〜6m超の津波が到達し、漁港・住宅地が壊滅的被害。日本全体で142人が死亡した。",
+  "damage": "岩手県・宮城県・北海道の太平洋岸で大規模な津波被害。三陸海岸では波高4〜6m超の津波が到達し、漁港・住宅地が壊滅的被害。日本全体で死者・行方不明者合計142人（内閣府・気象庁公式）。なお本震チリ本土での死者はUSGSによると約1,655〜5,700人、ハワイで61人、フィリピンで約21人が犠牲となった。",
   "lifeline": "三陸沿岸の漁業・水産業に甚大な被害。漁船・養殖施設が多数被害を受け、地域産業が深刻なダメージを受けた。",
   "lessons": [
     "遠地津波は地震を感じなくても発生する可能性があり、「揺れがなかったから安心」は禁物",
@@ -36,7 +36,13 @@
   "affiliateCategory": "tsunami",
   "relatedSlugs": [
     "tohoku-earthquake-2011",
-    "okushiri-tsunami-1993"
+    "okushiri-tsunami-1993",
+    "armero-volcano-1985",
+    "hokkaido-nansei-oki-earthquake-1993",
+    "india-ocean-tsunami-2004",
+    "nihonkai-chubu-earthquake-1983",
+    "niigata-earthquake-1964",
+    "pinatubo-eruption-1991"
   ],
   "tags": [
     "津波",
@@ -53,10 +59,16 @@
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/official19600522191120_30/executive"
     },
     {
-      "title": "内閣府 チリ地震津波の被害状況"
+      "title": "内閣府 チリ地震津波の被害状況",
+      "url": "https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1960_chile_jishintsunami/index.html"
     },
     {
-      "title": "岩手県 チリ地震津波の記録"
+      "title": "防災科研 チリ地震津波の教訓",
+      "url": "https://dil.bosai.go.jp/disaster/1960chile/lesson01.html"
+    },
+    {
+      "title": "NCEI - 1960 Chilean Earthquake and Tsunami",
+      "url": "https://www.ncei.noaa.gov/news/day-1960-chilean-earthquake-and-tsunami"
     }
   ],
   "featured": false,

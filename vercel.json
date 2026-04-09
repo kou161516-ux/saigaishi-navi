@@ -1,4 +1,18 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".next"
+  "outputDirectory": ".next",
+  "crons": [
+    {
+      "path": "/api/cron/update-disasters",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/link-check",
+      "schedule": "0 2 * * 0"
+    },
+    {
+      "path": "/api/cron/revalidate-news",
+      "schedule": "0 * * * *"
+    }
+  ]
 }

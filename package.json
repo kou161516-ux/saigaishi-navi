@@ -10,8 +10,11 @@
     "lint": "next lint",
     "postbuild": "next-sitemap",
     "fact-check": "node scripts/fact-check.js",
+    "fact-check:verbose": "node scripts/fact-check.js --verbose",
     "link-check": "node scripts/link-check.js",
-    "validate": "npm run fact-check && npx tsc --noEmit"
+    "auto-update": "node scripts/auto-update.js",
+    "validate": "npm run fact-check && npx tsc --noEmit",
+    "validate:full": "npm run fact-check:verbose && npm run link-check && npm run auto-update"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
