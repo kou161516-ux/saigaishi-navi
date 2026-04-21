@@ -1,0 +1,437 @@
+=== 週次メンテナンスチェック: 2026-04-13 ===
+
+【1. 構造チェック】
+✅ [akita-flood-2023.json]
+✅ [ancash-earthquake-1970.json]
+✅ [armero-volcano-1985.json]
+✅ [atami-landslide-2021.json]
+✅ [bam-earthquake-2003.json]
+✅ [bhola-cyclone-1970.json]
+✅ [chile-earthquake-tsunami-1960.json]
+✅ [china-yangtze-flood-1931.json]
+✅ [christchurch-earthquake-2011.json]
+✅ [cyclone-idai-2019.json]
+✅ [cyclone-nargis-2008.json]
+✅ [european-heatwave-2003.json]
+✅ [fukui-earthquake-1948.json]
+✅ [fukushima-nuclear-2011.json]
+✅ [galveston-hurricane-1900.json]
+✅ [haiti-earthquake-2010.json]
+✅ [haiyan-typhoon-2013.json]
+✅ [hanshin-awaji-earthquake-1995.json]
+✅ [heatwave-japan-2018.json]
+✅ [hokkaido-blizzard-historical.json]
+✅ [hokkaido-earthquake-2018.json]
+✅ [hokkaido-nansei-oki-earthquake-1993.json]
+✅ [hurricane-katrina-2005.json]
+✅ [india-ocean-tsunami-2004.json]
+✅ [isewan-typhoon-1959.json]
+✅ [izmit-earthquake-1999.json]
+✅ [kanogawa-typhoon-1958.json]
+✅ [kanto-earthquake-1923.json]
+✅ [kashmir-earthquake-2005.json]
+✅ [kii-peninsula-flood-2011.json]
+✅ [kinugawa-flood-2015.json]
+✅ [krakatoa-eruption-1883.json]
+✅ [kumamoto-earthquake-2016.json]
+✅ [kumamoto-flood-2020.json]
+✅ [libya-flood-2023.json]
+✅ [meiji-sanriku-tsunami-1896.json]
+✅ [mexico-city-earthquake-1985.json]
+✅ [miyagi-earthquake-1978.json]
+✅ [miyakejima-eruption-2000.json]
+✅ [morocco-earthquake-2023.json]
+✅ [muroto-typhoon-1961.json]
+✅ [nagasaki-flood-1982.json]
+✅ [nankai-trough-tokai-earthquake-history.json]
+✅ [nepal-earthquake-2015.json]
+✅ [nihonkai-chubu-earthquake-1983.json]
+✅ [niigata-chuetsu-earthquake-2004.json]
+✅ [niigata-earthquake-1964.json]
+✅ [nobi-earthquake-1891.json]
+✅ [northern-kyushu-flood-2017.json]
+✅ [noto-earthquake-2007.json]
+✅ [noto-earthquake-2024.json]
+✅ [noto-flood-2024.json]
+✅ [okushiri-tsunami-1993.json]
+✅ [ontake-eruption-2014.json]
+✅ [pakistan-floods-2022.json]
+✅ [pinatubo-eruption-1991.json]
+✅ [reiwa-typhoon19-2019.json]
+✅ [ringo-typhoon-1991.json]
+✅ [san-francisco-earthquake-1906.json]
+✅ [showa-sanriku-earthquake-1933.json]
+✅ [sichuan-earthquake-2008.json]
+✅ [tangshan-earthquake-1976.json]
+✅ [tohoku-earthquake-2011.json]
+✅ [tottori-earthquake-2000.json]
+✅ [toyamaru-typhoon-1954.json]
+✅ [turkey-syria-earthquake-2023.json]
+✅ [unzen-eruption-1991.json]
+✅ [usu-eruption-2000.json]
+✅ [western-japan-flood-2018.json]
+✅ [yamagata-niigata-flood-2022.json]
+
+📊 70ファイルチェック完了: ❌0エラー ⚠️0警告
+
+
+【2. 更新要否確認】
+
+📊 更新状況レポート (2026-04-13)
+
+✅ 最近更新済み: 70件
+⚠️  要更新確認 (90日以上未更新): 0件
+
+
+【3. リンクチェック（時間がかかります...）】
+
+🔍 184件のURLをチェック中...
+
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/usp0000a0g/executive
+✅ 200 https://en.wikipedia.org/wiki/Armero_tragedy
+❌ timeout https://www.usgs.gov/observatories/hvo/news/volcano-watch-lessons-learned-armero-colombia-tragedy [armero-volcano-1985.json]
+✅ 200 https://www.preventionweb.net/collections/colombia-1985-nevado-del-ruiz-eruption
+✅ 200 https://en.wikipedia.org/wiki/Armero_tragedy
+✅ 200 https://www.fdma.go.jp/relocation/e-college/cat63/cat38/cat71/r3-7.html
+✅ 200 https://ja.wikipedia.org/wiki/%E7%86%B1%E6%B5%B7%E5%B8%82%E4%BC%8A%E8%B1%86%E5%B1%B1%E5%9C%9F%E7%9F%B3%E6%B5%81%E7%81%BD%E5%AE%B3
+✅ 200 https://cidir.iii.u-tokyo.ac.jp/report/nl52-03/
+✅ 200 https://ja.wikipedia.org/wiki/%E7%86%B1%E6%B5%B7%E5%B8%82%E4%BC%8A%E8%B1%86%E5%B1%B1%E5%9C%9F%E7%9F%B3%E6%B5%81%E7%81%BD%E5%AE%B3
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/usp000cfzk/executive
+✅ 200 https://en.wikipedia.org/wiki/1970_Bhola_cyclone
+✅ 200 https://wmo.int/media/news/worlds-deadliest-tropical-cyclone-was-50-years-ago
+✅ 200 https://www.preventionweb.net/drr-community-voices/whats-changed-1970-great-bhola-cyclone
+✅ 200 https://www.aoml.noaa.gov/hurricane_blog/45th-anniversary-of-the-bhola-cyclone/
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/official19600522191120_30/executive
+✅ 200 https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1960_chile_jishintsunami/index.html
+❌ 404 https://dil.bosai.go.jp/disaster/1960chile/lesson01.html [chile-earthquake-tsunami-1960.json]
+✅ 200 https://www.ncei.noaa.gov/news/day-1960-chilean-earthquake-and-tsunami
+✅ 200 https://www.gns.cri.nz/
+❌ 404 https://www.unocha.org/southern-and-eastern-africa-rosea/cyclone-idai [cyclone-idai-2019.json]
+❌ 404 https://earth.org/2003-european-heat-wave/ [european-heatwave-2003.json]
+✅ 200 https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1948_fukui_jishin/index.html
+✅ 200 https://www.data.jma.go.jp/fukui/shosai/051fukui_jishin.html
+✅ 200 https://www.eri.u-tokyo.ac.jp/
+✅ 200 https://www.jishin.go.jp/regional_seismicity/rs_chubu/p18_fukui/
+✅ 301 https://www.nsr.go.jp/activity/monitoring/fukushima/
+✅ 200 https://www.bousai.go.jp/kaigirep/hakusho/h23/bousai2011/html/honbun/1b_2h_1s_1.htm
+✅ 200 https://www.env.go.jp/chemi/rhm/current/06-02-01.html
+✅ 301 https://www.reconstruction.go.jp/english/topics/Progress_to_date/index.html
+✅ 200 https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B3%B6%E7%AC%AC%E4%B8%80%E5%8E%9F%E5%AD%90%E5%8A%9B%E7%99%BA%E9%9B%BB%E6%89%80%E4%BA%8B%E6%95%85
+✅ 200 https://www.nhc.noaa.gov/outreach/history/
+✅ 200 https://en.wikipedia.org/wiki/2010_Haiti_earthquake
+✅ 200 https://www.britannica.com/event/2010-Haiti-earthquake
+✅ 200 https://news.un.org/en/story/2022/01/1109632
+✅ 200 https://www.preventionweb.net/collections/haiti-earthquake-2010
+✅ 200 https://reliefweb.int/report/haiti/haiti-earthquake-facts-and-figures
+✅ 200 https://en.wikipedia.org/wiki/Typhoon_Haiyan
+✅ 200 https://www.britannica.com/event/Super-Typhoon-Haiyan
+✅ 200 https://www.climate.gov/news-features/understanding-climate/2013-state-climate-record-breaking-super-typhoon-haiyan
+✅ 301 https://www.internetgeography.net/topics/typhoon-haiyan-case-study/
+✅ 200 https://www.directrelief.org/emergency/typhoon-haiyan/
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case199501.html
+✅ 200 https://www.fdma.go.jp/disaster/heatstroke/post3.html
+✅ 200 https://www.mhlw.go.jp/stf/newpage_03738.html
+✅ 200 https://www.wbgt.env.go.jp/
+✅ 200 https://www.nippon.com/ja/japan-topics/today07230/
+✅ 200 https://ja.wikipedia.org/wiki/2018%E5%B9%B4%E3%81%AE%E7%8C%9B%E6%9A%91_(%E6%97%A5%E6%9C%AC)
+✅ 301 https://www.data.jma.go.jp/obd/stats/data/bosai/report/1977/197701/197701.html
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case197701.html
+✅ 200 https://ja.wikipedia.org/wiki/%E6%98%AD%E5%92%8C52%E5%B9%B4%E8%B1%AA%E9%9B%AA
+✅ 200 https://www.pref.hokkaido.lg.jp/sm/ktk/bsb/yukihigaizyoukyou.html
+✅ 200 https://www.kantei.go.jp/jp/headline/bousai/setsugai.html
+✅ 200 https://www.bousai.go.jp/updates/h30jishin_hokkaido/index.html
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case199301.html
+✅ 200 https://www.bousai.go.jp/kyoiku/kyokun/hokkaidonaiseioki/about.htm
+✅ 200 https://www.jma-net.go.jp/sapporo/jishin/nanseioki.html
+✅ 200 https://www.jishin.go.jp/regional_seismicity/rs_kaiko/k14_hokkaidonanseioki/
+✅ 200 https://en.wikipedia.org/wiki/Hurricane_Katrina
+✅ 200 https://www.britannica.com/event/Hurricane-Katrina
+✅ 200 https://www.weather.gov/mob/katrina
+✅ 200 https://www.nationalgeographic.com/environment/article/hurricane-katrina
+✅ 200 https://www.worldvision.org/disaster-relief-news-stories/2005-hurricane-katrina-facts
+✅ 200 https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami
+✅ 200 https://www.britannica.com/event/Indian-Ocean-tsunami-of-2004
+✅ 200 https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153
+✅ 200 https://www.worldvision.org/disaster-relief-news-stories/2004-indian-ocean-earthquake-tsunami-facts
+✅ 200 https://recovery.preventionweb.net/collections/recovery-collection-2004-indian-ocean-earthquake-and-tsunami
+✅ 200 https://www.bousai.go.jp/kohou/kouhoubousai/h21/09/special_01.html
+✅ 200 https://en.wikipedia.org/wiki/1999_%C4%B0zmit_earthquake
+✅ 200 https://www.britannica.com/event/Izmit-earthquake-of-1999
+✅ 200 https://www.preventionweb.net/files/2745_IzmitTurkey1999.pdf
+✅ 200 https://www.moodys.com/web/en/us/insights/insurance/how-did-the-1999-izmit-earthquake-shape-earthquake-risk-in-turkiye.html
+✅ 200 https://www.bousai.go.jp/kantou100/
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/usp000he3g/executive
+✅ 200 https://www.jma-net.go.jp/tsu/knowledge/h23suigai.html
+✅ 200 https://www.kkr.mlit.go.jp/plan/saigairaiburari/2011_t12/
+✅ 200 https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%88%9023%E5%B9%B4%E5%8F%B0%E9%A2%A8%E7%AC%AC12%E5%8F%B7
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/pdf/201503.pdf
+✅ 200 https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%88%9027%E5%B9%B49%E6%9C%88%E9%96%A2%E6%9D%B1%E3%83%BB%E6%9D%B1%E5%8C%97%E8%B1%AA%E9%9B%A8
+❌ connection error https://www.gsi.go.jp/BOUSAI/H27.taihuu18gou.html [kinugawa-flood-2015.json]
+❌ 403 https://volcano.si.edu/volcano.cfm?vn=262000 [krakatoa-eruption-1883.json]
+✅ 200 https://www.bousai.go.jp/updates/h280414jishin/
+✅ 200 https://www.data.jma.go.jp/stats/data/bosai/report/2020/20200811/20200811.html
+✅ 200 https://www.bousai.go.jp/kaigirep/hakusho/r03/honbun/0b_1s_02_01.html
+✅ 200 https://www.bousai.go.jp/updates/r2_07ooame/r2_07ooame/index.html
+✅ 200 https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C2%E5%B9%B47%E6%9C%88%E8%B1%AA%E9%9B%A8
+✅ 200 https://en.wikipedia.org/wiki/Derna_dam_collapses
+✅ 200 https://www.nbcnews.com/news/world/libya-floods-thousands-feared-dead-derna-dams-collapse-rcna104576
+✅ 200 https://pmc.ncbi.nlm.nih.gov/articles/PMC11952095/
+✅ 200 https://www.hrw.org/news/2023/12/06/libya-derna-flood-response-costs-lives
+✅ 200 https://disasterphilanthropy.org/disasters/2023-libya-floods/
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/usp0002jwe/executive
+✅ 200 https://www.city.sendai.jp/kekaku/kurashi/anzen/saigaitaisaku/kanren/1978nen.html
+✅ 200 https://www.mlit.go.jp/kisha/kisha05/04/040523/04.pdf
+✅ 200 https://www.jishin.go.jp/regional_seismicity/rs_kaiko/rs_miyagioki/
+✅ 200 https://www.bosai-mainichi.net/2017-06-12-172615/
+❌ 404 https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/miyakejima/ [miyakejima-eruption-2000.json]
+✅ 200 https://en.wikipedia.org/wiki/2023_Al_Haouz_earthquake
+✅ 200 https://www.britannica.com/event/Morocco-earthquake-of-2023
+✅ 200 https://reliefweb.int/disaster/eq-2023-000166-mar
+✅ 200 https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/key-takeaways-from-the-al-haouz-earthquake-morocco-2023/B454F20348B2426EEA746D9E30A4443B
+✅ 200 https://www.data.jma.go.jp/stats/data/bosai/report/1961/19610915/19610915.html
+✅ 302 https://www.kkr.mlit.go.jp/yodogawa/know/history/flood_record/flood_1961.html
+✅ 200 https://ja.wikipedia.org/wiki/%E7%AC%AC2%E5%AE%A4%E6%88%B8%E5%8F%B0%E9%A2%A8
+✅ 200 https://www.jma-net.go.jp/nagasaki-c/shosai/saigai/ooame/19820723/index.html
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case198201.html
+✅ 200 https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B4%8E%E5%A4%A7%E6%B0%B4%E5%AE%B3
+✅ 200 https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1944_tounankai_jishin/index.html
+✅ 200 https://www.jishin.go.jp/regional_seismicity/rs_kaiko/k_nankai/
+✅ 200 https://www.data.jma.go.jp/gifu/shosai/know/showatonankai80/index_tonankai.html
+✅ 200 https://www.bousai.go.jp/jishin/nankai/taio_wg/pdf/h301101shiryou02.pdf
+✅ 200 https://www.data.jma.go.jp/kochi/jishin_bosai/jishin_nankai.html
+✅ 200 https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake
+✅ 200 https://www.usgs.gov/news/featured-story/one-year-after-m78-nepal-earthquake
+✅ 200 https://www.britannica.com/topic/Nepal-earthquake-of-2015
+✅ 200 https://www.adrc.asia/view_disaster_en.php?Lang=en&Key=1963
+✅ 200 https://www.jma-net.go.jp/akita/data/saigai/saigai_tyubu.html
+✅ 200 https://www.pa.thr.mlit.go.jp/akita/020/040/020/140/20200101045000.html
+✅ 200 https://www.rodo.co.jp/series/72382/
+✅ 200 https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E6%B5%B7%E4%B8%AD%E9%83%A8%E5%9C%B0%E9%9C%87
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case200404.html
+✅ 200 https://www.mlit.go.jp/toshi/content/001466321.pdf
+✅ 200 https://www.jma-net.go.jp/niigata/menu/bousai/seis_disaster.html
+✅ 200 https://www.nippon.com/ja/japan-topics/today06160/
+✅ 200 https://www.hrr.mlit.go.jp/project2024/history/1964.html
+❌ 404 https://www.jishin.go.jp/regional_seismicity/rs_katsudanso/f108_neodani/ [nobi-earthquake-1891.json]
+✅ 200 https://www.bousai.go.jp/kohou/kouhoubousai/h29/88/disaster.html
+✅ 200 https://www.data.jma.go.jp/stats/data/bosai/report/2017/20170711/20170711.html
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case200701.html
+✅ 200 https://www.jishin.go.jp/main/chousa/07apr_noto/index.htm
+❌ connection error https://www.gsi.go.jp/BOUSAI/h19-noto-earthquake-index.html [noto-earthquake-2007.json]
+✅ 200 https://www.jma.go.jp/jma/kishou/books/kenshin/vol72p027.pdf
+✅ 200 https://www.bousai.go.jp/updates/r60101notojishin/index.html
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case199301.html
+✅ 200 https://www.jma-net.go.jp/sapporo/jishin/nanseioki.html
+✅ 301 https://www.data.jma.go.jp/svd/vois/data/tokyo/STOCK/kaisetsu/VPZK50_20140927.pdf
+✅ 200 https://www.fdma.go.jp/publication/hakusho/h26/31/1610.html
+✅ 200 https://www.bousai.go.jp/kohou/kouhoubousai/r06/110/special_01.html
+✅ 200 https://ja.wikipedia.org/wiki/2014%E5%B9%B4%E3%81%AE%E5%BE%A1%E5%B6%BD%E5%B1%B1%E5%99%B4%E7%81%AB
+✅ 200 https://www.unocha.org/pakistan
+✅ 200 https://en.wikipedia.org/wiki/1991_eruption_of_Mount_Pinatubo
+✅ 200 https://pubs.usgs.gov/fs/1997/fs113-97/
+✅ 200 https://recovery.preventionweb.net/collections/recovery-collection-philippines-mount-pinatubo-eruption-1991
+✅ 200 https://www.britannica.com/place/Mount-Pinatubo
+✅ 200 https://www.data.jma.go.jp/stats/data/bosai/report/2019/20191012/20191012.html
+✅ 200 https://www.bousai.go.jp/updates/r1typhoon19/index.html
+✅ 200 https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C%E5%85%83%E5%B9%B4%E6%9D%B1%E6%97%A5%E6%9C%AC%E5%8F%B0%E9%A2%A8
+✅ 200 https://www.data.jma.go.jp/stats/data/bosai/report/1991/19910912ty/19910912_19.html
+✅ 200 https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%88%903%E5%B9%B4%E5%8F%B0%E9%A2%A8%E7%AC%AC19%E5%8F%B7
+✅ 200 https://tydb.bosai.go.jp/TYDB/HTML/9119.html
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/usp000efkv/executive
+✅ 200 https://ja.wikipedia.org/wiki/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%9C%B0%E9%9C%87
+✅ 200 https://www.bousai.go.jp/kaigirep/hakusho/h21/bousai2009/html/honbun/1b_4s_1_02.htm
+✅ 200 https://www.jishin.go.jp/figure/figure005012/
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/usp000g650/executive
+✅ 200 https://ja.wikipedia.org/wiki/%E5%94%90%E5%B1%B1%E5%9C%B0%E9%9C%87
+✅ 200 https://earthquake.usgs.gov/earthquakes/eventpage/usp0000qkv/executive
+✅ 200 https://disasterhistory.org/tangshan-earthquake-1976
+✅ 200 https://www.britannica.com/event/Tangshan-earthquake-of-1976
+✅ 200 https://www.bousai.go.jp/kohou/kouhoubousai/h23/64/special_01.html
+✅ 200 https://www.fdma.go.jp/disaster/higashinihon/post.html
+✅ 301 https://www.reconstruction.go.jp/topics/main-cat2/sub-cat2-6/20250214_kanrenshi.pdf
+✅ 200 https://www.bousai.go.jp/kaigirep/houkokusho/hukkousesaku/saigaitaiou/output_html_1/case200004.html
+✅ 200 https://www.pref.tottori.lg.jp/29135.htm
+✅ 200 https://www.jishin.go.jp/regional_seismicity/rs_chugoku-shikoku/p31_tottori/
+✅ 200 https://www.dpri.kyoto-u.ac.jp/web_j/dprinews/news19/n19-1.html
+✅ 200 https://www.data.jma.go.jp/stats/data/bosai/report/1954/19540924/19540924.html
+✅ 200 https://ja.wikipedia.org/wiki/%E6%B4%9E%E7%88%BA%E4%B8%B8%E4%BA%8B%E6%95%85
+✅ 200 https://jtsb.mlit.go.jp/kai/bunseki/bunsekikohosiryo/no6_taihu/gaiyou/pdf/02-1_jirei.pdf
+✅ 200 https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes
+✅ 200 https://www.un.org/en/turkiye-syria-earthquake-response
+✅ 200 https://www.britannica.com/event/2023-Turkey-Syria-earthquake
+✅ 200 https://reliefweb.int/disaster/eq-2023-000015-tur
+✅ 200 https://www.aljazeera.com/news/2023/2/25/death-toll-climbs-above-50000-after-turkey-syria-earthquakes
+✅ 200 https://www.bousai.go.jp/kyoiku/kyokun/kyoukunnokeishou/rep/1990_unzen_funka/index.html
+✅ 200 https://www.qsr.mlit.go.jp/bousai/index_c11.html
+✅ 200 https://www.nikkei.com/article/DGKKZO45509820R30C19A5EAC000/
+✅ 200 https://ja.wikipedia.org/wiki/%E9%9B%B2%E4%BB%99%E5%B2%B3
+✅ 200 https://www.bousai.go.jp/updates/h30typhoon7/
+✅ 200 https://www.bousai.go.jp/updates/r4_08ooame/index.html
+✅ 200 https://www.jma.go.jp/jma/kishou/know/jirei/sokuhou/R040803.pdf
+✅ 200 https://www.mlit.go.jp/saigai/saigai_220803.html
+✅ 200 https://www.pref.yamagata.jp/020072/bosai/kochibou/saigai/r04/040803.html
+✅ 200 https://www.pref.niigata.lg.jp/sec/dobokukanri/reiwa4-8-3-higai.html
+
+📊 結果: ✅175 ⚠️0 ❌9
+
+
+【4. USGS自動ファクトチェック】
+=== USGS自動ファクトチェック ===
+実行日時: 2026/4/13 9:01:38
+
+【照合結果】
+✅ chile-earthquake-tsunami-1960: USGS M9.5 / 記事 M9.5 → 一致
+⚠️  tangshan-earthquake-1976: USGS M7.5 / 記事 M7.8 → 要確認（差異0.3以上）
+✅ india-ocean-tsunami-2004: USGS M9.1 / 記事 M9.1 → 一致
+✅ izmit-earthquake-1999: USGS M7.6 / 記事 M7.6 → 一致
+✅ nepal-earthquake-2015: USGS M7.8 / 記事 M7.8 → 一致
+✅ turkey-syria-earthquake-2023: USGS M7.8 / 記事 M7.8 → 一致
+✅ morocco-earthquake-2023: USGS M6.8 / 記事 M6.8 → 一致
+✅ hokkaido-earthquake-2018: USGS M6.6 / 記事 M6.7 → 一致
+⚠️  kumamoto-earthquake-2016: USGS M7 / 記事 M7.3 → 要確認（差異0.3以上）
+✅ noto-earthquake-2024: USGS M7.5 / 記事 M7.6 → 一致
+✅ sichuan-earthquake-2008: USGS M7.9 / 記事 M7.9 → 一致
+✅ haiti-earthquake-2010: USGS M7 / 記事 M7 → 一致
+
+【サマリー】
+照合成功: 10件 / 不一致: 2件 / 取得失敗: 0件
+
+ログ保存: /Users/yoshinokouichi/projects/saigaishi-navi/logs/usgs-factcheck-2026-04-13.txt
+
+【5. 記事更新チェック】
+=== 記事更新状況チェック ===
+実行日時: 2026/4/9 9:00:00
+
+【🚨 緊急更新推奨（30日以上未更新の進行中災害）】
+  （該当なし）
+
+【📅 年次更新推奨（365日以上）】
+  （該当なし）
+
+【🎂 周年記念（5年・10年節目）】
+1. 熱海市伊豆山土石流災害（2021年）
+   2026年 → 5周年（2021年発生）
+   推奨: summaryに5周年の節目の言及を追加
+2. クライストチャーチ地震（2011年・ニュージーランド）
+   2026年 → 15周年（2011年発生）
+   推奨: summaryに15周年の節目の言及を追加
+3. 福島第一原子力発電所事故（2011年）
+   2026年 → 15周年（2011年発生）
+   推奨: summaryに15周年の節目の言及を追加
+4. 台風12号 紀伊半島大水害（2011年）
+   2026年 → 15周年（2011年発生）
+   推奨: summaryに15周年の節目の言及を追加
+5. 熊本地震（2016年）
+   2026年 → 10周年（2016年発生）
+   推奨: summaryに10周年の節目の言及を追加
+6. ピナトゥボ山噴火（1991年）
+   2026年 → 35周年（1991年発生）
+   推奨: summaryに35周年の節目の言及を追加
+7. 台風19号・りんご台風（1991年）
+   2026年 → 35周年（1991年発生）
+   推奨: summaryに35周年の節目の言及を追加
+8. 唐山地震（1976年）
+   2026年 → 50周年（1976年発生）
+   推奨: summaryに50周年の節目の言及を追加
+9. 東日本大震災（2011年）
+   2026年 → 15周年（2011年発生）
+   推奨: summaryに15周年の節目の言及を追加
+10. 雲仙普賢岳噴火・火砕流災害（1991年）
+   2026年 → 35周年（1991年発生）
+   推奨: summaryに35周年の節目の言及を追加
+
+【✅ 更新不要】
+残り 60件は最新状態
+
+--- 合計: 70記事中 10件が要確認 ---
+
+【6. 死者数確認推奨リスト】
+=== 死者数・関連死 照合レポート ===
+実行日時: 2026/4/9 9:00:00
+照合対象: 8件
+
+【要確認・要更新 記事】
+  🚨 福島第一原子力発電所事故（2011年） (fukushima-nuclear-2011)
+     DB値: 0人
+     参照値: 2,348人 (復興庁 関連死)
+     差異: 要更新 (差2,348、100.0%)
+     最終更新: 2026-04-09
+     確認URL: https://www.reconstruction.go.jp/topics/main-cat2/sub-cat2-6/20140526131634.html
+     備考: 毎年6月頃に復興庁が集計値を更新
+
+  🔶 インド洋大津波（2004年） (india-ocean-tsunami-2004)
+     DB値: 227,899人
+     参照値: 227,898人 (USGS / UN Report)
+     差異: 微差 (+1)
+     最終更新: 2026-04-09
+     確認URL: https://www.usgs.gov/faqs/how-many-people-died-2004-indian-ocean-tsunami
+     備考: 複数国にまたがるため集計値に差がある
+     行方不明者（DB）: 0人
+
+【✅ DB値と参照値が一致】
+  能登半島地震（2024年） — 594人 (内閣府 令和6年能登半島地震)
+  東日本大震災（2011年） — 15,900人 (警察庁 東日本大震災)
+  熊本地震（2016年） — 273人 (熊本県 最終報)
+  トルコ・シリア地震（2023年） — 59,259人 (AFAD / WHO 報告)
+  阪神・淡路大震災（1995年） — 6,434人 (消防庁 確定報)
+  ハイチ地震（2010年） — 316,000人 (USGS / Haiti Government)
+
+【🔒 確定値（変動なし）】
+  熊本地震（2016年） — 273人 / 参照: 273人
+     備考: 2019年以降は変動なし（確定）
+  阪神・淡路大震災（1995年） — 6,434人 / 参照: 6,434人
+     備考: 確定値。変動なし
+
+--- 更新スケジュール目安 ---
+  能登地震 (2024): 内閣府発表のたびに随時確認
+  東日本大震災 (2011): 毎年3月11日前後
+  福島原発 (2011): 毎年6月頃（復興庁集計）
+  その他未確定: 重大発表時に随時確認
+
+【7. 全エージェント実行】
+
+> saigaishi-navi@1.0.0 agent:all
+> node scripts/agent-runner.js --all
+
+[agent-runner] 起動 (モード: --all)
+[agent-runner] 開始時刻: 2026-04-13 00:01:47
+
+[agent-runner] 実行対象: fact-check, auto-update, internal-link, revenue, db-expansion, auto-improve
+
+[1/6] fact-check を実行中...
+  スクリプト: fact-check.js
+  処理内容: 全記事のJSON整合性・必須フィールド確認
+  結果: OK (64ms)
+
+[2/6] auto-update を実行中...
+  スクリプト: auto-update.js
+  処理内容: 90日以上未更新の記事を検出
+  結果: OK (62ms)
+
+[3/6] internal-link を実行中...
+  スクリプト: internal-link-agent.js
+  処理内容: 内部リンク構造・孤立記事の分析
+  結果: OK (78ms)
+
+[4/6] revenue を実行中...
+  スクリプト: revenue-agent.js
+  処理内容: 収益スコア・アフィリエイト適合度の分析
+  結果: OK (74ms)
+
+[5/6] db-expansion を実行中...
+  スクリプト: db-expansion-agent.js
+  処理内容: カバレッジ分析・追加記事候補の提案
+  結果: OK (72ms)
+
+[6/6] auto-improve を実行中...
+  スクリプト: auto-improve-agent.js
+  処理内容: 全記事スコアリング・改善提案
+  結果: OK (71ms)
+
+[agent-runner] レポートを保存しました: /Users/yoshinokouichi/projects/saigaishi-navi/logs/agent-report-2026-04-13.txt
+============================================================
+実行完了: 6体 / エラー: 0体 / 成功: 6体
+============================================================
+
+=== チェック完了 ===
+問題があれば修正してから: bash scripts/deploy.sh

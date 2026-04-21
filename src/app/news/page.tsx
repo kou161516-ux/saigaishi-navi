@@ -117,7 +117,7 @@ export default async function NewsPage() {
         <p className="text-gray-700 mb-4">最新の地震情報を見て「備えが心配」と感じたら、過去の教訓を確認しましょう。</p>
         <div className="flex gap-3 flex-wrap">
           <Link href="/disasters" className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-            全49件の災害史を見る
+            全70件の災害史を見る
           </Link>
           <Link href="/type/earthquake" className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
             地震の記録

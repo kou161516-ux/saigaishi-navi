@@ -14,7 +14,6 @@ import LessonBox from '@/components/disaster/LessonBox'
 import PreparednessBox from '@/components/disaster/PreparednessBox'
 import AffiliateBox from '@/components/affiliate/AffiliateBox'
 import InsWebAffiliateBox from '@/components/affiliate/InsWebAffiliateBox'
-import AdSense from '@/components/ads/AdSense'
 import DisasterCard from '@/components/disaster/DisasterCard'
 
 const typeLabels: Record<string, string> = {
@@ -42,6 +41,8 @@ const typeColors: Record<string, string> = {
   heatwave: 'bg-yellow-100 text-yellow-800',
   other: 'bg-gray-100 text-gray-800',
 }
+
+export const dynamic = 'force-static'
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
@@ -229,8 +230,7 @@ export default async function DisasterDetailPage({
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* AdSense - 記事上部 */}
-        {/* 本番前にスロットIDを差し替えてください */}
-        <AdSense slot="1111111111" format="auto" className="mb-6" />
+        {/* AdSense slot - configure slot ID when available */}
 
         {/* Summary */}
         <section id="summary" className="mb-8">
@@ -304,12 +304,11 @@ export default async function DisasterDetailPage({
         {/* Affiliate - 防災グッズ */}
         <AffiliateBox category={disaster.affiliateCategory} />
 
-        {/* Affiliate - インズウェブ火災保険（SBIホールディングス） */}
+        {/* Affiliate - インズウェブ火災保険（ファンコミュニケーションズ） */}
         <InsWebAffiliateBox />
 
         {/* AdSense - 記事下部 */}
-        {/* 本番前にスロットIDを差し替えてください */}
-        <AdSense slot="2222222222" format="auto" className="my-6" />
+        {/* AdSense slot - configure slot ID when available */}
 
         {/* Tags */}
         {disaster.tags.length > 0 && (

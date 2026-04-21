@@ -21,7 +21,6 @@ export default function AdSense({ slot, format = 'auto', className }: AdSensePro
 
   return (
     <div className={`adsense-container ${className || ''}`}>
-      {/* 本番前に slot ID を差し替えてください */}
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}

@@ -4,9 +4,11 @@ import Link from 'next/link'
 import { getAllTags, getDisastersByTag } from '@/lib/disasters'
 import DisasterCard from '@/components/disaster/DisasterCard'
 
+export const dynamic = 'force-static'
+
 export async function generateStaticParams() {
   const tags = getAllTags()
-  return tags.map((tag) => ({ tag: encodeURIComponent(tag) }))
+  return tags.map((tag) => ({ tag }))
 }
 
 export async function generateMetadata({

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import DisasterCard from '@/components/disaster/DisasterCard'
-import AdSense from '@/components/ads/AdSense'
 import AffiliateBox from '@/components/affiliate/AffiliateBox'
 import InsWebAffiliateBox from '@/components/affiliate/InsWebAffiliateBox'
 import LatestEarthquakeWidget from '@/components/news/LatestEarthquakeWidget'
@@ -168,8 +167,7 @@ export default function HomePage() {
 
       {/* AdSense - 記事上部 */}
       <div className="max-w-6xl mx-auto px-4">
-        {/* 本番前にスロットIDを差し替えてください（例: 1234567890） */}
-        <AdSense slot="1234567890" format="auto" className="my-4" />
+        {/* AdSense slot - configure slot ID when available */}
       </div>
 
       {/* 今月の防災チェック */}
@@ -331,8 +329,7 @@ export default function HomePage() {
 
       {/* AdSense - 下部 */}
       <div className="max-w-6xl mx-auto px-4">
-        {/* 本番前にスロットIDを差し替えてください */}
-        <AdSense slot="0987654321" format="auto" className="my-4" />
+        {/* AdSense slot - configure slot ID when available */}
       </div>
     </>
   )

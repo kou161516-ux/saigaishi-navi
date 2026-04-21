@@ -3,6 +3,10 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   outputFileTracingRoot: path.join(__dirname),
+  experimental: {
+    workerThreads: false,
+    cpus: 1,
+  },
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],
