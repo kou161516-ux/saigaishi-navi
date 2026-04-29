@@ -76,7 +76,7 @@ export default function PrivacyPage() {
           </p>
         </section>
 
-        <p className="text-sm text-gray-500">最終更新: 2024年1月</p>
+        <p className="text-sm text-gray-500">最終更新: 2026年4月</p>
       </div>
     </div>
   )

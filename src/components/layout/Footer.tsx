@@ -160,7 +160,7 @@ export default function Footer() {
 
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-sm">
             <p className="text-xs text-gray-500 mb-1">※ 掲載している各サービス・リンク先は、当サイトとは独立した別の運営者によるサービスです。</p>
-            <p>© 2024 災害史ナビ All rights reserved.</p>
+            <p>© 2026 災害史ナビ All rights reserved.</p>
             <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center text-xs">
               <p className="text-gray-500">
                 最終更新: {buildTime}

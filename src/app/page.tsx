@@ -16,7 +16,7 @@ const monthlyFeatured: Record<number, string[]> = {
   1:  ['noto-earthquake-2024', 'hanshin-awaji-earthquake-1995'],
   2:  ['hokkaido-earthquake-2018', 'nihonkai-chubu-earthquake-1983'],
   3:  ['tohoku-earthquake-2011', 'miyagi-earthquake-1978'],
-  4:  ['kumamoto-earthquake-2016', 'fukui-earthquake-1948'],
+  4:  ['kumamoto-earthquake-2016', 'nepal-earthquake-2015'],
   5:  ['ontake-eruption-2014', 'pinatubo-eruption-1991'],
   6:  ['fukui-earthquake-1948', 'niigata-earthquake-1964'],
   7:  ['western-japan-flood-2018', 'northern-kyushu-flood-2017'],
@@ -265,7 +265,7 @@ export default function HomePage() {
                       <p className={`font-bold text-sm ${isTop3 ? 'text-red-700' : 'text-gray-700'}`}>
                         {total.toLocaleString()}人
                       </p>
-                      <p className="text-xs text-gray-400">死者・行不明</p>
+                      <p className="text-xs text-gray-400">死者・行方不明</p>
                     </div>
                     <span className="flex-shrink-0 text-gray-400 group-hover:text-amber-500 transition text-lg">›</span>
                   </Link>

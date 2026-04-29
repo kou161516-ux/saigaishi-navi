@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: '災害史ナビ | 日本と世界の災害から学ぶ防災サイト',
     template: '%s | 災害史ナビ',
   },
-  description: '東日本大震災・阪神淡路大震災・伊勢湾台風など日本と世界の70件の重大災害史を収録。各災害の教訓と今日からできる備えを分かりやすく解説します。',
+  description: '東日本大震災・阪神淡路大震災・伊勢湾台風など日本と世界の重大災害史を収録。各災害の教訓と今日からできる備えを分かりやすく解説します。',
   keywords: ['防災', '災害', '地震', '津波', '台風', '洪水', '東日本大震災', '阪神淡路大震災', '能登半島地震', '備え'],
   verification: {
     google: process.env.NEXT_PUBLIC_SC_VERIFICATION,
