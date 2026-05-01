@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script';
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
@@ -49,7 +50,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-9753448379800739" />
+        <meta name="google-site-verification" content="tqZO-zlBlY1P8Kc_tvhQLtqMY4Llx-fivRBb69KwPyo" />
+      </head>
       <body className={`${inter.className} bg-gray-50`}>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-Q952RCHG6D" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Q952RCHG6D');
+        `}</Script>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9753448379800739"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+
         <AdSenseScript />
         <GoogleAnalytics />
         <Header />
